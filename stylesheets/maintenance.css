@@ -245,50 +245,50 @@ table {
 */
 body {
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 31px;
+  line-height: 16px;
 }
 
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  line-height: 1.29032em;
+  margin-top: 0.25806em;
+  margin-bottom: 0.25806em;
 }
 
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  line-height: 1.37634em;
+  margin-top: 0.34409em;
+  margin-bottom: 0.34409em;
 }
 
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
+  line-height: 1.32341em;
+  margin-top: 0.44114em;
+  margin-bottom: 0.44114em;
 }
 
 h4 {
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  line-height: 1.54839em;
+  margin-top: 0.51613em;
+  margin-bottom: 0.51613em;
 }
 
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
-  margin-top: 1.80723em;
-  margin-bottom: 1.80723em;
+  line-height: 1.24368em;
+  margin-top: 0.62184em;
+  margin-bottom: 0.62184em;
 }
 
 h6 {
   font-size: 0.75em;
-  line-height: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  line-height: 1.37634em;
+  margin-top: 0.68817em;
+  margin-bottom: 0.68817em;
 }
 
 a:link {
@@ -309,7 +309,7 @@ hr {
   height: 1px;
   border: 1px solid #666666;
   padding-bottom: -1px;
-  margin: 1.5em 0;
+  margin: 0.51613em 0;
 }
 
 strong {
