@@ -358,12 +358,17 @@ textarea {
 
 #name-and-slogan {
   height: 29px;
+  margin-top: -6px;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(4%, #e77401), color-stop(37%, #d05d04), color-stop(63%, #cb5d07), color-stop(83%, #b85304), color-stop(87%, #b85304), color-stop(90%, #c05903), color-stop(100%, #d56702));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   border-top-right-radius: 5px;
+}
+#name-and-slogan img#site-slogan-image {
+  margin-left: 15px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 800px) {
@@ -382,6 +387,43 @@ textarea {
 
 .list-style-none ul li {
   list-style: none;
+}
+
+#block-menu-menu-primary-navigation {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 800px) {
+  #block-menu-menu-primary-navigation ul {
+    border-top: 1px solid white;
+    border-bottom: 1px solid black;
+    height: 100%;
+    padding: 0;
+    margin: 0 0 0 75px;
+    line-height: 2em;
+    background: #999999;
+  }
+  #block-menu-menu-primary-navigation ul li {
+    display: inline;
+    height: 24px;
+    width: auto;
+    padding: 0 5px;
+    margin: 0;
+    display: inline;
+    float: left;
+    background: #999999;
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    text-align: center;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #878787;
+  }
+  #block-menu-menu-primary-navigation ul li a {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 footer,
