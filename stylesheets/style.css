@@ -245,57 +245,57 @@ table {
 */
 body {
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
-  font-size: 31px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 h1 {
   font-size: 2em;
-  line-height: 1.29032em;
-  margin-top: 0.25806em;
-  margin-bottom: 0.25806em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 h2 {
   font-size: 1.5em;
-  line-height: 1.37634em;
-  margin-top: 0.34409em;
-  margin-bottom: 0.34409em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h3 {
   font-size: 1.17em;
-  line-height: 1.32341em;
-  margin-top: 0.44114em;
-  margin-bottom: 0.44114em;
+  line-height: 2.5641em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
 }
 
 h4 {
   font-size: 1em;
-  line-height: 1.54839em;
-  margin-top: 0.51613em;
-  margin-bottom: 0.51613em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 h5 {
   font-size: 0.83em;
-  line-height: 1.24368em;
-  margin-top: 0.62184em;
-  margin-bottom: 0.62184em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
 }
 
 h6 {
   font-size: 0.75em;
-  line-height: 1.37634em;
-  margin-top: 0.68817em;
-  margin-bottom: 0.68817em;
+  line-height: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 a:link {
-  color: #2090b4;
+  color: #cc5500;
 }
 a:visited {
-  color: #2090b4;
+  color: #994000;
 }
 
 ul ul,
@@ -309,7 +309,7 @@ hr {
   height: 1px;
   border: 1px solid #666666;
   padding-bottom: -1px;
-  margin: 0.51613em 0;
+  margin: 1.5em 0;
 }
 
 strong {
@@ -321,14 +321,14 @@ em {
 }
 
 ::-moz-selection {
-  background: #66b360;
-  color: white;
+  background: #b2eee2;
+  color: black;
   text-shadow: none;
 }
 
 ::selection {
-  background: #66b360;
-  color: white;
+  background: #b2eee2;
+  color: black;
   text-shadow: none;
 }
 
@@ -345,3 +345,46 @@ textarea {
 /**
  * Design partials: A place to put your specific design partials.
  */
+#page {
+  margin: 0 0.5em;
+}
+
+#site-name,
+#site-slogan {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+#name-and-slogan {
+  height: 29px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(4%, #e77401), color-stop(37%, #d05d04), color-stop(63%, #cb5d07), color-stop(83%, #b85304), color-stop(87%, #b85304), color-stop(90%, #c05903), color-stop(100%, #d56702));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  border-top-right-radius: 5px;
+}
+
+@media (min-width: 800px) {
+  #block-menu-menu-visitor-menu ul.menu {
+    float: right;
+    margin-bottom: 5px;
+  }
+  #block-menu-menu-visitor-menu ul.menu li {
+    display: inline;
+    text-align: left;
+  }
+  #block-menu-menu-visitor-menu ul.menu li a {
+    text-decoration: none;
+  }
+}
+
+.list-style-none ul li {
+  list-style: none;
+}
+
+footer,
+#footer {
+  border-top: 1px solid black;
+}
