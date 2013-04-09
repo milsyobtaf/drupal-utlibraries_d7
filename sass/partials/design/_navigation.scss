@@ -2,3 +2,39 @@
   list-style: none;
 }
 
+#block-menu-menu-primary-navigation {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  @include breakpoint(800px) {
+    ul {
+
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $black;
+height: 100%;
+      padding: 0;
+      margin: 0 0 0 75px;
+      line-height: 2em;
+      background: $gray-dark;
+      li{
+        display: inline;
+        height: 24px;
+        width: auto;
+        padding: 0 5px;
+        margin: 0;
+        @include float(left);
+        background: $gray-dark;
+        font-family: $helvetica;
+        text-align: center;
+        border-left: 1px solid $gray-light;
+        border-right: 1px solid darken($gray-dark, 7%);
+          a {
+            margin: 0;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+          }
+      }
+    }
+  }
+}
