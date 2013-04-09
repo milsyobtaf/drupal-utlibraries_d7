@@ -59,9 +59,9 @@ function utlibraries_d7_preprocess_html(&$vars) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_page(&$vars) {
-
+  $vars['theme_path'] = drupal_get_path('theme', variable_get('theme_default', NULL));
 }
 
 /**
