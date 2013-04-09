@@ -80,25 +80,25 @@
         </h1>
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php ($site_name)? print $site_name . t('&nbsp;Home') : print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+          <img id="site-name-image" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
 
       <?php if ($site_slogan): ?>
         <h3 id="site-slogan"><?php print $site_slogan; ?></h3>
       <?php endif; ?>
-        <img src="<?php print render($theme_path); ?>/images/slogan.png" />
+        <img id="site-slogan-image" src="<?php print render($theme_path); ?>/images/slogan.png" />
     </hgroup><!-- #name-and-slogan -->
 
       <?php print render($page['header']); ?>
 
       <?php print render($page['header_suffix']); ?>
 
-    </header>
-
     <!-- navigation -->
     <?php if ($page['navigation']) :?>
       <?php print render($page['navigation']); ?>
     <?php endif; ?>
+
+    </header>
 
     <!-- #content-prefix -->
     <?php if ($page['main_prefix']) :?>
