@@ -25,8 +25,8 @@ $legacy-support-for-ie8: true;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-size:   16px; // The font size set on the root html element.
-$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$base-font-size:   12px; // The font size set on the root html element.
+$base-line-height: 18px; // This line-height determines the basic unit of vertical rhythm.
 
 $h1-font-size: 2    * $base-font-size;
 $h2-font-size: 1.5  * $base-font-size;
@@ -67,7 +67,7 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $georgia; // The font family set on the html element.
+$base-font-family: $verdana; // The font family set on the html element.
 $font-body:        $verdana;
 $font-monospace:   $courier;
 $form-font-family: $arial;
@@ -79,6 +79,8 @@ $form-font-family: $arial;
 
 $white          : #FFFFFF;
 $black          : #000000;
+$color-libgreen : #098484;
+$color-ut       : #cc5500;
 
 // Standard colors: for standard 4K and other brand colors.
 // Note: these are just for reference, and some brands have multiple colors.
@@ -98,10 +100,10 @@ $color-fk       : #66B360;
 
 
 // Base color variables.
-$link           : #2090B4;
-$visited        : $link;
-$selection-bg   : #66B360;
-$selection      : $white;
+$link           : $color-ut;
+$visited        : darken($link, 10%);
+$selection-bg   : lighten(#35D2B4, 30%);
+$selection      : $black;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 2em;

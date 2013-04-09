@@ -3,3 +3,9 @@
 //
 // All of your mixins should go in this file.
 ////////////////////////
+
+@mixin hide-text {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  }
