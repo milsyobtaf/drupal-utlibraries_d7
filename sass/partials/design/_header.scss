@@ -15,9 +15,9 @@
 }
 
 #block-menu-menu-visitor-menu {
-@include breakpoint(800px) {
+@include respond-to('full') {
   ul.menu {
-    float: right;
+    @include float(right);
     margin-bottom: 5px;
      li {
       display: inline;

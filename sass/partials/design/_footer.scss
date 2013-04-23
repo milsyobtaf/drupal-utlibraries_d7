@@ -1,6 +1,44 @@
 footer,
 #footer {
   border-top: 1px solid $black;
+  @include respond-to('full') {
+    border: none;
+    #block-menu-menu-policy-and-feedback-links,
+    #block-system-user-menu,
+    #block-views-1db01a8daceda9472cc9c604cabb179c {
+      width: 80%;
+      @include float(right);
+      @include pie-clearfix;
+      h2 {
+        @include hide-text;
+      }
+        .content{
+        ul.menu,
+        div.item-list ul {
 
+           li {
+        @include float(right);
+            text-align: left;
+            display: inline;
 
+              a {
+                text-decoration: none;
+              }
+            }
+        }
+      }
+    }
+  }
+  .utdirect-logo {
+    @include float(right);
+    a {
+      text-decoration: none;
+      }
+    img {
+      display: block;
+    }
+    span {
+      font-size: .8em;
+    }
+  }
 }
