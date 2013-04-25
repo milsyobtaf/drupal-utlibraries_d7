@@ -19,13 +19,19 @@
   ul.menu {
     @include float(right);
     margin-bottom: 5px;
-     li {
+    li {
+      border-right: black 1px solid;
       display: inline;
       text-align: left;
         a {
           text-decoration: none;
         }
       }
+    li.last {
+      border: none;
+      @include replace-text-with-dimensions("support_us_header.png", 0, 0);
+      display: inline-block;
+    }
   }
 }
 }
