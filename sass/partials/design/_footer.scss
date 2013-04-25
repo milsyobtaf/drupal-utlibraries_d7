@@ -1,23 +1,22 @@
 footer,
 #footer {
+  @include container;
+  @include susy-grid-background;
   border-top: 1px solid $black;
+  h2 {
+    @include hide-text;
+    }
   @include respond-to('full') {
     border: none;
     #block-menu-menu-policy-and-feedback-links,
     #block-system-user-menu,
     #block-views-1db01a8daceda9472cc9c604cabb179c {
       width: 80%;
-      @include float(right);
-      @include pie-clearfix;
-      h2 {
-        @include hide-text;
-      }
-        .content{
+        .content {
         ul.menu,
         div.item-list ul {
-
-           li {
-        @include float(right);
+          li {
+        // @include float(right);
             text-align: left;
             display: inline;
 
@@ -30,7 +29,7 @@ footer,
     }
   }
   .utdirect-logo {
-    @include float(right);
+    @include span-columns(1 omega,12);
     a {
       text-decoration: none;
       }
@@ -41,4 +40,17 @@ footer,
       font-size: .8em;
     }
   }
+}
+
+.utdirect-logo {
+  @include span-columns(1 omega,12);
+}
+#block-menu-menu-policy-and-feedback-links {
+  @include span-columns(7 omega, 12);
+}
+#block-system-user-menu {
+  @include span-columns(7, 12);
+}
+#block-views-1db01a8daceda9472cc9c604cabb179c {
+  @include span-columns(7, 12);
 }
