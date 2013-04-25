@@ -145,8 +145,6 @@
       <?php print render($page['main_suffix']); ?>
     <?php endif; ?>
 
-    <footer id="footer" role="contentinfo">
-      <?php print render($page['footer']); ?>
-    </footer>
+    <?php print render($page['footer']); ?>
 
   </div><!-- #page -->
