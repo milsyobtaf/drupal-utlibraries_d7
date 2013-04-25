@@ -3,22 +3,22 @@
 }
 
 #block-menu-menu-primary-navigation {
-  height: auto;
+  height: 25px;
   width: 100%;
   padding: 0;
-  @include breakpoint(800px) {
-    ul {
-
+  background-color: $gray-dark;
   border-top: 1px solid $white;
   border-bottom: 1px solid $black;
-  height: 100%;
+  @include breakpoint(800px) {
+    ul {
+      height: 100%;
       padding: 0;
       margin: 0 0 0 75px;
       line-height: 2em;
       background: $gray-dark;
       li{
         display: inline;
-        height: 24px;
+        height: 23px;
         width: auto;
         padding: 0 5px;
         margin: 0;
