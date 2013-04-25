@@ -31,6 +31,8 @@
       border: none;
       @include replace-text-with-dimensions("support_us_header.png", 0, 0);
       display: inline-block;
+      position: relative;
+      bottom: 20px;
     }
   }
 }
