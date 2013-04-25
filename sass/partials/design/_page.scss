@@ -2,3 +2,10 @@
   margin: 0 2em;
   max-width: 1200px;
 }
+
+div#content {
+  border: 15px $gray-light solid;
+  border-top: none;
+  margin-top: 2px;
+  padding: 2em;
+}
