@@ -1,7 +1,5 @@
 footer,
 #footer {
-  @include container;
-  @include susy-grid-background;
   border-top: 1px solid $black;
   h2 {
     @include hide-text;
@@ -11,25 +9,17 @@ footer,
     #block-menu-menu-policy-and-feedback-links,
     #block-system-user-menu,
     #block-views-1db01a8daceda9472cc9c604cabb179c {
-      width: 80%;
-        .content {
-        ul.menu,
-        div.item-list ul {
-          li {
-        // @include float(right);
-            text-align: left;
-            display: inline;
-
-              a {
-                text-decoration: none;
-              }
+      div.content {
+        li {
+          display: inline;
+            a {
+              text-decoration: none;
             }
         }
       }
     }
   }
   .utdirect-logo {
-    @include span-columns(1 omega,12);
     a {
       text-decoration: none;
       }
@@ -42,15 +32,32 @@ footer,
   }
 }
 
+footer,
+#footer {
+  @include container;
+  @include susy-grid-background;
+}
 .utdirect-logo {
-  @include span-columns(1 omega,12);
+  @include span-columns(12, 12);
+  @include pre(11);
+  //@include omega;
+  background-color: pink;
 }
 #block-menu-menu-policy-and-feedback-links {
-  @include span-columns(7 omega, 12);
+  @include span-columns(6, 12);
+//  @include pull(2);
+
+  background-color: blue;
 }
 #block-system-user-menu {
-  @include span-columns(7, 12);
+  @include span-columns(2, 6);
+//  @include pull(2);
+  background-color: orange;
 }
 #block-views-1db01a8daceda9472cc9c604cabb179c {
-  @include span-columns(7, 12);
+  // clear: both;
+  @include span-columns(2, 6);
+  // @include pull(2);
+  // @include omega;
+  background-color: green;
 }
