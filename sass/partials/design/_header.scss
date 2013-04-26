@@ -29,6 +29,9 @@
       font-weight: bolder;
       font-size: 11px;
       margin: 0;
+        &:after {
+          content:'\00a0\00a0|';
+        }
       }
     li.last {
       border: none;
@@ -36,12 +39,9 @@
       display: inline-block;
       position: relative;
       bottom: 25px;
-    }
-    li:after {
-      content:'\00a0\00a0|';
-    }
-    li.list:after {
-      content:'';
+        &:after {
+          content:'';
+        }
     }
   }
 }
