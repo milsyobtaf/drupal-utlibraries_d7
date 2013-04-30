@@ -1,3 +1,10 @@
+header,
+#header {
+  a {
+    color: $black;
+  }
+}
+
 #site-name,
 #site-slogan {
   @include hide-text;
