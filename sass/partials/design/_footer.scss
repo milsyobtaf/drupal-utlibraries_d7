@@ -1,5 +1,6 @@
 footer,
 #footer {
+  margin-top: 10px;
   border-top: 1px solid $black;
   h2 {
     @include hide-text;
@@ -7,7 +8,7 @@ footer,
   @include respond-to('full') {
     border: none;
     @include container;
-    @include susy-grid-background;
+    // @include susy-grid-background;
     #block-menu-menu-policy-and-feedback-links {
       @include span-columns(7, 12);
       @include push(4);
