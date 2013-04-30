@@ -6,9 +6,29 @@ footer,
     }
   @include respond-to('full') {
     border: none;
+    @include container;
+    @include susy-grid-background;
+    #block-menu-menu-policy-and-feedback-links {
+      @include span-columns(7, 12);
+      @include push(4);
+    }
+    #block-system-user-menu {
+      @include span-columns(3, 12);
+      @include push(8);
+    }
+    #block-views-1db01a8daceda9472cc9c604cabb179c {
+      @include span-columns(4, 12);
+      @include push(7);
+    }
+    .utdirect-logo {
+      @include span-columns(1 omega, 12);
+    }
     #block-menu-menu-policy-and-feedback-links,
     #block-system-user-menu,
     #block-views-1db01a8daceda9472cc9c604cabb179c {
+      ul {
+        margin: 0;
+      }
       div.content {
         li {
           display: inline;
@@ -34,30 +54,4 @@ footer,
 
 footer,
 #footer {
-  @include container;
-  @include susy-grid-background;
-}
-.utdirect-logo {
-  @include span-columns(12, 12);
-  @include pre(11);
-  //@include omega;
-  background-color: pink;
-}
-#block-menu-menu-policy-and-feedback-links {
-  @include span-columns(6, 12);
-//  @include pull(2);
-
-  background-color: blue;
-}
-#block-system-user-menu {
-  @include span-columns(2, 6);
-//  @include pull(2);
-  background-color: orange;
-}
-#block-views-1db01a8daceda9472cc9c604cabb179c {
-  // clear: both;
-  @include span-columns(2, 6);
-  // @include pull(2);
-  // @include omega;
-  background-color: green;
 }
