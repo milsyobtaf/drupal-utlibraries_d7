@@ -107,11 +107,11 @@
 
     <?php print $breadcrumb; ?>
 
-    <?php if ($messages): ?>
-      <div id="messages" role="alertdialog"><?php print $messages; ?></div>
-    <?php endif; ?>
-
     <div id="main" role="main" class="clearfix">
+
+      <?php if ($messages): ?>
+        <div id="messages" role="alertdialog"><?php print $messages; ?></div>
+      <?php endif; ?>
 
       <div id="content" role="article" class="column">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
