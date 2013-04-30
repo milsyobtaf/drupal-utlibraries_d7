@@ -1,3 +1,10 @@
+header,
+#header {
+  a {
+    color: $black;
+  }
+}
+
 #site-name,
 #site-slogan {
   @include hide-text;
@@ -18,14 +25,31 @@
 @include respond-to('full') {
   ul.menu {
     @include float(right);
-    margin-bottom: 5px;
-     li {
+    margin: 15px 0px 0px;
+    li {
+      // border-right: black 1px solid;
       display: inline;
       text-align: left;
         a {
           text-decoration: none;
         }
+      font-weight: bolder;
+      font-size: 11px;
+      margin: 0;
+        &:after {
+          content:'\00a0\00a0|';
+        }
       }
+    li.last {
+      border: none;
+      @include replace-text-with-dimensions("support_us_header.png", 0, 0);
+      display: inline-block;
+      position: relative;
+      bottom: 25px;
+        &:after {
+          content:'';
+        }
+    }
   }
 }
 }

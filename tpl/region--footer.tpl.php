@@ -26,8 +26,8 @@
  */
 ?>
 <?php if ($content): ?>
-  <footer id="footer" class="<?php print $classes; ?>">
-    <p class="utdirect-logo"><a href="http://utdirect.utexas.edu"><img src="<?php print render($theme_path); ?>/images/utdirect-logo.jpg" /><span>requires EID</span></a></p>
+  <footer id="footer" role="contentinfo" class="<?php print $classes; ?>">
+    <span class="utdirect-logo"><a href="http://utdirect.utexas.edu"><img src="<?php print render($theme_path); ?>/images/utdirect-logo.jpg" /><span>requires EID</span></a></span>
     <?php print $content; ?>
   </footer><!-- region__footer -->
 <?php endif; ?>
