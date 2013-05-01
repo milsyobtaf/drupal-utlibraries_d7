@@ -20,7 +20,8 @@ footer,
       @include span-columns(3, 12);
       @include push(8);
     }
-    #block-views-1db01a8daceda9472cc9c604cabb179c {
+    #block-views-1db01a8daceda9472cc9c604cabb179c,
+    #block-views-library-social-media-block {
       @include span-columns(4, 12);
       @include push(7);
     }
@@ -29,7 +30,8 @@ footer,
     }
     #block-menu-menu-policy-and-feedback-links,
     #block-system-user-menu,
-    #block-views-1db01a8daceda9472cc9c604cabb179c {
+    #block-views-1db01a8daceda9472cc9c604cabb179c,
+    #block-views-library-social-media-block {
       ul {
         margin: 0;
       }
