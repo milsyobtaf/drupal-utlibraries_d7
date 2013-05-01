@@ -350,6 +350,18 @@ textarea {
   max-width: 1200px;
 }
 
+div#main {
+  border: 15px #cccccc solid;
+  border-top: none;
+  margin-top: 2px;
+  padding: 0 2em 1em;
+}
+
+header a,
+#header a {
+  color: black;
+}
+
 #site-name,
 #site-slogan {
   font: 0/0 a;
@@ -376,14 +388,37 @@ textarea {
   #block-menu-menu-visitor-menu ul.menu {
     display: inline;
     float: right;
-    margin-bottom: 5px;
+    margin: 15px 0px 0px;
   }
   #block-menu-menu-visitor-menu ul.menu li {
     display: inline;
     text-align: left;
+    font-weight: bolder;
+    font-size: 11px;
+    margin: 0;
   }
   #block-menu-menu-visitor-menu ul.menu li a {
     text-decoration: none;
+  }
+  #block-menu-menu-visitor-menu ul.menu li:after {
+    content: '\00a0\00a0|';
+  }
+  #block-menu-menu-visitor-menu ul.menu li.last {
+    border: none;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-image: url('../images/support_us_header.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 54px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+  }
+  #block-menu-menu-visitor-menu ul.menu li.last:after {
+    content: '';
   }
 }
 
@@ -431,79 +466,94 @@ textarea {
 
 footer,
 #footer {
+  margin-top: 10px;
   border-top: 1px solid black;
+}
+footer a,
+#footer a {
+  color: black;
+}
+footer h2,
+#footer h2 {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 @media (min-width: 800px) {
   footer,
   #footer {
     border: none;
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  footer #block-menu-menu-policy-and-feedback-links,
-  footer #block-system-user-menu,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c,
-  #footer #block-menu-menu-policy-and-feedback-links,
-  #footer #block-system-user-menu,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c {
-    width: 80%;
-    display: inline;
-    float: right;
-  }
-  footer #block-menu-menu-policy-and-feedback-links:after,
-  footer #block-system-user-menu:after,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c:after,
-  #footer #block-menu-menu-policy-and-feedback-links:after,
-  #footer #block-system-user-menu:after,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c:after {
+  footer:after,
+  #footer:after {
     content: "";
     display: table;
     clear: both;
   }
-  footer #block-menu-menu-policy-and-feedback-links h2,
-  footer #block-system-user-menu h2,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c h2,
-  #footer #block-menu-menu-policy-and-feedback-links h2,
-  #footer #block-system-user-menu h2,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c h2 {
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+  footer #block-menu-menu-policy-and-feedback-links,
+  #footer #block-menu-menu-policy-and-feedback-links {
+    width: 57.62712%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 33.89831%;
   }
-  footer #block-menu-menu-policy-and-feedback-links .content ul.menu li,
-  footer #block-menu-menu-policy-and-feedback-links .content div.item-list ul li,
-  footer #block-system-user-menu .content ul.menu li,
-  footer #block-system-user-menu .content div.item-list ul li,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c .content ul.menu li,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c .content div.item-list ul li,
-  #footer #block-menu-menu-policy-and-feedback-links .content ul.menu li,
-  #footer #block-menu-menu-policy-and-feedback-links .content div.item-list ul li,
-  #footer #block-system-user-menu .content ul.menu li,
-  #footer #block-system-user-menu .content div.item-list ul li,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c .content ul.menu li,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c .content div.item-list ul li {
-    display: inline;
+  footer #block-system-user-menu,
+  #footer #block-system-user-menu {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 67.79661%;
+  }
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c,
+  footer #block-views-library-social-media-block,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c,
+  #footer #block-views-library-social-media-block {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 59.32203%;
+  }
+  footer .utdirect-logo,
+  #footer .utdirect-logo {
+    width: 6.77966%;
     float: right;
-    text-align: left;
+    margin-right: 0;
+  }
+  footer #block-menu-menu-policy-and-feedback-links ul,
+  footer #block-system-user-menu ul,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c ul,
+  footer #block-views-library-social-media-block ul,
+  #footer #block-menu-menu-policy-and-feedback-links ul,
+  #footer #block-system-user-menu ul,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c ul,
+  #footer #block-views-library-social-media-block ul {
+    margin: 0;
+  }
+  footer #block-menu-menu-policy-and-feedback-links div.content li,
+  footer #block-system-user-menu div.content li,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li,
+  footer #block-views-library-social-media-block div.content li,
+  #footer #block-menu-menu-policy-and-feedback-links div.content li,
+  #footer #block-system-user-menu div.content li,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li,
+  #footer #block-views-library-social-media-block div.content li {
     display: inline;
   }
-  footer #block-menu-menu-policy-and-feedback-links .content ul.menu li a,
-  footer #block-menu-menu-policy-and-feedback-links .content div.item-list ul li a,
-  footer #block-system-user-menu .content ul.menu li a,
-  footer #block-system-user-menu .content div.item-list ul li a,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c .content ul.menu li a,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c .content div.item-list ul li a,
-  #footer #block-menu-menu-policy-and-feedback-links .content ul.menu li a,
-  #footer #block-menu-menu-policy-and-feedback-links .content div.item-list ul li a,
-  #footer #block-system-user-menu .content ul.menu li a,
-  #footer #block-system-user-menu .content div.item-list ul li a,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c .content ul.menu li a,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c .content div.item-list ul li a {
+  footer #block-menu-menu-policy-and-feedback-links div.content li a,
+  footer #block-system-user-menu div.content li a,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li a,
+  footer #block-views-library-social-media-block div.content li a,
+  #footer #block-menu-menu-policy-and-feedback-links div.content li a,
+  #footer #block-system-user-menu div.content li a,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li a,
+  #footer #block-views-library-social-media-block div.content li a {
     text-decoration: none;
   }
-}
-footer .utdirect-logo,
-#footer .utdirect-logo {
-  display: inline;
-  float: right;
 }
 footer .utdirect-logo a,
 #footer .utdirect-logo a {
