@@ -7,7 +7,7 @@ header,
 
 #site-name,
 #site-slogan {
-  @include hide-text;
+  @include squish-text;
 }
 
 #name-and-slogan {
