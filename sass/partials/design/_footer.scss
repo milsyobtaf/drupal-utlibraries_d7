@@ -1,3 +1,5 @@
+// #block-views-1db01a8daceda9472cc9c604cabb179c is the machine name of the social media footer links on the local dev server
+
 footer,
 #footer {
   a {
@@ -6,7 +8,7 @@ footer,
   margin-top: 10px;
   border-top: 1px solid $black;
   h2 {
-    @include hide-text;
+    @include squish-text;
     }
   @include respond-to('full') {
     border: none;
@@ -24,6 +26,39 @@ footer,
     #block-views-library-social-media-block {
       @include span-columns(4, 12);
       @include push(7);
+      ul.social-media-accounts-list {
+        margin: 0 50px 0 0;
+        text-align: right;
+         li {
+          margin: 1px;
+          a {
+            display: inline-block;
+            height: 22px;
+            width: 22px;
+            &.social-media-icon-gplus {
+              @include replace-text($social-icon-gplus-sm);
+            }
+            &.social-media-icon-twitter {
+              @include replace-text($social-icon-twitter-sm);
+            }
+            &.social-media-icon-fb {
+              @include replace-text($social-icon-fb-sm);
+            }
+            &.social-media-icon-flickr {
+              @include replace-text($social-icon-flickr-sm);
+            }
+            &.social-media-icon-yt {
+              @include replace-text($social-icon-youtube-sm);
+            }
+            &.social-media-icon-ff {
+              @include replace-text($social-icon-ff-sm);
+            }
+            &.social-media-icon-pinterest {
+              @include replace-text($social-icon-pinterest-sm);
+            }
+          }
+        }
+      }
     }
     .utdirect-logo {
       @include span-columns(1 omega, 12);

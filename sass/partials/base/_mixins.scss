@@ -4,10 +4,12 @@
 // All of your mixins should go in this file.
 ////////////////////////
 
-@mixin hide-text {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  }
-
-@import "compass/utilities/general/clearfix"
+// @mixin hide-text {
+//   background-color: transparent;
+//   border:           0;
+//   color:            transparent;
+//   font:             0/0 a;
+//   text-shadow:      none;
+// }
+@import "compass/typography/text/replacement";
+@import "compass/utilities/general/clearfix";

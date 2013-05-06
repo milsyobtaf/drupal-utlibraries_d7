@@ -107,6 +107,16 @@ $visited        : darken($link, 10%);
 $selection-bg   : lighten(#35D2B4, 30%);
 $selection      : $black;
 
+// Social media icons
+$social-icon-delicious-sm: image-url("social-icons/sm/delicious.png");
+$social-icon-fb-sm: image-url("social-icons/sm/facebook.png");
+$social-icon-flickr-sm: image-url("social-icons/sm/flickr.png");
+$social-icon-ff-sm: image-url("social-icons/sm/friendfeed.png");
+$social-icon-gplus-sm: image-url("social-icons/sm/google-plus.png");
+$social-icon-pinterest-sm: image-url("social-icons/sm/pinterest.png");
+$social-icon-twitter-sm: image-url("social-icons/sm/twitter.png");
+$social-icon-youtube-sm: image-url("social-icons/sm/youtube.png");
+
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 2em;
 
