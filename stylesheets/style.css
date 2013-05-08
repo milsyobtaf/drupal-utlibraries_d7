@@ -362,6 +362,10 @@ header a,
   color: black;
 }
 
+img.tower-header {
+  min-height: 35px;
+}
+
 #site-name,
 #site-slogan {
   font: 0/0 serif;
@@ -388,7 +392,7 @@ header a,
   #block-menu-menu-visitor-menu ul.menu {
     display: inline;
     float: right;
-    margin: 15px 0px 0px;
+    margin: 14px 0px 0px;
   }
   #block-menu-menu-visitor-menu ul.menu li {
     display: inline;
