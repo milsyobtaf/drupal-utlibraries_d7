@@ -74,9 +74,9 @@ function utlibraries_d7_preprocess_page(&$vars) {
  */
 /* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_region(&$vars, $hook) {
-  $vars['theme_path'] = /*'/drupal7-theme/' . */drupal_get_path('theme', variable_get('theme_default', NULL));
+   $vars['theme_path'] = /*'/drupal7-theme/' . */drupal_get_path('theme', variable_get('theme_default', NULL));
 }
-// */
+
 
 /**
  * Override or insert variables into the block templates.
