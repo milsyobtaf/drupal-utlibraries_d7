@@ -61,7 +61,11 @@ function utlibraries_d7_preprocess_html(&$vars) {
  */
 /* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_page(&$vars) {
+<<<<<<< HEAD
   $vars['theme_path'] = drupal_get_path('theme', variable_get('theme_default', NULL));
+=======
+  $vars['theme_path'] = /*'/drupal7-theme/' . */drupal_get_path('theme', variable_get('theme_default', NULL));
+>>>>>>> 9643902d797c1603c2a38c4daa58ee2e08fae008
 }
 
 /**
@@ -74,7 +78,11 @@ function utlibraries_d7_preprocess_page(&$vars) {
  */
 /* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_region(&$vars, $hook) {
+<<<<<<< HEAD
   $vars['theme_path'] = drupal_get_path('theme', variable_get('theme_default', NULL));
+=======
+  $vars['theme_path'] = /*'/drupal7-theme/' . */drupal_get_path('theme', variable_get('theme_default', NULL));
+>>>>>>> 9643902d797c1603c2a38c4daa58ee2e08fae008
 }
 // */
 

@@ -5,6 +5,10 @@ header,
   }
 }
 
+img.tower-header {
+  min-height: 35px;
+}
+
 #site-name,
 #site-slogan {
   @include squish-text;
@@ -25,7 +29,7 @@ header,
 @include respond-to('full') {
   ul.menu {
     @include float(right);
-    margin: 15px 0px 0px;
+    margin: 14px 0px 0px;
     li {
       // border-right: black 1px solid;
       display: inline;

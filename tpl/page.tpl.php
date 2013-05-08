@@ -72,7 +72,7 @@
       <?php print render($page['header_prefix']); ?>
 
       <a href="http://www.utexas.edu" title="The University of Texas">
-        <img src="<?php print render($theme_path); ?>/images/tower-header.jpg" alt="The University of Texas" /></a>
+        <img src="<?php print render($theme_path); ?>/images/tower-header.jpg" alt="The University of Texas" class="tower-header"/></a>
 
     <hgroup id="name-and-slogan">
         <h1 id="site-name">
