@@ -13,3 +13,10 @@ div#main {
   margin-top: 2px;
   padding-bottom: 1em;
 }
+
+#sidebar-first {
+  @include span-columns(4,12);
+  background-color: $color-fk;
+  border: solid 1px darken($color-fk, 10%);
+  margin: .5em;
+}
