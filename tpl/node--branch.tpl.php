@@ -88,8 +88,7 @@
     <?php print render($title_suffix); ?>
   </header>
   <?php
-    $block = module_invoke('og_menu', 'block_view', 'og_single_menu_block');
-    print $block['content'];
+    print theme('links', array('links' => og_menu('og-single-menu')));
   ?>
   <div class="content"<?php print $content_attributes; ?>>
     <?php
