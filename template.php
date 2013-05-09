@@ -27,16 +27,16 @@ function utlibraries_d7_preprocess_maintenance_page(&$vars, $hook) {
  * @return
  *   An array to be output as yepnope testObjects.
  */
-function utlibraries_d7_modernizr_load_alter(&$load) {
+// function utlibraries_d7_modernizr_load_alter(&$load) {
 
-  // We will check for touch events, and if we do load the hammer.js script.
-  $load[] = array(
-    'test' => 'Modernizr.touch',
-    'yep'  => array('/'. drupal_get_path('theme','utlibraries_d7') . '/javascripts/hammer.js'),
-  );
+//   // We will check for touch events, and if we do load the hammer.js script.
+//   $load[] = array(
+//     'test' => 'Modernizr.touch',
+//     'yep'  => array('/'. drupal_get_path('theme','utlibraries_d7') . '/javascripts/hammer.js'),
+//   );
 
-  return $load;
-}
+//   return $load;
+// }
 
 /**
  * Implements hook_preprocess_html()
