@@ -87,7 +87,10 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   </header>
-
+  <?php
+    $block = module_invoke('og_menu', 'block_view', 'og_single_menu_block');
+    print $block['content'];
+  ?>
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
