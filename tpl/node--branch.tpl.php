@@ -87,13 +87,15 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   </header>
-  <?php
-    print theme('links', array('links' => og_menu('og-single-menu')));
-  ?>
+      <?php print render($content['field_branch_header_image']); // This should theoretically let me position the image wherever in the markup // ?> 
   <div class="content"<?php print $content_attributes; ?>>
+<pre>
+<?php print_r($node); ?>
+</pre>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
+      hide($content['field_branch_header_image']);
       print render($content);
     ?>
 
