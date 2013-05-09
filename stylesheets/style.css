@@ -359,7 +359,7 @@ div#main {
   border: 15px #cccccc solid;
   border-top: none;
   margin-top: 2px;
-  padding: 0 2em 1em;
+  padding-bottom: 1em;
 }
 
 header a,
@@ -488,17 +488,34 @@ div.breadcrumb a:hover {
   text-decoration: underline;
 }
 
+.not-logged-in div.tabs {
+  display: none;
+}
+
 h1#page-title {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
 }
 
-.branch_menu ul {
-  list-display-type: none;
+.node-type-branch .field-type-image {
+  line-height: 0;
 }
-.branch_menu ul li {
+
+#block-og-menu-og-single-menu-block ul {
+  margin: 0;
+  padding: 5px;
+  background-color: green;
+  list-display: none;
+  text-align: center;
+}
+#block-og-menu-og-single-menu-block ul li {
+  height: 100%;
   display: inline;
+  padding: 6px;
+}
+#block-og-menu-og-single-menu-block ul li.active-trail {
+  background-color: brown;
 }
 
 footer,
