@@ -349,6 +349,11 @@ textarea {
   margin: 0 2em;
   max-width: 1200px;
 }
+#page #sidebar-first {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
 
 div#main {
   border: 15px #cccccc solid;
@@ -366,13 +371,6 @@ img.tower-header {
   min-height: 35px;
 }
 
-#site-name,
-#site-slogan {
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
-}
-
 #name-and-slogan {
   height: 29px;
   margin-top: -6px;
@@ -387,8 +385,14 @@ img.tower-header {
   margin-left: 15px;
   margin-bottom: 2px;
 }
+#name-and-slogan #site-name,
+#name-and-slogan #site-slogan {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
 
-@media (min-width: 800px) {
+@media (min-width: 0px) {
   #block-menu-menu-visitor-menu ul.menu {
     display: inline;
     float: right;
@@ -484,6 +488,19 @@ div.breadcrumb a:hover {
   text-decoration: underline;
 }
 
+h1#page-title {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+.branch_menu ul {
+  list-display-type: none;
+}
+.branch_menu ul li {
+  display: inline;
+}
+
 footer,
 #footer {
   margin-top: 10px;
@@ -499,7 +516,7 @@ footer h2,
   text-shadow: none;
   color: transparent;
 }
-@media (min-width: 800px) {
+@media (min-width: 0px) {
   footer,
   #footer {
     border: none;
