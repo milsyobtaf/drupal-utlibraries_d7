@@ -1,6 +1,10 @@
+body {
+  padding: 0 2em;
+}
+
 #page {
-  margin: 0 2em;
   max-width: 1200px;
+  margin: 0 auto;
     #sidebar-first {
       @include span-columns(3, 12);
     }
