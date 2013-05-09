@@ -362,6 +362,15 @@ div#main {
   padding-bottom: 1em;
 }
 
+#sidebar-first {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: #66b360;
+  border: solid 1px #4e9848;
+  margin: .5em;
+}
+
 header a,
 #header a {
   color: black;
@@ -380,6 +389,8 @@ img.tower-header {
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   border-top-right-radius: 5px;
+  position: relative;
+  z-index: 100;
 }
 #name-and-slogan img#site-slogan-image {
   margin-left: 15px;
@@ -499,13 +510,14 @@ h1#page-title {
 }
 
 .node-type-branch .field-type-image {
+  text-align: center;
   line-height: 0;
 }
 
 #block-og-menu-og-single-menu-block ul {
   margin: 0;
   padding: 5px;
-  background-color: green;
+  background-color: #999999;
   list-display: none;
   text-align: center;
 }
@@ -514,8 +526,11 @@ h1#page-title {
   display: inline;
   padding: 6px;
 }
+#block-og-menu-og-single-menu-block ul li:hover {
+  background-color: #cccccc;
+}
 #block-og-menu-og-single-menu-block ul li.active-trail {
-  background-color: brown;
+  background-color: #cccccc;
 }
 
 footer,
