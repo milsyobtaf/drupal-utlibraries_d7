@@ -1,0 +1,10 @@
+h1#page-title {
+  @include squish-text;
+}
+
+.branch_menu ul {
+  list-display-type: none;
+    li {
+      display: inline;
+    }
+}
