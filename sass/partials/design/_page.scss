@@ -1,6 +1,10 @@
 #page {
   margin: 0 2em;
   max-width: 1200px;
+    #sidebar-first {
+      @include span-columns(3, 12);
+    }
+
 }
 
 div#main {
