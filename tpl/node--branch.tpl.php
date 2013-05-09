@@ -78,7 +78,7 @@
  * @see template_process()
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-front clearfix"<?php print $attributes; ?>>
 
   <header>
     <?php print render($title_prefix); ?>
@@ -94,6 +94,15 @@
       hide($content['links']);
       print render($content);
     ?>
+
+    <div class="frontpage-blocks">
+      <div class="block-1 frontpage-block">
+      </div>
+      <div class="block-1 frontpage-block">
+      </div>
+      <div class="block-1 frontpage-block">
+      </div>
+    </div>
   </div>
 
   <?php print render($content['links']); ?>

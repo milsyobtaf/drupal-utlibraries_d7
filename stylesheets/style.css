@@ -345,9 +345,13 @@ textarea {
 /**
  * Design partials: A place to put your specific design partials.
  */
+body {
+  padding: 0 2em;
+}
+
 #page {
-  margin: 0 2em;
   max-width: 1200px;
+  margin: 0 auto;
 }
 #page #sidebar-first {
   width: 23.72881%;
@@ -531,6 +535,12 @@ h1#page-title {
 }
 #block-og-menu-og-single-menu-block ul li.active-trail {
   background-color: #cccccc;
+}
+
+.frontpage-blocks .frontpage-block {
+  background: pink;
+  width: 20px;
+  height: 20px;
 }
 
 footer,
