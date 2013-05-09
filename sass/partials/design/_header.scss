@@ -9,11 +9,6 @@ img.tower-header {
   min-height: 35px;
 }
 
-#site-name,
-#site-slogan {
-  @include squish-text;
-}
-
 #name-and-slogan {
   height: 29px;
   margin-top: -6px;
@@ -22,6 +17,11 @@ img.tower-header {
   img#site-slogan-image {
     margin-left: 15px;
     margin-bottom: 2px;
+  }
+  #site-name,
+  #site-slogan {
+    @include squish-text;
+    // @include clearfix;
   }
 }
 
