@@ -114,11 +114,15 @@ function utlibraries_d7_preprocess_entity(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_node(&$vars, $hook) {
   $node = $vars['node'];
+  if ($blocks = block_get_blocks_by_region('group_nav')) {
+    $vars['group_nav'] = $blocks;
+  }
 }
-// */
+
+/* // */
 
 /**
  * Override or insert variables into the field template.
