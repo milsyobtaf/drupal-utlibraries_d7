@@ -106,7 +106,7 @@
     <?php endif; ?>
 
     <?php print $breadcrumb; ?>
-
+    
     <div id="main" role="main" class="clearfix">
 
       <div id="content" role="article" class="column">
