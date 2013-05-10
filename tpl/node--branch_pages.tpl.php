@@ -78,8 +78,19 @@
  * @see template_process()
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-not-front clearfix"<?php print $attributes; ?>>
 
+<?php print render($content['field_branch_header_image']); ?>
+
+<?php if ($group_nav = render($group_nav)): ?>
+  <div class="group-nav">
+    <?php print $group_nav; ?>
+  </div>
+<?php endif; ?>
+
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-not-front clearfix"<?php print $attributes; ?>>
+<?php
+  print $content['field_branch_header_image']['#items'][0]['value'];
+?>
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
