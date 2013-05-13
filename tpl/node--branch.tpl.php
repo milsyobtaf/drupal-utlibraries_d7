@@ -79,13 +79,7 @@
  */
 ?>
 
-<?php print render($content['field_branch_header_image']); ?>
 
-<?php if ($group_nav = render($group_nav)): ?>
-  <div class="group-nav">
-    <?php print $group_nav; ?>
-  </div>
-<?php endif; ?>
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-front clearfix"<?php print $attributes; ?>>
 
@@ -93,6 +87,11 @@
     <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
+    <?php endif; ?>
+    <?php if ($group_nav = render($group_nav)): ?>
+      <div class="group-nav">
+        <?php print $group_nav; ?>
+      </div>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   </header>
@@ -102,12 +101,18 @@
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
-      hide($content['field_branch_header_image']);
       print render($content);
     ?>
-
+    
     <div class="frontpage-blocks">
       <div class="block-1 frontpage-block">
+      <div class="frontpage-block-content">
+      <h3>Announcements</h3>
+        <?php
+          $block = module_invoke('views', 'block_view', 'branch_views-block_2');
+          print render($block['content']);
+        ?>
+      </div>
       </div>
       <div class="block-1 frontpage-block">
       </div>
@@ -115,7 +120,5 @@
       </div>
     </div>
   </div>
-
-  <?php print render($content['links']); ?>
 
 </article>
