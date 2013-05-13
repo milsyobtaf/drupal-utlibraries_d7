@@ -41,6 +41,7 @@ h1#page-title {
 .frontpage-blocks {
   margin-top: 1em;
   .frontpage-block {
+    $gutter-width: 0px;
     @include span-columns(4,12);
     padding: 0 1em;
     h3 {
