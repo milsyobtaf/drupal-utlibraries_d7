@@ -3,8 +3,6 @@ body {
 }
 
 #page {
-  max-width: 1200px;
-  margin: 0 auto;
     #sidebar-first {
       @include span-columns(3, 12);
     }

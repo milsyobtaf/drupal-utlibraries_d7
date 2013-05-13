@@ -11,6 +11,11 @@ img, video {
   height: auto;
 }
 
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /**
  * Global partials: Typography, forms, site-wide changes.
  */
