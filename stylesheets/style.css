@@ -11,6 +11,11 @@ img, video {
   height: auto;
 }
 
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /**
  * Global partials: Typography, forms, site-wide changes.
  */
@@ -349,14 +354,10 @@ body {
   padding: 0 2em;
 }
 
-#page {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 #page #sidebar-first {
-  width: 23.72881%;
+  width: 25%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0%;
 }
 
 div#main {
@@ -367,9 +368,9 @@ div#main {
 }
 
 #sidebar-first {
-  width: 32.20339%;
+  width: 33.33333%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0%;
   background-color: #66b360;
   border: solid 1px #4e9848;
   margin: .5em;
@@ -537,8 +538,34 @@ h1#page-title {
   background-color: #cccccc;
 }
 
+.frontpage-blocks {
+  margin-top: 1em;
+}
 .frontpage-blocks .frontpage-block {
-  background: pink;
+  width: 33.33333%;
+  float: left;
+  margin-right: 0%;
+  padding: 0 1em;
+}
+.frontpage-blocks .frontpage-block h3 {
+  margin: 0 0.5em;
+}
+.frontpage-blocks .frontpage-block h3.frontpage-block-title {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  margin: 0;
+  padding: 0 1em;
+  font-size: 1.6em;
+  background-color: yellow;
+  border: 1px solid #e5e600;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.frontpage-blocks .frontpage-block img {
+  display: block;
+  margin: 0.3em auto;
 }
 
 footer,
@@ -560,9 +587,9 @@ footer h2,
   footer,
   #footer {
     border: none;
-    max-width: 1180px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 960px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -574,26 +601,26 @@ footer h2,
   }
   footer #block-menu-menu-policy-and-feedback-links,
   #footer #block-menu-menu-policy-and-feedback-links {
-    width: 57.62712%;
+    width: 58.33333%;
     float: left;
-    margin-right: 1.69492%;
-    margin-left: 33.89831%;
+    margin-right: 0%;
+    margin-left: 33.33333%;
   }
   footer #block-system-user-menu,
   #footer #block-system-user-menu {
-    width: 23.72881%;
+    width: 25%;
     float: left;
-    margin-right: 1.69492%;
-    margin-left: 67.79661%;
+    margin-right: 0%;
+    margin-left: 66.66667%;
   }
   footer #block-views-1db01a8daceda9472cc9c604cabb179c,
   footer #block-views-library-social-media-block,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c,
   #footer #block-views-library-social-media-block {
-    width: 32.20339%;
+    width: 33.33333%;
     float: left;
-    margin-right: 1.69492%;
-    margin-left: 59.32203%;
+    margin-right: 0%;
+    margin-left: 58.33333%;
   }
   footer #block-views-1db01a8daceda9472cc9c604cabb179c ul.social-media-accounts-list,
   footer #block-views-library-social-media-block ul.social-media-accounts-list,
@@ -695,7 +722,7 @@ footer h2,
   }
   footer .utdirect-logo,
   #footer .utdirect-logo {
-    width: 6.77966%;
+    width: 8.33333%;
     float: right;
     margin-right: 0;
   }
