@@ -39,8 +39,25 @@ h1#page-title {
 }
 
 .frontpage-blocks {
+  margin-top: 1em;
   .frontpage-block {
-    background: pink;
-
+    @include span-columns(4,12);
+    padding: 0 1em;
+    h3 {
+      margin: 0 .5em;
+    }
+    h3.frontpage-block-title {
+      font-family: $helvetica;
+      margin: 0;
+      padding: 0 1em;
+      font-size: 1.6em;
+      background-color: yellow;
+      border: 1px solid darken(yellow, 5%);
+      @include border-radius(2px);
+    }
+    img {
+      display: block;
+      margin: .3em auto;
+    }
   }
 }
