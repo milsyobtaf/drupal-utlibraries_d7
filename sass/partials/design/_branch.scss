@@ -21,7 +21,6 @@ h1#page-title {
       margin: 0;
       padding: 5px;
       background-color: $gray-dark;
-      list-display: none;
       text-align: center;
         li {
           height: 100%;
@@ -38,9 +37,18 @@ h1#page-title {
             }
         }
     }
-
 }
 
+aside.sidebar-group {
+  border: 1px solid gray;
+  margin: 1em;
+  ul li {
+    list-style: none;
+      a {
+        text-decoration: none;
+      }
+  }
+}
 
 // Front Page Blocks
 .frontpage-blocks {
