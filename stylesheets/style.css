@@ -557,6 +557,10 @@ aside.sidebar-group ul li a {
   text-decoration: none;
 }
 
+article div.content-group {
+  padding-right: 1em;
+}
+
 .frontpage-blocks {
   margin-top: 1em;
 }
