@@ -7,19 +7,20 @@ base theme = aurora
 stylesheets[all][] = stylesheets/style.css
 
 ; Regions
-regions[header]         = Header
-regions[header_prefix]  = Header Prefix
-regions[header_suffix]  = Header Suffix
-regions[navigation]     = Navigation
-regions[group_nav]      = Group Navigation
-regions[main_prefix]    = Main Region Prefix
-regions[highlighted]    = Highlighted
-regions[help]           = Help
-regions[content]        = Content
-regions[sidebar_first]  = Primary Sidebar
-regions[sidebar_second] = Secondary Sidebar
-regions[main_suffix]    = Main Region Suffix
-regions[footer]         = Footer
+regions[header]               = Header
+regions[header_prefix]        = Header Prefix
+regions[header_suffix]        = Header Suffix
+regions[navigation]           = Navigation
+regions[group_nav]            = Group Navigation
+regions[main_prefix]          = Main Region Prefix
+regions[highlighted]          = Highlighted
+regions[help]                 = Help
+regions[content]              = Content
+regions[sidebar_group]        = Group Sidebar
+regions[sidebar_first]        = Primary Sidebar
+regions[sidebar_second]       = Secondary Sidebar
+regions[main_suffix]          = Main Region Suffix
+regions[footer]               = Footer
 
 ; THEME OPTIONS
 
