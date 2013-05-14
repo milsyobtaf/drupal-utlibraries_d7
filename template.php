@@ -46,11 +46,10 @@ function utlibraries_d7_preprocess_maintenance_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function 
 function utlibraries_d7_preprocess_html(&$vars) {
-
 }
-
+*/
 /**
  * Override or insert variables into the page template.
  *
@@ -63,7 +62,6 @@ function utlibraries_d7_preprocess_html(&$vars) {
 function utlibraries_d7_preprocess_page(&$vars) {
   $vars['theme_path'] = '/' . drupal_get_path('theme', variable_get('theme_default', NULL));
 }
-
 /**
  * Override or insert variables into the region templates.
  *
@@ -115,13 +113,20 @@ function utlibraries_d7_preprocess_entity(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function */
-function utlibraries_d7_preprocess_node(&$vars, $hook) {
-  $node = $vars['node'];
-  if ($blocks = block_get_blocks_by_region('group_nav')) {
-    $vars['group_nav'] = $blocks;
+function utlibraries_d7_preprocess_node(&$vars) {
+  // Get a list of all the regions for this theme
+  foreach (system_region_list($GLOBALS['theme']) as $region_key => $region_name) {
+    // Get the content for each region and add it to the $region variable
+    if ($blocks = block_get_blocks_by_region($region_key)) {
+      $vars['region'][$region_key] = $blocks;
+      // If the region exists, add it as a class to the node
+      $vars['classes_array'][] = str_replace('_', '-', $region_key);
+    }
+    else {
+      $vars['region'][$region_key] = array();
+    }
   }
 }
-
 /* // */
 
 /**

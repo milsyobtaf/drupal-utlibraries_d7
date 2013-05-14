@@ -86,15 +86,15 @@
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
     <?php endif; ?>
-    <?php if ($group_nav = render($group_nav)): ?>
+    <?php if ($region['group_nav'] = render($region['group_nav'])): ?>
       <div class="group-nav">
-        <?php print $group_nav; ?>
+        <?php print $region['group_nav']; ?>
       </div>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   </header>
 
-  <div class="content"<?php print $content_attributes; ?>>
+  <div class="content content-group"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
@@ -102,6 +102,12 @@
     ?>
   </div>
 
+  <?php if ($region['sidebar_group'] = render($region['sidebar_group'])): ?>
+    <aside class="sidebar-group">
+      <?php print $region['sidebar_group']; ?>
+    </aside>
+  <?php endif; ?>
+  
   <?php print render($content['links']); ?>
 
 </article>
