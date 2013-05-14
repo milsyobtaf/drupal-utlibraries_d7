@@ -9,15 +9,14 @@ h1#page-title {
 
 // Navigation
 
-.node-type-branch,
-.node-type-branch-pages {
-  div.branch-header-image img {
-    text-align: center;
+.group-nav {
+  .branch-header-image {
     line-height: 0;
+    text-align: center;
   }
 }
 
-#block-og-menu-og-single-menu-block {
+.group-nav-menu {
     ul {
       margin: 0;
       padding: 5px;
@@ -34,11 +33,16 @@ h1#page-title {
         }
         li.active-trail {
           background-color: $gray-light;
+            ul.menu {
+              display: none;
+            }
         }
     }
 
 }
 
+
+// Front Page Blocks
 .frontpage-blocks {
   margin-top: 1em;
   .frontpage-block {

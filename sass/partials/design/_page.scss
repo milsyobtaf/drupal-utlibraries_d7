@@ -2,11 +2,23 @@ body {
   padding: 0 2em;
 }
 
-#page {
-    #sidebar-first {
-      @include span-columns(3, 12);
-    }
+body {
+  div.content {
+    @include span-columns(12,12);
+  }
 
+}
+
+body.sidebar-first {
+  article div.content {
+    @include span-columns(9 omega, 12);
+    @include post(1);
+    background-color: red;
+  }
+  aside#sidebar-first {
+    @include span-columns(2,12);
+    @include clearfix;
+  }
 }
 
 div#main {
@@ -16,8 +28,8 @@ div#main {
   padding-bottom: 1em;
 }
 
-#sidebar-first {
-  @include span-columns(4,12);
+.group-nav-menu-secondary {
+  // @include span-columns(4,12);
   background-color: $color-fk;
   border: solid 1px darken($color-fk, 10%);
   margin: .5em;
