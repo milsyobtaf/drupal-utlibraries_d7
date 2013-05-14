@@ -88,9 +88,9 @@
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
     <?php endif; ?>
-    <?php if ($group_nav = render($group_nav)): ?>
+    <?php if ($region['group_nav'] = render($region['group_nav'])): ?>
       <div class="group-nav">
-        <?php print $group_nav; ?>
+        <?php print $region['group_nav']; ?>
       </div>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
@@ -130,5 +130,10 @@
       </div>
     </div>
   </div>
-
+<?php if ($sidebar_group = render($sidebar_group)): ?>
+    <div class="group-sidebar">
+    poop
+      <?php print $sidebar_group; ?>
+    </div>
+  <?php endif; ?>
 </article>
