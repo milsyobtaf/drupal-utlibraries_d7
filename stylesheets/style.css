@@ -514,7 +514,8 @@ h1#page-title {
   color: transparent;
 }
 
-.node-type-branch .field-type-image {
+.node-type-branch div.branch-header-image img,
+.node-type-branch-pages div.branch-header-image img {
   text-align: center;
   line-height: 0;
 }
@@ -566,6 +567,19 @@ h1#page-title {
 .frontpage-blocks .frontpage-block img {
   display: block;
   margin: 0.3em auto;
+}
+
+.node-type-branch-exhibits article,
+.node-type-branch-digital-collection article {
+  padding: 0 1em;
+}
+.node-type-branch-exhibits article .field-name-field-exhibit-promo-img img,
+.node-type-branch-exhibits article .field-name-field-collection-promo-img img,
+.node-type-branch-digital-collection article .field-name-field-exhibit-promo-img img,
+.node-type-branch-digital-collection article .field-name-field-collection-promo-img img {
+  display: inline;
+  float: left;
+  margin: 0 1.5em 0.5em 0;
 }
 
 footer,

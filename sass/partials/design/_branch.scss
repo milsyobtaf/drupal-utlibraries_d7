@@ -9,8 +9,9 @@ h1#page-title {
 
 // Navigation
 
-.node-type-branch {
-  .field-type-image {
+.node-type-branch,
+.node-type-branch-pages {
+  div.branch-header-image img {
     text-align: center;
     line-height: 0;
   }
@@ -61,4 +62,14 @@ h1#page-title {
       margin: .3em auto;
     }
   }
+}
+
+.node-type-branch-exhibits article,
+.node-type-branch-digital-collection article {
+  padding: 0 1em;
+    .field-name-field-exhibit-promo-img img,
+    .field-name-field-collection-promo-img img {
+      @include float(left);
+      margin: 0 1.5em .5em 0;
+    }
 }
