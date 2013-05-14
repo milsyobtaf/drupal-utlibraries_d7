@@ -354,10 +354,24 @@ body {
   padding: 0 2em;
 }
 
-#page #sidebar-first {
-  width: 23.72881%;
+body div.content {
+  width: 100%;
   float: left;
   margin-right: 1.69492%;
+}
+
+body.sidebar-first article div.content {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+  margin-right: 8.47458%;
+  background-color: red;
+}
+body.sidebar-first aside#sidebar-first {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  overflow: hidden;
 }
 
 div#main {
@@ -367,10 +381,7 @@ div#main {
   padding-bottom: 1em;
 }
 
-#sidebar-first {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
+.group-nav-menu-secondary {
   background-color: #66b360;
   border: solid 1px #4e9848;
   margin: .5em;
@@ -486,6 +497,9 @@ img.tower-header {
     font-weight: bold;
     text-decoration: none;
   }
+  #block-menu-menu-primary-navigation ul li ul > ul {
+    display: block;
+  }
 }
 
 div.breadcrumb {
@@ -514,29 +528,31 @@ h1#page-title {
   color: transparent;
 }
 
-.node-type-branch div.branch-header-image img,
-.node-type-branch-pages div.branch-header-image img {
-  text-align: center;
+.group-nav .branch-header-image {
   line-height: 0;
+  text-align: center;
 }
 
-#block-og-menu-og-single-menu-block ul {
+.group-nav-menu ul {
   margin: 0;
   padding: 5px;
   background-color: #999999;
   list-display: none;
   text-align: center;
 }
-#block-og-menu-og-single-menu-block ul li {
+.group-nav-menu ul li {
   height: 100%;
   display: inline;
   padding: 6px;
 }
-#block-og-menu-og-single-menu-block ul li:hover {
+.group-nav-menu ul li:hover {
   background-color: #cccccc;
 }
-#block-og-menu-og-single-menu-block ul li.active-trail {
+.group-nav-menu ul li.active-trail {
   background-color: #cccccc;
+}
+.group-nav-menu ul li.active-trail ul.menu {
+  display: none;
 }
 
 .frontpage-blocks {
