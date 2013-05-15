@@ -537,19 +537,24 @@ h1#page-title {
 
 .group-nav-menu ul {
   margin: 0;
-  padding: 5px;
+  padding: 5px 5px 3px;
   background-color: #999999;
   text-align: center;
 }
 .group-nav-menu ul li {
+  margin: 0;
+  padding: 0;
   height: 100%;
   display: inline;
-  padding: 6px;
 }
-.group-nav-menu ul li:hover {
+.group-nav-menu ul li a {
+  padding: 6px 10px 5px;
+  text-decoration: none;
+}
+.group-nav-menu ul li a:hover {
   background-color: #cccccc;
 }
-.group-nav-menu ul li.active-trail {
+.group-nav-menu ul li a.active-trail {
   background-color: #cccccc;
 }
 .group-nav-menu ul li.active-trail ul.menu {
@@ -560,11 +565,17 @@ aside.sidebar-group {
   border: 1px solid gray;
   margin: 1em;
 }
+aside.sidebar-group ul {
+  padding-left: 1em;
+}
 aside.sidebar-group ul li {
   list-style: none;
 }
 aside.sidebar-group ul li a {
   text-decoration: none;
+}
+aside.sidebar-group ul li a:hover {
+  text-decoration: underline;
 }
 
 article div.content-group {
