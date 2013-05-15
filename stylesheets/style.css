@@ -510,6 +510,16 @@ div.breadcrumb a:hover {
   text-decoration: underline;
 }
 
+.image-right {
+  float: right;
+  margin: 5px 5px 5px 10px;
+}
+
+.image-left {
+  float: left;
+  margin: 5px 10px 5px 5px;
+}
+
 .not-logged-in div.tabs {
   display: none;
 }
@@ -555,6 +565,10 @@ aside.sidebar-group ul li {
 }
 aside.sidebar-group ul li a {
   text-decoration: none;
+}
+
+article div.content-group {
+  padding-right: 1em;
 }
 
 .frontpage-blocks {

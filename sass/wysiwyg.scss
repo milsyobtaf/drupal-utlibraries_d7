@@ -1,0 +1,21 @@
+/* styles from my custom theme that I want to work inside my wysiwyg editor */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-size: 87.5%;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+}
+
+body p {
+  font-size: 1.071em;
+}
+body h2 {
+  margin-bottom: 2px;
+  font-size: 1.429em;
+  line-height: 1.4;
+  font-weight: inherit;
+}
