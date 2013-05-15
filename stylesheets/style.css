@@ -579,7 +579,7 @@ aside.sidebar-group ul li a:hover {
 }
 
 article div.content-group {
-  padding-right: 1em;
+  padding: 0 1em;
 }
 
 .frontpage-blocks {
