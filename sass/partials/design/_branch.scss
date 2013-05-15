@@ -19,19 +19,27 @@ h1#page-title {
 .group-nav-menu {
     ul {
       margin: 0;
-      padding: 5px;
+      padding: 5px 5px 3px;
       background-color: $gray-dark;
       text-align: center;
         li {
-          height: 100%;
-          display: inline;
-          padding: 6px;
+          margin: 0;
+          padding: 0;
+          a {
+            padding: 6px 10px 5px;
+            // padding-bottom: 7px;
+            text-decoration: none;
             &:hover {
               background-color: $gray-light;
             }
+            &.active-trail {
+              background-color: $gray-light;
+            }
+          }
+          height: 100%;
+          display: inline;
         }
         li.active-trail {
-          background-color: $gray-light;
             ul.menu {
               display: none;
             }
@@ -42,10 +50,16 @@ h1#page-title {
 aside.sidebar-group {
   border: 1px solid gray;
   margin: 1em;
-  ul li {
-    list-style: none;
-      a {
-        text-decoration: none;
+  ul {
+    padding-left: 1em;
+      li {
+        list-style: none;
+          a {
+            text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+          }
       }
   }
 }
@@ -53,7 +67,7 @@ aside.sidebar-group {
 // Page content
 
 article div.content-group {
-  padding-right: 1em;
+  padding: 0 1em;
 }
 
 // Front Page Blocks
