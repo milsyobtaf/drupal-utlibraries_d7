@@ -582,6 +582,10 @@ article div.content-group {
   padding: 0 1em;
 }
 
+article.sidebar-group div.content-group {
+  padding: 0 1em 0 0;
+}
+
 .frontpage-blocks {
   margin-top: 1em;
 }
