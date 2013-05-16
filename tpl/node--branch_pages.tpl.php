@@ -100,6 +100,11 @@
       hide($content['links']);
       print render($content);
     ?>
+    <?php
+    // This block is specifically for the FAQ pages
+      $block = module_invoke('views', 'block_view', 'branch_views-block_5');
+      print render($block['content']);
+    ?>
   </div>
 
   <?php if ($region['sidebar_group'] = render($region['sidebar_group'])): ?>
