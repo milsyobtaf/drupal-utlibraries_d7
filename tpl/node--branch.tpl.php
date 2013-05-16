@@ -130,10 +130,4 @@
       </div>
     </div>
   </div>
-<?php if ($sidebar_group = render($sidebar_group)): ?>
-    <div class="group-sidebar">
-    poop
-      <?php print $sidebar_group; ?>
-    </div>
-  <?php endif; ?>
 </article>
