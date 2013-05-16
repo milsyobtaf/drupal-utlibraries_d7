@@ -361,15 +361,20 @@ article div.content {
 }
 article.sidebar-first div.content-group {
   width: 62.96296%;
-  float: right;
-  margin-right: 0;
-  margin-right: 16.94915%;
+  float: left;
+  margin-right: 1.85185%;
 }
-article.sidebar-first aside.sidebar-group {
+article aside.sidebar-first {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
-  overflow: hidden;
+}
+article aside.sidebar-second {
+  width: 15.25424%;
+  float: right;
+  margin-right: 0;
+  margin-left: 0;
+  margin-right: 1em;
 }
 
 div#main {
