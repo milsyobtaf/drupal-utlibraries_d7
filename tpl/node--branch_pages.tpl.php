@@ -94,22 +94,28 @@
     <?php print render($title_suffix); ?>
   </header>
 
+  <?php if ($region['sidebar_first'] = render($region['sidebar_first'])): ?>
+    <aside class="sidebar-group sidebar-first">
+      <?php print $region['sidebar_first']; ?>
+    </aside>
+  <?php endif; ?>
+
   <div class="content content-group"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
       print render($content);
     ?>
-    <?php
-    // This block is specifically for the FAQ pages
-      $block = module_invoke('views', 'block_view', 'branch_views-block_5');
-      print render($block['content']);
-    ?>
+    <?php if ($region['content_suffix'] = render($region['content_suffix'])): ?>
+      <section class="content-suffix">
+        <?php print $region['content_suffix']; ?>
+      </section>
+    <?php endif; ?>
   </div>
 
-  <?php if ($region['sidebar_group'] = render($region['sidebar_group'])): ?>
-    <aside class="sidebar-group">
-      <?php print $region['sidebar_group']; ?>
+  <?php if ($region['sidebar_second'] = render($region['sidebar_second'])): ?>
+    <aside class="sidebar-group sidebar-second">
+      <?php print $region['sidebar_second']; ?>
     </aside>
   <?php endif; ?>
   
