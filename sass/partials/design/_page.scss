@@ -7,12 +7,15 @@ article {
     @include span-columns(12,12);
   }
   &.sidebar-first div.content-group {
-    @include span-columns(7 omega, 11);
-    @include post(2);
+    @include span-columns(7, 11);
   }
-  &.sidebar-first aside.sidebar-group {
-    @include span-columns(2,12);
-    @include clearfix;
+  aside.sidebar-first {
+    @include span-columns(2 alpha,12);
+  }
+  aside.sidebar-second {
+    @include span-columns(2 omega,12);
+    margin-left: 0;
+    margin-right: 1em;
   }
 }
 
