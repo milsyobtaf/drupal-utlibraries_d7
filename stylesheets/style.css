@@ -359,13 +359,13 @@ article div.content {
   float: left;
   margin-right: 1.69492%;
 }
-article.sidebar-group div.content-group {
+article.sidebar-first div.content-group {
   width: 62.96296%;
   float: right;
   margin-right: 0;
   margin-right: 16.94915%;
 }
-article.sidebar-group aside.sidebar-group {
+article.sidebar-first aside.sidebar-group {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
@@ -623,12 +623,6 @@ article div.content-group {
   display: inline;
   float: left;
   margin: 0 1.5em 0.5em 0;
-}
-
-.branch-faq {
-  width: 66.66667%;
-  float: left;
-  margin-right: 0%;
 }
 
 footer,
