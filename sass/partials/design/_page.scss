@@ -3,11 +3,20 @@ body {
 }
 
 article {
-  div.content {
+  div.content-group {
     @include span-columns(12,12);
   }
+  & div.content-group {
+    @include span-columns(8, 11);
+    @include pre(2);
+  }
   &.sidebar-first div.content-group {
-    @include span-columns(7, 11);
+    @include span-columns(8,11);
+    @include pre(0);
+  }
+  &.sidebar-second div.content-group {
+    @include span-columns(7,11);
+    @include pre(0);
   }
   aside.sidebar-first {
     @include span-columns(2 alpha,12);
