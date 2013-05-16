@@ -354,15 +354,28 @@ body {
   padding: 0 2em;
 }
 
-article div.content {
+article div.content-group {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
 }
+article div.content-group {
+  width: 72.22222%;
+  float: left;
+  margin-right: 1.85185%;
+  margin-left: 16.94915%;
+}
 article.sidebar-first div.content-group {
+  width: 72.22222%;
+  float: left;
+  margin-right: 1.85185%;
+  margin-left: 0%;
+}
+article.sidebar-second div.content-group {
   width: 62.96296%;
   float: left;
   margin-right: 1.85185%;
+  margin-left: 0%;
 }
 article aside.sidebar-first {
   width: 15.25424%;
