@@ -70,9 +70,10 @@ article div.content-group {
   padding: 0 1em;
 }
 
-article.sidebar-group div.content-group {
-  padding: 0 1em 0 0;
-}
+// Removed this right side content padding since the content area was smooshed to 7col from 9col
+// article.sidebar-group div.content-group {
+//   padding: 0 1em 0 0;
+// }
 
 // Front Page Blocks
 .frontpage-blocks {
@@ -108,4 +109,9 @@ article.sidebar-group div.content-group {
       @include float(left);
       margin: 0 1.5em .5em 0;
     }
+}
+
+// Branch FAQ
+.branch-faq {
+  @include span-columns(8);
 }
