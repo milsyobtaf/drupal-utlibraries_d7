@@ -122,18 +122,6 @@
         <?php print $feed_icons; ?>
       </div>
 
-      <?php if ($page['sidebar_first']): ?>
-        <aside id="sidebar-first" role="complementary" class="column sidebar">
-          <?php print render($page['sidebar_first']); ?>
-        </aside><!-- #sidebar-first -->
-      <?php endif; ?>
-
-      <?php if ($page['sidebar_second']): ?>
-        <aside id="sidebar-second" role="complementary" class="column sidebar">
-          <?php print render($page['sidebar_second']); ?>
-        </aside><!-- #sidebar-second -->
-      <?php endif; ?>
-
     </div><!-- #main -->
 
     <!-- #content-suffix -->
