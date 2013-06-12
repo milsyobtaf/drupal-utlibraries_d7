@@ -674,6 +674,14 @@ article div.content-group {
 .frontpage-blocks .frontpage-block h3 {
   margin: 0 0.3em;
 }
+.frontpage-blocks .frontpage-block div.view-content div a,
+.frontpage-blocks .frontpage-block h3 a {
+  text-decoration: none;
+}
+.frontpage-blocks .frontpage-block div.view-content div a:hover,
+.frontpage-blocks .frontpage-block h3 a:hover {
+  text-decoration: underline;
+}
 .frontpage-blocks .frontpage-block p {
   margin: 0 0 1em;
 }
@@ -696,12 +704,6 @@ article div.content-group {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-}
-.frontpage-blocks .frontpage-block h3.frontpage-block-title a {
-  text-decoration: none;
-}
-.frontpage-blocks .frontpage-block h3.frontpage-block-title a:hover {
-  text-decoration: underline;
 }
 .frontpage-blocks .frontpage-block img {
   display: block;
