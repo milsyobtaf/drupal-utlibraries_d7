@@ -255,6 +255,10 @@ table {
 /**
  * Defaults: For any general elements to apply to the whole page.
  */
+html {
+  color: #333333;
+}
+
 /**
 * Typography: Headings, body text, lists, code, and more for a versatile and durable typography system.
 */
