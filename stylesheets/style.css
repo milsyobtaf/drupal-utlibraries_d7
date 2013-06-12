@@ -688,14 +688,12 @@ footer h2,
     margin-right: 0%;
     margin-left: 66.66667%;
   }
-  footer .user-menu-footer div.content:first-child,
-  #footer .user-menu-footer div.content:first-child {
+  footer .user-menu-footer div.content,
+  #footer .user-menu-footer div.content {
     display: inline-block;
   }
   footer .user-menu-footer:before,
   #footer .user-menu-footer:before {
-    display: inline;
-    white-space: nowrap;
     content: "CMS: ";
   }
   footer .user-menu-footer ul.menu,
