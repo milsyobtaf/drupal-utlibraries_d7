@@ -28,6 +28,13 @@ article {
   }
 }
 
+.page-user- div.content {
+  article {
+    @include span-columns(12,12);
+    padding: 0 1em;
+  }
+}
+
 div#main {
   border: 15px $gray-light solid;
   border-top: none;
