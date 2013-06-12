@@ -390,6 +390,13 @@ article aside.sidebar-second {
   margin-right: 1em;
 }
 
+.page-user- div.content article {
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 0 1em;
+}
+
 div#main {
   border: 15px #cccccc solid;
   border-top: none;
@@ -444,6 +451,9 @@ img.tower-header {
   }
   #block-menu-menu-visitor-menu ul.menu li a {
     text-decoration: none;
+  }
+  #block-menu-menu-visitor-menu ul.menu li a:hover {
+    text-decoration: underline;
   }
   #block-menu-menu-visitor-menu ul.menu li:after {
     content: '\00a0\00a0|';
