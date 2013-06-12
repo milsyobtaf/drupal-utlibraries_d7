@@ -38,3 +38,28 @@ div#main {
   margin-top: 2px;
   padding-bottom: 1em;
 }
+
+// WYSIWYG styles
+article {
+  h2 {
+    @include trailer(0, $h3-font-size);
+  }
+  h3 {
+    @include trailer(0, $h3-font-size);
+  }
+  h4 {
+    @include trailer(0, $h3-font-size);
+  }
+  p {
+    margin: .5em 0;
+  }
+}
+
+.image-right {
+  float: right;
+  margin: 5px 5px 5px 10px;
+}
+.image-left {
+  float: left;
+  margin: 5px 10px 5px 5px;
+}

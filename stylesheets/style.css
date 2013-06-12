@@ -255,6 +255,10 @@ table {
 /**
  * Defaults: For any general elements to apply to the whole page.
  */
+html {
+  color: #333333;
+}
+
 /**
 * Typography: Headings, body text, lists, code, and more for a versatile and durable typography system.
 */
@@ -411,6 +415,29 @@ div#main {
   padding-bottom: 1em;
 }
 
+article h2 {
+  margin-bottom: 0em;
+}
+article h3 {
+  margin-bottom: 0em;
+}
+article h4 {
+  margin-bottom: 0em;
+}
+article p {
+  margin: 0.5em 0;
+}
+
+.image-right {
+  float: right;
+  margin: 5px 5px 5px 10px;
+}
+
+.image-left {
+  float: left;
+  margin: 5px 10px 5px 5px;
+}
+
 header a,
 #header a {
   color: black;
@@ -545,16 +572,6 @@ div.breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.image-right {
-  float: right;
-  margin: 5px 5px 5px 10px;
-}
-
-.image-left {
-  float: left;
-  margin: 5px 10px 5px 5px;
-}
-
 .not-logged-in div.tabs {
   display: none;
 }
@@ -618,7 +635,8 @@ h1#page-title {
 }
 
 aside.sidebar-group {
-  border: 1px solid gray;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 5px 1px #cccccc;
   margin: 1em;
 }
 aside.sidebar-group ul {
@@ -628,10 +646,14 @@ aside.sidebar-group ul li {
   list-style: none;
 }
 aside.sidebar-group ul li a {
+  color: #333333;
   text-decoration: none;
 }
 aside.sidebar-group ul li a:hover {
   text-decoration: underline;
+}
+aside.sidebar-group ul li a.active-trail {
+  font-weight: bold;
 }
 
 article div.content-group {
@@ -647,8 +669,12 @@ article div.content-group {
   margin-right: 0%;
   padding: 0 1em;
 }
+.frontpage-blocks .frontpage-block div.view-content div,
 .frontpage-blocks .frontpage-block h3 {
-  margin: 0 0.5em;
+  margin: 0 0.3em;
+}
+.frontpage-blocks .frontpage-block p {
+  margin: 0 0 1em;
 }
 .frontpage-blocks .frontpage-block h3.frontpage-block-title {
   font-family: "Segoe UI", "Open Sans", "DejaVu Sans", sans-serif;
