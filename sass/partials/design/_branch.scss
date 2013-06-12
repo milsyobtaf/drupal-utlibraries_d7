@@ -98,6 +98,12 @@ article div.content-group {
     div.view-content div,
     h3 {
       margin: 0 .3em;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     p {
       margin: 0 0 1em;
@@ -113,12 +119,6 @@ article div.content-group {
       background-color: #6f7454; // Old browsers
       @include background-image(linear-gradient(top, #6f7454 0%,#7c7c5a 5%,#888564 7%,#938f6a 11%,#9d9b74 14%,#9d9b72 16%,#a19f76 18%,#a8a77b 30%,#a7a678 36%,#a7a67a 45%,#9b9771 70%,#95916e 77%,#8b8764 82%,#868161 86%,#807b5b 89%,#807a64 91%,#787554 93%,#757553 95%,#73735b 98%,#73735b 100%));
       @include border-radius(2px);
-        a {
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
     }
     img {
       display: block;
