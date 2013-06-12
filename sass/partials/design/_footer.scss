@@ -86,6 +86,10 @@ footer,
       div.content {
         a {
           text-decoration: none;
+          font-weight: normal;
+          &:hover {
+            text-decoration: underline;
+          }
         }
         li {
           display: inline;
