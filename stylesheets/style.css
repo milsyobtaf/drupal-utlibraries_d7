@@ -609,7 +609,7 @@ h1#page-title {
 }
 .group-nav-menu ul li a {
   color: #ffffff;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 2px #999999;
   padding: 6px 10px 5px;
   text-decoration: none;
 }
@@ -637,6 +637,7 @@ h1#page-title {
 aside.sidebar-group {
   border: 1px solid #cccccc;
   box-shadow: 1px 1px 5px 1px #cccccc;
+  border-radius: 2px;
   margin: 1em;
 }
 aside.sidebar-group ul {
@@ -695,6 +696,12 @@ article div.content-group {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
+}
+.frontpage-blocks .frontpage-block h3.frontpage-block-title a {
+  text-decoration: none;
+}
+.frontpage-blocks .frontpage-block h3.frontpage-block-title a:hover {
+  text-decoration: underline;
 }
 .frontpage-blocks .frontpage-block img {
   display: block;

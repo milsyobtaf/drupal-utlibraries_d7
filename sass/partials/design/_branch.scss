@@ -29,7 +29,7 @@ h1#page-title {
           padding: 0;
           a {
             color: #ffffff;
-            text-shadow: 2px 2px 2px #000000;
+            text-shadow: 1px 1px 2px $gray-dark;
             padding: 6px 10px 5px;
             // padding-bottom: 7px;
             text-decoration: none;
@@ -57,6 +57,7 @@ h1#page-title {
 aside.sidebar-group {
   border: 1px solid $gray-light;
   box-shadow: 1px 1px 5px 1px $gray-light;
+  border-radius: 2px;
   margin: 1em;
   ul {
     padding-left: 1em;
@@ -112,6 +113,12 @@ article div.content-group {
       background-color: #6f7454; // Old browsers
       @include background-image(linear-gradient(top, #6f7454 0%,#7c7c5a 5%,#888564 7%,#938f6a 11%,#9d9b74 14%,#9d9b72 16%,#a19f76 18%,#a8a77b 30%,#a7a678 36%,#a7a67a 45%,#9b9771 70%,#95916e 77%,#8b8764 82%,#868161 86%,#807b5b 89%,#807a64 91%,#787554 93%,#757553 95%,#73735b 98%,#73735b 100%));
       @include border-radius(2px);
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
     }
     img {
       display: block;
