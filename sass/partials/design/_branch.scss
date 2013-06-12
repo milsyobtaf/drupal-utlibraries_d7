@@ -55,16 +55,21 @@ h1#page-title {
 }
 
 aside.sidebar-group {
-  border: 1px solid gray;
+  border: 1px solid $gray-light;
+  box-shadow: 1px 1px 5px 1px $gray-light;
   margin: 1em;
   ul {
     padding-left: 1em;
       li {
         list-style: none;
           a {
+            color: #333333;
             text-decoration: none;
           &:hover {
             text-decoration: underline;
+          }
+          &.active-trail {
+            font-weight: bold;
           }
           }
       }
