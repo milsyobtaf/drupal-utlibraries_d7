@@ -688,14 +688,12 @@ footer h2,
     margin-right: 0%;
     margin-left: 66.66667%;
   }
-  footer .user-menu-footer div.content:first-child,
-  #footer .user-menu-footer div.content:first-child {
+  footer .user-menu-footer div.content,
+  #footer .user-menu-footer div.content {
     display: inline-block;
   }
   footer .user-menu-footer:before,
   #footer .user-menu-footer:before {
-    display: inline;
-    white-space: nowrap;
     content: "CMS: ";
   }
   footer .user-menu-footer ul.menu,
@@ -839,6 +837,17 @@ footer h2,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a,
   #footer #block-views-library-social-media-block div.content a {
     text-decoration: none;
+    font-weight: normal;
+  }
+  footer #block-menu-menu-policy-and-feedback-links div.content a:hover,
+  footer .user-menu-footer div.content a:hover,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:hover,
+  footer #block-views-library-social-media-block div.content a:hover,
+  #footer #block-menu-menu-policy-and-feedback-links div.content a:hover,
+  #footer .user-menu-footer div.content a:hover,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:hover,
+  #footer #block-views-library-social-media-block div.content a:hover {
+    text-decoration: underline;
   }
   footer #block-menu-menu-policy-and-feedback-links div.content li,
   footer .user-menu-footer div.content li,
