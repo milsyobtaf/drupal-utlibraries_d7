@@ -326,13 +326,13 @@ em {
 }
 
 ::-moz-selection {
-  background: #b2eee2;
+  background: #fefeca;
   color: black;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b2eee2;
+  background: #fefeca;
   color: black;
   text-shadow: none;
 }
@@ -681,12 +681,31 @@ footer h2,
     margin-right: 0%;
     margin-left: 33.33333%;
   }
-  footer #block-system-user-menu,
-  #footer #block-system-user-menu {
+  footer .user-menu-footer,
+  #footer .user-menu-footer {
     width: 25%;
     float: left;
     margin-right: 0%;
     margin-left: 66.66667%;
+  }
+  footer .user-menu-footer div.content:first-child,
+  #footer .user-menu-footer div.content:first-child {
+    display: inline-block;
+  }
+  footer .user-menu-footer:before,
+  #footer .user-menu-footer:before {
+    display: inline;
+    white-space: nowrap;
+    content: "CMS: ";
+  }
+  footer .user-menu-footer ul.menu,
+  #footer .user-menu-footer ul.menu {
+    padding-left: 0;
+  }
+  footer .user-menu-footer #shib_login_url a,
+  #footer .user-menu-footer #shib_login_url a {
+    padding-left: .2em;
+    margin-left: .5em;
   }
   footer #block-views-1db01a8daceda9472cc9c604cabb179c,
   footer #block-views-library-social-media-block,
@@ -802,34 +821,34 @@ footer h2,
     margin-right: 0;
   }
   footer #block-menu-menu-policy-and-feedback-links ul,
-  footer #block-system-user-menu ul,
+  footer .user-menu-footer ul,
   footer #block-views-1db01a8daceda9472cc9c604cabb179c ul,
   footer #block-views-library-social-media-block ul,
   #footer #block-menu-menu-policy-and-feedback-links ul,
-  #footer #block-system-user-menu ul,
+  #footer .user-menu-footer ul,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c ul,
   #footer #block-views-library-social-media-block ul {
     margin: 0;
   }
+  footer #block-menu-menu-policy-and-feedback-links div.content a,
+  footer .user-menu-footer div.content a,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a,
+  footer #block-views-library-social-media-block div.content a,
+  #footer #block-menu-menu-policy-and-feedback-links div.content a,
+  #footer .user-menu-footer div.content a,
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a,
+  #footer #block-views-library-social-media-block div.content a {
+    text-decoration: none;
+  }
   footer #block-menu-menu-policy-and-feedback-links div.content li,
-  footer #block-system-user-menu div.content li,
+  footer .user-menu-footer div.content li,
   footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li,
   footer #block-views-library-social-media-block div.content li,
   #footer #block-menu-menu-policy-and-feedback-links div.content li,
-  #footer #block-system-user-menu div.content li,
+  #footer .user-menu-footer div.content li,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li,
   #footer #block-views-library-social-media-block div.content li {
     display: inline;
-  }
-  footer #block-menu-menu-policy-and-feedback-links div.content li a,
-  footer #block-system-user-menu div.content li a,
-  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li a,
-  footer #block-views-library-social-media-block div.content li a,
-  #footer #block-menu-menu-policy-and-feedback-links div.content li a,
-  #footer #block-system-user-menu div.content li a,
-  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content li a,
-  #footer #block-views-library-social-media-block div.content li a {
-    text-decoration: none;
   }
 }
 footer .utdirect-logo a,
