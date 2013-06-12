@@ -52,14 +52,9 @@ article {
   }
   p {
     margin: .5em 0;
+      img {
+        margin: 8px;
+      }
   }
-}
 
-.image-right {
-  float: right;
-  margin: 5px 5px 5px 10px;
-}
-.image-left {
-  float: left;
-  margin: 5px 10px 5px 5px;
 }
