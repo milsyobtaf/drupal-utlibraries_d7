@@ -38,6 +38,9 @@ img.tower-header {
       text-align: left;
         a {
           text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       font-weight: bolder;
       font-size: 11px;
