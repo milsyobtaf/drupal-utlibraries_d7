@@ -89,8 +89,12 @@ article div.content-group {
     $gutter-width: 0px;
     @include span-columns(4,12);
     padding: 0 1em;
+    div.view-content div,
     h3 {
-      margin: 0 .5em;
+      margin: 0 .3em;
+    }
+    p {
+      margin: 0 0 1em;
     }
     h3.frontpage-block-title {
       font-family: $segoeui;
