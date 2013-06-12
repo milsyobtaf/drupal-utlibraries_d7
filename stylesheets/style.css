@@ -427,15 +427,8 @@ article h4 {
 article p {
   margin: 0.5em 0;
 }
-
-.image-right {
-  float: right;
-  margin: 5px 5px 5px 10px;
-}
-
-.image-left {
-  float: left;
-  margin: 5px 10px 5px 5px;
+article p img {
+  margin: 8px;
 }
 
 header a,
@@ -658,7 +651,7 @@ aside.sidebar-group ul li a.active-trail {
 }
 
 article div.content-group {
-  padding: 0 1em;
+  padding: 1em;
 }
 
 .frontpage-blocks {
