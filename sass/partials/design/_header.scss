@@ -29,9 +29,11 @@ img.tower-header {
 
 #block-menu-menu-visitor-menu {
 @include respond-to('full') {
+  @include float(right);
   ul.menu {
-    @include float(right);
-    margin: 14px 0px 0px;
+
+    // @include clearfix;
+    margin: 14px 0px -14px;
     li {
       // border-right: black 1px solid;
       display: inline;
