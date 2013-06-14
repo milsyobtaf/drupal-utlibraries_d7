@@ -114,6 +114,7 @@ article div.content-group {
       text-shadow: 1px 1px 1px #000000;
       font-size: 2em;
       line-height: 2em;
+      word-break: break-all;
       margin: 0;
       padding: 0 1em;
       background-color: #6f7454; // Old browsers
@@ -144,6 +145,16 @@ article div.content-group {
 .branch-announcements-all {}
 
 // Branch Contact Info
+.branch-location-block {
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .branch-contactinfo-block {
   @include span-columns(3);
   @include pre(1);
@@ -161,4 +172,10 @@ article div.content-group {
   @include span-columns(10,12);
   @include pre(1);
   padding-top: 1em;
+    iframe {
+      border: 1px solid $gray-light;
+      box-shadow: 1px 1px 5px 1px $gray-light;
+      border-radius: 2px;
+      width: 95%;
+    }
 }

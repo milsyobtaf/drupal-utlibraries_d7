@@ -684,6 +684,7 @@ article div.content-group {
   text-shadow: 1px 1px 1px black;
   font-size: 2em;
   line-height: 2em;
+  word-break: break-all;
   margin: 0;
   padding: 0 1em;
   background-color: #6f7454;
@@ -716,6 +717,14 @@ article div.content-group {
   margin: 0 1.5em 0.5em 0;
 }
 
+.branch-location-block a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.branch-location-block a:hover {
+  text-decoration: underline;
+}
+
 .branch-contactinfo-block {
   width: 25%;
   float: left;
@@ -741,6 +750,12 @@ article div.content-group {
   margin-right: 0%;
   margin-left: 8.33333%;
   padding-top: 1em;
+}
+.branch-googlemap-block iframe {
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 5px 1px #cccccc;
+  border-radius: 2px;
+  width: 95%;
 }
 
 footer,
