@@ -142,3 +142,23 @@ article div.content-group {
 
 // Branch Announcements
 .branch-announcements-all {}
+
+// Branch Contact Info
+.branch-contactinfo-block {
+  @include span-columns(3);
+  @include pre(1);
+}
+
+.branch-campusaddress-block {
+  @include span-columns(3);
+}
+
+.branch-mailingaddress-block {
+  @include span-columns(3);
+}
+
+.branch-googlemap-block {
+  @include span-columns(10,12);
+  @include pre(1);
+  padding-top: 1em;
+}
