@@ -526,10 +526,9 @@ img.tower-header {
   background: #999999;
 }
 #block-menu-menu-primary-navigation ul li {
-  display: inline;
   height: 23px;
   width: auto;
-  padding: 0 5px;
+  padding: 1px 5px 0;
   margin: 0;
   display: inline;
   float: left;
@@ -758,6 +757,20 @@ article div.content-group {
   width: 95%;
 }
 
+div.branch-staff-list thead {
+  display: none;
+}
+div.branch-staff-list tbody {
+  border-top: 0px;
+}
+div.branch-staff-list .views-field.views-field-field-phone-number {
+  width: 10em;
+}
+div.branch-staff-list a.tabledrag-handle .handle {
+  height: 25px;
+  width: 25px;
+}
+
 footer,
 #footer {
   margin-top: 10px;
@@ -798,6 +811,8 @@ footer h2,
   }
   footer .user-menu-footer,
   #footer .user-menu-footer {
+    text-align: right;
+    padding-right: 1em;
     width: 25%;
     float: left;
     margin-right: 0%;
@@ -986,4 +1001,48 @@ footer .utdirect-logo img,
 footer .utdirect-logo span,
 #footer .utdirect-logo span {
   font-size: .8em;
+}
+
+table th {
+  background: #e0e0e0;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: none;
+}
+
+table th a {
+  color: #000;
+}
+
+table th {
+  padding: 5px 15px;
+}
+
+table th.views-field-operations-dropbutton {
+  width: 175px;
+}
+
+table td {
+  padding: 5px 15px;
+}
+
+table tr.even,
+table tr.odd {
+  border: none;
+}
+
+table tr.odd {
+  background-color: #ffffff;
+}
+
+table.sticky-header {
+  z-index: 99;
+  border-bottom: 0;
+  -moz-box-shadow: 0 1px 1px #bebfb9;
+  -webkit-box-shadow: 0 1px 1px #bebfb9;
+  box-shadow: 0 1px 1px #bebfb9;
+}
+
+table.sticky-header th {
+  border-bottom: 0;
 }
