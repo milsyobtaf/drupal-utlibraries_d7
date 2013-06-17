@@ -17,10 +17,9 @@
       line-height: 2em;
       background: $gray-dark;
       li{
-        display: inline;
         height: 23px;
         width: auto;
-        padding: 0 5px;
+        padding: 1px 5px 0;
         margin: 0;
         @include float(left);
         background: $gray-dark;

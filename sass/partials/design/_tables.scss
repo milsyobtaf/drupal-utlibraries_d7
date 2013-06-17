@@ -1,0 +1,42 @@
+table th {
+  background: #e0e0e0;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: none;
+}
+
+table th a {
+  color: #000;
+}
+
+table th {
+  padding: 5px 15px;
+}
+
+table th.views-field-operations-dropbutton {
+  width: 175px;
+}
+
+table td {
+  padding: 5px 15px;
+}
+
+table tr.even,
+table tr.odd {
+  border: none;
+}
+
+table tr.odd {
+  background-color: #ffffff;
+}
+
+table.sticky-header {
+  z-index: 99;
+  border-bottom: 0;
+  -moz-box-shadow: 0 1px 1px #bebfb9;
+  -webkit-box-shadow: 0 1px 1px #bebfb9;
+  box-shadow: 0 1px 1px #bebfb9;
+}
+table.sticky-header th {
+  border-bottom: 0;
+}

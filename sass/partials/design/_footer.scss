@@ -19,6 +19,8 @@ footer,
       @include push(4);
     }
     .user-menu-footer {
+      text-align: right;
+      padding-right: 1em;
       div.content {
         display: inline-block;
       }
