@@ -538,6 +538,9 @@ img.tower-header {
   border-left: 1px solid #cccccc;
   border-right: 1px solid #878787;
 }
+#block-menu-menu-primary-navigation ul li:hover, #block-menu-menu-primary-navigation ul li:focus {
+  background-color: #cccccc;
+}
 #block-menu-menu-primary-navigation ul li a {
   margin: 0;
   font-size: 13px;
@@ -547,15 +550,18 @@ img.tower-header {
 #block-menu-menu-primary-navigation ul li ul.menu {
   display: none;
   margin: 0;
-  position: relative;
+  position: absolute;
   z-index: 100;
   height: auto;
   /* adjusts height to contents */
-  width: 12em;
+  opacity: .97;
+  border-bottom: 1px solid #878787;
 }
 #block-menu-menu-primary-navigation ul li ul.menu li {
   text-align: left;
-  width: auto;
+  padding: 0;
+  width: 15em;
+  background-color: white;
   height: auto;
 }
 #block-menu-menu-primary-navigation ul li ul.menu li a {
@@ -571,7 +577,6 @@ img.tower-header {
 }
 #block-menu-menu-primary-navigation ul li:hover ul.menu li, #block-menu-menu-primary-navigation ul li:focus ul.menu li {
   display: block;
-  width: 12em;
   float: none;
 }
 
