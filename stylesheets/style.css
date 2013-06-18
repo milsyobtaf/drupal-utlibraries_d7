@@ -481,7 +481,7 @@ img.tower-header {
   #block-menu-menu-visitor-menu ul.menu li a {
     text-decoration: none;
   }
-  #block-menu-menu-visitor-menu ul.menu li a:hover {
+  #block-menu-menu-visitor-menu ul.menu li a:hover, #block-menu-menu-visitor-menu ul.menu li a:focus {
     text-decoration: underline;
   }
   #block-menu-menu-visitor-menu ul.menu li:after {
@@ -520,6 +520,7 @@ img.tower-header {
 }
 #block-menu-menu-primary-navigation ul {
   height: 100%;
+  width: auto;
   padding: 0;
   margin: 0 0 0 75px;
   line-height: 2em;
@@ -527,7 +528,6 @@ img.tower-header {
 }
 #block-menu-menu-primary-navigation ul li {
   height: 23px;
-  width: auto;
   padding: 1px 5px 0;
   margin: 0;
   display: inline;
@@ -544,8 +544,35 @@ img.tower-header {
   font-weight: bold;
   text-decoration: none;
 }
-#block-menu-menu-primary-navigation ul li ul > ul {
+#block-menu-menu-primary-navigation ul li ul.menu {
+  display: none;
+  margin: 0;
+  position: relative;
+  z-index: 100;
+  height: auto;
+  /* adjusts height to contents */
+  width: 12em;
+}
+#block-menu-menu-primary-navigation ul li ul.menu li {
+  text-align: left;
+  width: auto;
+  height: auto;
+}
+#block-menu-menu-primary-navigation ul li ul.menu li a {
+  width: auto;
   display: block;
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  padding: 0.4em 0.5em 0.4em 0.5em;
+}
+#block-menu-menu-primary-navigation ul li:hover ul.menu, #block-menu-menu-primary-navigation ul li:focus ul.menu {
+  display: block;
+}
+#block-menu-menu-primary-navigation ul li:hover ul.menu li, #block-menu-menu-primary-navigation ul li:focus ul.menu li {
+  display: block;
+  width: 12em;
+  float: none;
 }
 
 div.breadcrumb {
@@ -560,7 +587,7 @@ div.breadcrumb a {
   text-decoration: none;
   color: black;
 }
-div.breadcrumb a:hover {
+div.breadcrumb a:hover, div.breadcrumb a:focus {
   text-decoration: underline;
 }
 
@@ -605,7 +632,7 @@ h1#page-title {
   padding: 6px 10px 5px;
   text-decoration: none;
 }
-.group-nav-menu ul li a:hover {
+.group-nav-menu ul li a:hover, .group-nav-menu ul li a:focus {
   background-color: #757a63;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #757a63), color-stop(4%, #777c65), color-stop(30%, #979d81), color-stop(35%, #969f84), color-stop(43%, #9ca58a), color-stop(52%, #9ca58a), color-stop(57%, #9aa388), color-stop(65%, #8f987d), color-stop(70%, #8f9579), color-stop(74%, #8a8f78), color-stop(78%, #80856f), color-stop(83%, #7d8369), color-stop(87%, #747b5c), color-stop(91%, #646a4e), color-stop(96%, #5a5e4d), color-stop(100%, #53564f));
   background-image: -webkit-linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
@@ -642,7 +669,7 @@ aside.sidebar-group ul li a {
   color: #333333;
   text-decoration: none;
 }
-aside.sidebar-group ul li a:hover {
+aside.sidebar-group ul li a:hover, aside.sidebar-group ul li a:focus {
   text-decoration: underline;
 }
 aside.sidebar-group ul li a.active-trail {
@@ -670,8 +697,9 @@ article div.content-group {
 .frontpage-blocks .frontpage-block h3 a {
   text-decoration: none;
 }
-.frontpage-blocks .frontpage-block div.view-content div a:hover,
-.frontpage-blocks .frontpage-block h3 a:hover {
+.frontpage-blocks .frontpage-block div.view-content div a:hover, .frontpage-blocks .frontpage-block div.view-content div a:focus,
+.frontpage-blocks .frontpage-block h3 a:hover,
+.frontpage-blocks .frontpage-block h3 a:focus {
   text-decoration: underline;
 }
 .frontpage-blocks .frontpage-block p {
@@ -720,7 +748,7 @@ article div.content-group {
   text-decoration: none;
   font-weight: bold;
 }
-.branch-location-block a:hover {
+.branch-location-block a:hover, .branch-location-block a:focus {
   text-decoration: underline;
 }
 
@@ -969,14 +997,21 @@ footer h2,
     text-decoration: none;
     font-weight: normal;
   }
-  footer #block-menu-menu-policy-and-feedback-links div.content a:hover,
+  footer #block-menu-menu-policy-and-feedback-links div.content a:hover, footer #block-menu-menu-policy-and-feedback-links div.content a:focus,
   footer .user-menu-footer div.content a:hover,
+  footer .user-menu-footer div.content a:focus,
   footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:hover,
+  footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:focus,
   footer #block-views-library-social-media-block div.content a:hover,
+  footer #block-views-library-social-media-block div.content a:focus,
   #footer #block-menu-menu-policy-and-feedback-links div.content a:hover,
+  #footer #block-menu-menu-policy-and-feedback-links div.content a:focus,
   #footer .user-menu-footer div.content a:hover,
+  #footer .user-menu-footer div.content a:focus,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:hover,
-  #footer #block-views-library-social-media-block div.content a:hover {
+  #footer #block-views-1db01a8daceda9472cc9c604cabb179c div.content a:focus,
+  #footer #block-views-library-social-media-block div.content a:hover,
+  #footer #block-views-library-social-media-block div.content a:focus {
     text-decoration: underline;
   }
   footer #block-menu-menu-policy-and-feedback-links div.content li,
@@ -1004,7 +1039,7 @@ footer .utdirect-logo span,
 }
 
 table th {
-  background: #e0e0e0;
+  background: #cccccc;
   font-weight: 400;
   font-size: 15px;
   text-transform: none;
@@ -1032,7 +1067,11 @@ table tr.odd {
 }
 
 table tr.odd {
-  background-color: #ffffff;
+  background-color: white;
+}
+
+table tr.even {
+  background-color: #f7f7f7;
 }
 
 table.sticky-header {
