@@ -799,8 +799,11 @@ div.branch-staff-list thead {
 div.branch-staff-list tbody {
   border-top: 0px;
 }
+div.branch-staff-list .views-field-title {
+  width: 20%;
+}
 div.branch-staff-list .views-field.views-field-field-phone-number {
-  width: 10em;
+  width: 17%;
 }
 div.branch-staff-list a.tabledrag-handle .handle {
   height: 25px;
