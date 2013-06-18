@@ -23,6 +23,7 @@ img, video {
 
 #page {
   max-width: 1200px;
+  min-width: 960px;
   margin: 0 auto;
 }
 
@@ -443,11 +444,12 @@ img.tower-header {
 #name-and-slogan {
   height: 29px;
   margin-top: -6px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(4%, #e77401), color-stop(37%, #d05d04), color-stop(63%, #cb5d07), color-stop(83%, #b85304), color-stop(87%, #b85304), color-stop(90%, #c05903), color-stop(100%, #d56702));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-color: #cc5500;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(4%, #e77401), color-stop(37%, #d05d04), color-stop(63%, #cb5d07), color-stop(83%, #b85304), color-stop(87%, #b85304), color-stop(90%, #c05903), color-stop(100%, #d56702));
+  background-image: -webkit-linear-gradient(top, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: -moz-linear-gradient(top, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: -o-linear-gradient(top, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
+  background-image: linear-gradient(top, #e77401 4%, #d05d04 37%, #cb5d07 63%, #b85304 83%, #b85304 87%, #c05903 90%, #d56702 100%);
   border-top-right-radius: 5px;
   position: relative;
   z-index: 100;
@@ -528,7 +530,7 @@ img.tower-header {
 }
 #block-menu-menu-primary-navigation ul li {
   height: 23px;
-  padding: 1px 5px 0;
+  padding: 0;
   margin: 0;
   display: inline;
   float: left;
@@ -543,6 +545,7 @@ img.tower-header {
 }
 #block-menu-menu-primary-navigation ul li a {
   margin: 0;
+  padding: 1px 5px 5px;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;

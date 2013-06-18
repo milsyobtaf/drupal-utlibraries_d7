@@ -12,7 +12,8 @@ img.tower-header {
 #name-and-slogan {
   height: 29px;
   margin-top: -6px;
-  @include background-image(linear-gradient(top, rgba(255,255,255,0) 0%,rgba(231,116,1,1) 4%,rgba(208,93,4,1) 37%,rgba(203,93,7,1) 63%,rgba(184,83,4,1) 83%,rgba(184,83,4,1) 87%,rgba(192,89,3,1) 90%,rgba(213,103,2,1) 100%));
+  background-color: #cc5500; //Old browsers
+  @include background-image(linear-gradient(top, rgba(231,116,1,1) 4%,rgba(208,93,4,1) 37%,rgba(203,93,7,1) 63%,rgba(184,83,4,1) 83%,rgba(184,83,4,1) 87%,rgba(192,89,3,1) 90%,rgba(213,103,2,1) 100%));
   border-top-right-radius: 5px;
   position: relative;
   z-index: 100;

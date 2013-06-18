@@ -19,7 +19,7 @@
       background: $gray-dark;
       li {
         height: 23px;
-        padding: 1px 5px 0;
+        padding: 0;
         margin: 0;
         @include float(left);
         background: $gray-dark;
@@ -33,6 +33,7 @@
         }
           a {
             margin: 0;
+            padding: 1px 5px 5px;
             font-size: 13px;
             font-weight: bold;
             text-decoration: none;
