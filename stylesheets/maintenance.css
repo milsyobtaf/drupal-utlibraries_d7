@@ -23,6 +23,7 @@ img, video {
 
 #page {
   max-width: 1200px;
+  min-width: 960px;
   margin: 0 auto;
 }
 
