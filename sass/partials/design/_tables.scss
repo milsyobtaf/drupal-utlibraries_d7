@@ -1,5 +1,5 @@
 table th {
-  background: #e0e0e0;
+  background: $gray-light;
   font-weight: 400;
   font-size: 15px;
   text-transform: none;
@@ -27,7 +27,11 @@ table tr.odd {
 }
 
 table tr.odd {
-  background-color: #ffffff;
+  background-color: $white;
+}
+
+table tr.even {
+  background-color: lighten($gray-light, 17%);
 }
 
 table.sticky-header {

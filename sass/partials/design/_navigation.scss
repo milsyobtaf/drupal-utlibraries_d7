@@ -12,13 +12,13 @@
   // @include breakpoint('full') {
     ul {
       height: 100%;
+      width: auto;
       padding: 0;
       margin: 0 0 0 75px;
       line-height: 2em;
       background: $gray-dark;
-      li{
+      li {
         height: 23px;
-        width: auto;
         padding: 1px 5px 0;
         margin: 0;
         @include float(left);
@@ -27,16 +27,61 @@
         text-align: center;
         border-left: 1px solid $gray-light;
         border-right: 1px solid darken($gray-dark, 7%);
+        &:hover,
+        &:focus {
+          background-color: $gray-light;
+        }
           a {
             margin: 0;
             font-size: 13px;
             font-weight: bold;
             text-decoration: none;
           }
-    ul > ul {
-            display: block;
+          ul.menu {
+            display: none;
+            margin: 0;
+            position: absolute;
+            z-index: 100;
+            height: auto; /* adjusts height to contents */
+            opacity: .97;
+            border-bottom: 1px solid darken($gray-dark, 7%);
+            li {
+              text-align: left;
+              padding: 0;
+              width: 15em;
+              background-color: $white;
+              height: auto;
+              a {
+                width: auto;
+                display: block;
+                font-family: $verdana;
+                font-weight: normal;
+                line-height: 1em;
+                padding: 0.4em 0.5em 0.4em 0.5em;
+              }
+            }
           }
-      }
+          &:hover,
+          &:focus {
+            ul.menu {
+              display: block;
+              li {
+                display: block;
+                float: none;
+              }
+            }
+          }
+        }
+      // ul {
+      //     ul {
+      //       display: none;
+      //     }
+      //     &:hover {
+      //       ul {
+      //         display: inline;
+      //       }
+          // }
+      // }
     }
   // }
 }
@@ -51,7 +96,8 @@ div.breadcrumb {
     a {
       text-decoration: none;
       color: $black;
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration: underline;
       }
     }

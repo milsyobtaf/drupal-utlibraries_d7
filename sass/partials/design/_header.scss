@@ -40,7 +40,8 @@ img.tower-header {
       text-align: left;
         a {
           text-decoration: none;
-          &:hover {
+          &:hover,
+          &:focus {
             text-decoration: underline;
           }
         }
