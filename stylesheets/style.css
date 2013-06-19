@@ -615,6 +615,7 @@ h1#page-title {
 }
 
 .group-nav-menu ul {
+  background-color: #cccccc;
   margin: 0;
   padding: 5px 5px 3px;
   text-align: center;
@@ -687,6 +688,7 @@ article div.content-group {
 }
 .frontpage-blocks .frontpage-block h3.frontpage-block-title {
   font-family: "Segoe UI", "Open Sans", "DejaVu Sans", sans-serif;
+  background-color: #cccccc;
   font-size: 2em;
   line-height: 2em;
   word-break: break-all;
