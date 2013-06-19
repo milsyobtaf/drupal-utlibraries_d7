@@ -81,7 +81,7 @@
 
 
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-front clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> node-branch-<?php print $node->og_group_ref['und'][0]['target_id']; ?> branch-front clearfix"<?php print $attributes; ?>>
 
   <header>
     <?php print render($title_prefix); ?>
@@ -103,7 +103,7 @@
       hide($content['links']);
       print render($content);
     ?>
-    
+
     <div class="frontpage-blocks">
       <div class="block-1 frontpage-block">
       <div class="frontpage-block-content">

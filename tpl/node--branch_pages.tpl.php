@@ -79,7 +79,7 @@
  */
 ?>
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> branch-not-front clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> node-branch-<?php print $node->og_group_ref['und'][0]['target_id']; ?> branch-not-front clearfix"<?php print $attributes; ?>>
 
   <header>
     <?php print render($title_prefix); ?>
@@ -118,7 +118,7 @@
       <?php print $region['sidebar_second']; ?>
     </aside>
   <?php endif; ?>
-  
+
   <?php print render($content['links']); ?>
 
 </article>
