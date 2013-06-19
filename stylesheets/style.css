@@ -774,12 +774,10 @@ div.branch-staff-list a.tabledrag-handle .handle {
   width: 25px;
 }
 
-#node-2 .group-nav-menu,
-.node-branch-2 .group-nav-menu {
+.og-context-node-2 .group-nav-menu {
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
-#node-2 .group-nav-menu ul,
-.node-branch-2 .group-nav-menu ul {
+.og-context-node-2 .group-nav-menu ul {
   background-color: #1b1b1b;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1b1b1b), color-stop(4%, #0e0e0e), color-stop(17%, #313131), color-stop(26%, #3f3f3f), color-stop(30%, #414141), color-stop(39%, #3d3d3d), color-stop(43%, #373737), color-stop(52%, #262626), color-stop(61%, #1a1a1a), color-stop(74%, #0f0f0f), color-stop(78%, #0e0e0e), color-stop(83%, #090909), color-stop(87%, #0b0b0b), color-stop(96%, #000000), color-stop(100%, #131313));
   background-image: -webkit-linear-gradient(top, #1b1b1b 0%, #0e0e0e 4%, #313131 17%, #3f3f3f 26%, #414141 30%, #3d3d3d 39%, #373737 43%, #262626 52%, #1a1a1a 61%, #0f0f0f 74%, #0e0e0e 78%, #090909 83%, #0b0b0b 87%, #000000 96%, #131313 100%);
@@ -787,14 +785,11 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: -o-linear-gradient(top, #1b1b1b 0%, #0e0e0e 4%, #313131 17%, #3f3f3f 26%, #414141 30%, #3d3d3d 39%, #373737 43%, #262626 52%, #1a1a1a 61%, #0f0f0f 74%, #0e0e0e 78%, #090909 83%, #0b0b0b 87%, #000000 96%, #131313 100%);
   background-image: linear-gradient(top, #1b1b1b 0%, #0e0e0e 4%, #313131 17%, #3f3f3f 26%, #414141 30%, #3d3d3d 39%, #373737 43%, #262626 52%, #1a1a1a 61%, #0f0f0f 74%, #0e0e0e 78%, #090909 83%, #0b0b0b 87%, #000000 96%, #131313 100%);
 }
-#node-2 .group-nav-menu ul li a,
-.node-branch-2 .group-nav-menu ul li a {
+.og-context-node-2 .group-nav-menu ul li a {
   color: #ffffff;
   text-shadow: 1px 1px 2px #999999;
 }
-#node-2 .group-nav-menu ul li a:hover, #node-2 .group-nav-menu ul li a:focus,
-.node-branch-2 .group-nav-menu ul li a:hover,
-.node-branch-2 .group-nav-menu ul li a:focus {
+.og-context-node-2 .group-nav-menu ul li a:hover, .og-context-node-2 .group-nav-menu ul li a:focus {
   background-color: #757a63;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #757a63), color-stop(4%, #777c65), color-stop(30%, #979d81), color-stop(35%, #969f84), color-stop(43%, #9ca58a), color-stop(52%, #9ca58a), color-stop(57%, #9aa388), color-stop(65%, #8f987d), color-stop(70%, #8f9579), color-stop(74%, #8a8f78), color-stop(78%, #80856f), color-stop(83%, #7d8369), color-stop(87%, #747b5c), color-stop(91%, #646a4e), color-stop(96%, #5a5e4d), color-stop(100%, #53564f));
   background-image: -webkit-linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
@@ -802,8 +797,7 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: -o-linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
   background-image: linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
 }
-#node-2 .group-nav-menu ul li a.active-trail,
-.node-branch-2 .group-nav-menu ul li a.active-trail {
+.og-context-node-2 .group-nav-menu ul li a.active-trail {
   background-color: #757a63;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #757a63), color-stop(4%, #777c65), color-stop(30%, #979d81), color-stop(35%, #969f84), color-stop(43%, #9ca58a), color-stop(52%, #9ca58a), color-stop(57%, #9aa388), color-stop(65%, #8f987d), color-stop(70%, #8f9579), color-stop(74%, #8a8f78), color-stop(78%, #80856f), color-stop(83%, #7d8369), color-stop(87%, #747b5c), color-stop(91%, #646a4e), color-stop(96%, #5a5e4d), color-stop(100%, #53564f));
   background-image: -webkit-linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
@@ -812,8 +806,7 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: linear-gradient(top, #757a63 0%, #777c65 4%, #979d81 30%, #969f84 35%, #9ca58a 43%, #9ca58a 52%, #9aa388 57%, #8f987d 65%, #8f9579 70%, #8a8f78 74%, #80856f 78%, #7d8369 83%, #747b5c 87%, #646a4e 91%, #5a5e4d 96%, #53564f 100%);
   font-weight: bold;
 }
-#node-2 h3.frontpage-block-title,
-.node-branch-2 h3.frontpage-block-title {
+.og-context-node-2 h3.frontpage-block-title {
   color: #ffffff;
   text-shadow: 1px 1px 1px black;
   background-color: #6f7454;
