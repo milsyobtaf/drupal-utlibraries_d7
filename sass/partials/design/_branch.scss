@@ -192,8 +192,11 @@ div.branch-staff-list {
   tbody {
     border-top: 0px;
   }
+  .views-field-title {
+    width: 20%;
+  }
   .views-field.views-field-field-phone-number {
-    width: 10em;
+    width: 17%;
   }
   a.tabledrag-handle .handle {
     height: 25px;
