@@ -46,9 +46,8 @@ div.panel-pane {
   .pane-content {
     border: 1px solid $gray-light;
     border-top: none;
-    // margin: 8px 12px 14px 2px;
-    padding: 7px;
-    &:first-child {
+    padding: 7px 7px 0;
+    p {
       margin-top: 0;
     }
   }
