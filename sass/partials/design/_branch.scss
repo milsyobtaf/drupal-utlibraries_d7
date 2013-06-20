@@ -18,6 +18,7 @@ h1#page-title {
 
 .group-nav-menu {
     ul {
+      background-color: #cccccc; // Default color
       margin: 0;
       padding: 5px 5px 3px;
       text-align: center;
@@ -98,6 +99,7 @@ article div.content-group {
     }
     h3.frontpage-block-title {
       font-family: $segoeui;
+      background-color: #cccccc; // Default color
       font-size: 2em;
       line-height: 2em;
       word-break: break-all;
