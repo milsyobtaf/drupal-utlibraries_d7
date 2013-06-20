@@ -872,9 +872,9 @@ div.panel-pane h2.pane-title {
 div.panel-pane .pane-content {
   border: 1px solid #cccccc;
   border-top: none;
-  padding: 7px;
+  padding: 7px 7px 0;
 }
-div.panel-pane .pane-content:first-child {
+div.panel-pane .pane-content p {
   margin-top: 0;
 }
 
