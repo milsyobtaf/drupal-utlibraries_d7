@@ -1164,3 +1164,10 @@ table.sticky-header {
 table.sticky-header th {
   border-bottom: 0;
 }
+
+/**
+ * Media partials: A place to put media format styling - videos, images, embeds
+ */
+iframe.video-filter {
+  width: 100%;
+}
