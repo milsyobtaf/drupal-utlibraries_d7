@@ -1,0 +1,9 @@
+/**
+ * Media partials: A place to put media format styling - videos, images, embeds
+ */
+
+iframe {
+  &.video-filter {
+    width: 100%;
+  }
+}
