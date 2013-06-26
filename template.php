@@ -46,7 +46,7 @@ function utlibraries_d7_preprocess_maintenance_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function 
+/* -- Delete this line if you want to use this function
 function utlibraries_d7_preprocess_html(&$vars) {
 }
 */
@@ -169,6 +169,27 @@ function utlibraries_d7_preprocess_views_view(&$vars) {
 }
 // */
 
+
+/**
+ * Override User Login page for custom theming
+ *
+ * @param $vars
+ *    An array of variables to pass to the theme template.
+ */
+
+function utlibraries_d7_theme() {
+  $vars = array();
+  // create custom user-login.tpl.php
+  $vars['user_login'] = array(
+  'render element' => 'form',
+  'path' => drupal_get_path('theme', 'utlibraries_d7') . '/tpl',
+  'template' => 'user--login',
+  'preprocess functions' => array(
+  'utlibraries-d7_preprocess_user_login'
+  ),
+ );
+return $vars;
+}
 
 /**
  * Override or insert css on the site.
