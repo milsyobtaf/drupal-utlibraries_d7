@@ -1171,3 +1171,17 @@ table.sticky-header th {
 iframe.video-filter {
   width: 100%;
 }
+
+div.user-login-wrapper {
+  padding: 0 5em;
+  min-height: 15em;
+}
+div.user-login-wrapper h2 {
+  color: #cc5500;
+}
+div.user-login-wrapper a {
+  text-decoration: none;
+}
+div.user-login-wrapper a:hover, div.user-login-wrapper a:focus {
+  text-decoration: underline;
+}
