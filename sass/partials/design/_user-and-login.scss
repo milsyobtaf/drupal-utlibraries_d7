@@ -1,0 +1,14 @@
+  div.user-login-wrapper {
+    padding: 0 5em;
+    min-height: 15em;
+      h2 {
+        color: $color-ut;
+      }
+      a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+  }

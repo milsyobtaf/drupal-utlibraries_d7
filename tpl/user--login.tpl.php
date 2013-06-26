@@ -1,3 +1,5 @@
+<div class="user-login-wrapper">
+<h2>User Login</h2>
 <div class="user-login-box-shibboleth">
   <p class="user-login-button-shibboleth">
     <a href="https://cms-d7.lib.utexas.edu/Shibboleth.sso/Login?target=https%3A%2F%2Fcms-d7.lib.utexas.edu%2F%3Fq%3Dshib_login%2Fuser">Login Using Your UT EID</a>
@@ -6,7 +8,9 @@
 
 <div class="user-login-box-drupal">
   <p class="user-login-button-drupal">
-    <a href="#" onclick="toggle_visibility('user-login-form-drupal');">Login Using Your Administrator Account</a>
+    <span onclick="toggle_visibility('user-login-form-drupal');">
+      <a href="#">Login Using Your Administrator Account</a>
+    </span>
   </p>
   <div class="user-login-form-drupal" id="user-login-form-drupal" style="display:none;">
     <?php
@@ -20,7 +24,7 @@
     ?>
   </div>
 </div>
-
+</div>
 <script type="text/javascript">
 <!--
     function toggle_visibility(id) {
