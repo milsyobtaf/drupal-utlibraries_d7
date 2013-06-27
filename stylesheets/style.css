@@ -874,7 +874,7 @@ div.ctools-collapsible-container h2.pane-title {
 }
 div.panel-pane span.ctools-toggle,
 div.ctools-collapsible-container span.ctools-toggle {
-  background-image: url('../images/ui/desc.gif');
+  background-image: url('../images/ui/down.gif');
   float: left;
   width: 20px;
   height: 25px;
@@ -884,7 +884,10 @@ div.ctools-collapsible-container span.ctools-toggle {
 }
 div.panel-pane span.ctools-toggle.ctools-toggle-collapsed,
 div.ctools-collapsible-container span.ctools-toggle.ctools-toggle-collapsed {
-  background-image: url('../images/ui/asc.gif');
+  background-image: url('../images/ui/right.gif');
+  width: 20px;
+  height: 25px;
+  background-position: 8px;
 }
 div.panel-pane div.pane-content,
 div.panel-pane div.ctools-collapsible-content,

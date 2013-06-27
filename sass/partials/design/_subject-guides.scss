@@ -45,7 +45,7 @@ div.ctools-collapsible-container {
     }
   }
   span.ctools-toggle {
-    background-image: image-url('ui/desc.gif');
+    background-image: image-url('ui/down.gif');
     float: left;
     width: 20px;
     height: 25px;
@@ -54,7 +54,10 @@ div.ctools-collapsible-container {
     background-repeat: no-repeat;
   }
   span.ctools-toggle.ctools-toggle-collapsed {
-    background-image: image-url('ui/asc.gif');
+    background-image: image-url('ui/right.gif');
+    width: 20px;
+    height: 25px;
+    background-position: 8px;
   }
   div.pane-content,
   div.ctools-collapsible-content {
