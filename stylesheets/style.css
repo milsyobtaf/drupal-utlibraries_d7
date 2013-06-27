@@ -848,15 +848,18 @@ div.panel-panel .pane-node-title .pane-content h2 {
   margin: 0;
 }
 
-div.panel-pane {
+div.panel-pane,
+div.ctools-collapsible-container {
   margin: 4px 0 20px;
 }
-div.panel-pane h2 {
+div.panel-pane h2,
+div.ctools-collapsible-container h2 {
   font-family: Verdana, Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 1.2em;
   font-weight: normal;
 }
-div.panel-pane h2.pane-title {
+div.panel-pane h2.pane-title,
+div.ctools-collapsible-container h2.pane-title {
   text-align: left;
   background-color: #0a3c70;
   margin: 0;
@@ -869,12 +872,32 @@ div.panel-pane h2.pane-title {
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-div.panel-pane .pane-content {
+div.panel-pane span.ctools-toggle,
+div.ctools-collapsible-container span.ctools-toggle {
+  background-image: url('../images/ui/desc.gif');
+  float: left;
+  width: 20px;
+  height: 25px;
+  background-position: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+div.panel-pane span.ctools-toggle.ctools-toggle-collapsed,
+div.ctools-collapsible-container span.ctools-toggle.ctools-toggle-collapsed {
+  background-image: url('../images/ui/asc.gif');
+}
+div.panel-pane div.pane-content,
+div.panel-pane div.ctools-collapsible-content,
+div.ctools-collapsible-container div.pane-content,
+div.ctools-collapsible-container div.ctools-collapsible-content {
   border: 1px solid #cccccc;
   border-top: none;
   padding: 7px 7px 0;
 }
-div.panel-pane .pane-content p {
+div.panel-pane div.pane-content p,
+div.panel-pane div.ctools-collapsible-content p,
+div.ctools-collapsible-container div.pane-content p,
+div.ctools-collapsible-container div.ctools-collapsible-content p {
   margin-top: 0;
 }
 
