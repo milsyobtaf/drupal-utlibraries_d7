@@ -28,7 +28,8 @@ div.panel-panel {
 
 }
 
-div.panel-pane {
+div.panel-pane,
+div.ctools-collapsible-container {
   margin: 4px 0 20px;
   h2 {
     font-family: Verdana, $arial;
@@ -43,7 +44,20 @@ div.panel-pane {
       @include border-top-radius(10px);
     }
   }
-  .pane-content {
+  span.ctools-toggle {
+    background-image: image-url('ui/desc.gif');
+    float: left;
+    width: 20px;
+    height: 25px;
+    background-position: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+  span.ctools-toggle.ctools-toggle-collapsed {
+    background-image: image-url('ui/asc.gif');
+  }
+  div.pane-content,
+  div.ctools-collapsible-content {
     border: 1px solid $gray-light;
     border-top: none;
     padding: 7px 7px 0;
