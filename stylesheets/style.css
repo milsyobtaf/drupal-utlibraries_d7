@@ -665,10 +665,17 @@ article div.content-group {
   margin-top: 1em;
 }
 .frontpage-blocks .frontpage-block {
-  width: 33.33333%;
+  width: 29.16667%;
   float: left;
   margin-right: 0%;
-  padding: 0 1em;
+  margin-left: 3.33333%;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 5px 1px #cccccc;
+  border-radius: 2px;
+}
+.frontpage-blocks .frontpage-block div.view-content {
+  margin: 10px 0;
 }
 .frontpage-blocks .frontpage-block div.view-content div,
 .frontpage-blocks .frontpage-block h3 {
@@ -691,7 +698,6 @@ article div.content-group {
   background-color: #cccccc;
   font-size: 2em;
   line-height: 2em;
-  word-break: break-all;
   margin: 0;
   padding: 0 1em;
   -webkit-border-radius: 2px;
@@ -817,6 +823,9 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: -moz-linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
   background-image: -o-linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
   background-image: linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
+}
+.og-context-node-2 div.frontpage-block div.view-content {
+  border-top: 1px solid #e1c96b;
 }
 
 div.panel-panel {
