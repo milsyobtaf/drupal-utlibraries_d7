@@ -81,8 +81,15 @@ article div.content-group {
   margin-top: 1em;
   .frontpage-block {
     $gutter-width: 0px;
-    @include span-columns(4,12);
-    padding: 0 1em;
+    @include span-columns(3.5,12);
+    @include squish(.4);
+    padding: 1em;
+    border: 1px solid $gray-light;
+    box-shadow: 1px 1px 5px 1px $gray-light;
+    border-radius: 2px;
+    div.view-content {
+      margin: 10px 0;
+    }
     div.view-content div,
     h3 {
       margin: 0 .3em;
@@ -102,7 +109,7 @@ article div.content-group {
       background-color: #cccccc; // Default color
       font-size: 2em;
       line-height: 2em;
-      word-break: break-all;
+      // word-break: break-all;
       margin: 0;
       padding: 0 1em;
       @include border-radius(2px);
