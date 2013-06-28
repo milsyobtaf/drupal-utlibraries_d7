@@ -599,17 +599,22 @@ div.breadcrumb a:hover, div.breadcrumb a:focus {
   text-decoration: underline;
 }
 
-.branch-boxes-shadowed, aside.sidebar-group, .frontpage-blocks .frontpage-block .frontpage-block-content, .branch-googlemap-block iframe {
+.branch-boxes-shadowed, aside.sidebar-group, .frontpage-columns .frontpage-column .frontpage-block, .branch-googlemap-block iframe {
   border: 1px solid #cccccc;
   box-shadow: 1px 1px 5px 1px #cccccc;
   border-radius: 2px;
 }
 
-.frontpage-block-thirds, .og-context-node-2 div.frontpage-block .frontpage-block-content {
+.frontpage-column-thirds, .og-context-node-2 div.frontpage-column {
   width: 28.81356%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 2.71186%;
+}
+.frontpage-column-thirds .last-col, .og-context-node-2 div.frontpage-column .last-col {
+  width: 28.81356%;
+  float: right;
+  margin-right: 0;
 }
 
 .not-logged-in div.tabs {
@@ -685,33 +690,33 @@ article div.content-group {
   padding: 0.5em 1em;
 }
 
-.frontpage-blocks {
+.frontpage-columns {
   margin-top: 1em;
 }
-.frontpage-blocks .frontpage-block .frontpage-block-content {
+.frontpage-columns .frontpage-column .frontpage-block {
   padding: 1em;
   margin-bottom: 1em;
 }
-.frontpage-blocks .frontpage-block div.view-content {
+.frontpage-columns .frontpage-column div.view-content {
   margin: 10px 0;
 }
-.frontpage-blocks .frontpage-block div.view-content div,
-.frontpage-blocks .frontpage-block h3 {
+.frontpage-columns .frontpage-column div.view-content div,
+.frontpage-columns .frontpage-column h3 {
   margin: 0 0.3em;
 }
-.frontpage-blocks .frontpage-block div.view-content div a,
-.frontpage-blocks .frontpage-block h3 a {
+.frontpage-columns .frontpage-column div.view-content div a,
+.frontpage-columns .frontpage-column h3 a {
   text-decoration: none;
 }
-.frontpage-blocks .frontpage-block div.view-content div a:hover, .frontpage-blocks .frontpage-block div.view-content div a:focus,
-.frontpage-blocks .frontpage-block h3 a:hover,
-.frontpage-blocks .frontpage-block h3 a:focus {
+.frontpage-columns .frontpage-column div.view-content div a:hover, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:hover,
+.frontpage-columns .frontpage-column h3 a:focus {
   text-decoration: underline;
 }
-.frontpage-blocks .frontpage-block p {
+.frontpage-columns .frontpage-column p {
   margin: 0 0 1em;
 }
-.frontpage-blocks .frontpage-block h3.frontpage-block-title {
+.frontpage-columns .frontpage-column h3.frontpage-block-title {
   font-family: "Segoe UI", "Open Sans", "DejaVu Sans", sans-serif;
   background-color: #cccccc;
   font-size: 2em;
@@ -724,7 +729,7 @@ article div.content-group {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-.frontpage-blocks .frontpage-block img {
+.frontpage-columns .frontpage-column img {
   display: block;
   margin: 0.3em auto;
 }
@@ -839,7 +844,7 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: -o-linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
   background-image: linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
 }
-.og-context-node-2 div.frontpage-block div.view-content {
+.og-context-node-2 div.frontpage-column div.view-content {
   border-top: 1px solid #e1c96b;
 }
 
