@@ -104,9 +104,9 @@
       print render($content);
     ?>
 
-    <div class="frontpage-blocks">
-      <div class="block-1 frontpage-block">
-      <div class="frontpage-block-content">
+    <div class="frontpage-columns">
+      <div class="frontpage-column">
+      <div class="frontpage-block">
         <h3 class="frontpage-block-title">Announcements</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_2');
@@ -114,19 +114,23 @@
           ?>
       </div>
       </div>
-      <div class="block-1 frontpage-block">
+      <div class="frontpage-column">
+      <div class="frontpage-block">
         <h3 class="frontpage-block-title">Exhibits</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_3');
             print render($block['content']);
           ?>
       </div>
-      <div class="block-1 frontpage-block">
+      </div>
+      <div class="frontpage-column">
+      <div class="frontpage-block">
         <h3 class="frontpage-block-title">Featured Collection</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_4');
             print render($block['content']);
           ?>
+      </div>
       </div>
     </div>
   </div>

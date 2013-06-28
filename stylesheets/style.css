@@ -599,6 +599,24 @@ div.breadcrumb a:hover, div.breadcrumb a:focus {
   text-decoration: underline;
 }
 
+.branch-boxes-shadowed, aside.sidebar-group, .frontpage-columns .frontpage-column .frontpage-block, .branch-googlemap-block iframe {
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 5px 1px #cccccc;
+  border-radius: 2px;
+}
+
+.frontpage-column-thirds, .og-context-node-2 div.frontpage-column {
+  width: 28.81356%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 2.71186%;
+}
+.frontpage-column-thirds .last-col, .og-context-node-2 div.frontpage-column .last-col {
+  width: 28.81356%;
+  float: right;
+  margin-right: 0;
+}
+
 .not-logged-in div.tabs {
   display: none;
 }
@@ -635,9 +653,6 @@ h1#page-title {
 }
 
 aside.sidebar-group {
-  border: 1px solid #cccccc;
-  box-shadow: 1px 1px 5px 1px #cccccc;
-  border-radius: 2px;
   margin: 1em;
 }
 aside.sidebar-group ul {
@@ -658,42 +673,44 @@ aside.sidebar-group ul li a.active-trail {
 }
 
 article div.content-group {
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
   padding: 0.5em 1em;
 }
 
-.frontpage-blocks {
+.frontpage-columns {
   margin-top: 1em;
 }
-.frontpage-blocks .frontpage-block {
-  width: 29.16667%;
-  float: left;
-  margin-right: 0%;
-  margin-left: 3.33333%;
+.frontpage-columns .frontpage-column .frontpage-block {
   padding: 1em;
-  border: 1px solid #cccccc;
-  box-shadow: 1px 1px 5px 1px #cccccc;
-  border-radius: 2px;
+  margin-bottom: 1em;
 }
-.frontpage-blocks .frontpage-block div.view-content {
+.frontpage-columns .frontpage-column div.view-content {
   margin: 10px 0;
 }
-.frontpage-blocks .frontpage-block div.view-content div,
-.frontpage-blocks .frontpage-block h3 {
+.frontpage-columns .frontpage-column div.view-content div,
+.frontpage-columns .frontpage-column h3 {
   margin: 0 0.3em;
 }
-.frontpage-blocks .frontpage-block div.view-content div a,
-.frontpage-blocks .frontpage-block h3 a {
+.frontpage-columns .frontpage-column div.view-content div a,
+.frontpage-columns .frontpage-column h3 a {
   text-decoration: none;
 }
-.frontpage-blocks .frontpage-block div.view-content div a:hover, .frontpage-blocks .frontpage-block div.view-content div a:focus,
-.frontpage-blocks .frontpage-block h3 a:hover,
-.frontpage-blocks .frontpage-block h3 a:focus {
+.frontpage-columns .frontpage-column div.view-content div a:hover, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:hover,
+.frontpage-columns .frontpage-column h3 a:focus {
   text-decoration: underline;
 }
-.frontpage-blocks .frontpage-block p {
+.frontpage-columns .frontpage-column p {
   margin: 0 0 1em;
 }
-.frontpage-blocks .frontpage-block h3.frontpage-block-title {
+.frontpage-columns .frontpage-column h3.frontpage-block-title {
   font-family: "Segoe UI", "Open Sans", "DejaVu Sans", sans-serif;
   background-color: #cccccc;
   font-size: 2em;
@@ -706,7 +723,7 @@ article div.content-group {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-.frontpage-blocks .frontpage-block img {
+.frontpage-columns .frontpage-column img {
   display: block;
   margin: 0.3em auto;
 }
@@ -733,35 +750,32 @@ article div.content-group {
 }
 
 .branch-contactinfo-block {
-  width: 25%;
+  width: 23.72881%;
   float: left;
-  margin-right: 0%;
-  margin-left: 8.33333%;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
 }
 
 .branch-campusaddress-block {
-  width: 25%;
+  width: 23.72881%;
   float: left;
-  margin-right: 0%;
+  margin-right: 1.69492%;
 }
 
 .branch-mailingaddress-block {
-  width: 25%;
+  width: 23.72881%;
   float: left;
-  margin-right: 0%;
+  margin-right: 1.69492%;
 }
 
 .branch-googlemap-block {
-  width: 83.33333%;
+  width: 83.05085%;
   float: left;
-  margin-right: 0%;
-  margin-left: 8.33333%;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
   padding-top: 1em;
 }
 .branch-googlemap-block iframe {
-  border: 1px solid #cccccc;
-  box-shadow: 1px 1px 5px 1px #cccccc;
-  border-radius: 2px;
   width: 95%;
 }
 
@@ -824,7 +838,7 @@ div.branch-staff-list a.tabledrag-handle .handle {
   background-image: -o-linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
   background-image: linear-gradient(top, #6f7454 0%, #7c7c5a 5%, #888564 7%, #938f6a 11%, #9d9b74 14%, #9d9b72 16%, #a19f76 18%, #a8a77b 30%, #a7a678 36%, #a7a67a 45%, #9b9771 70%, #95916e 77%, #8b8764 82%, #868161 86%, #807b5b 89%, #807a64 91%, #787554 93%, #757553 95%, #73735b 98%, #73735b 100%);
 }
-.og-context-node-2 div.frontpage-block div.view-content {
+.og-context-node-2 div.frontpage-column div.view-content {
   border-top: 1px solid #e1c96b;
 }
 
@@ -932,7 +946,7 @@ footer h2,
   footer,
   #footer {
     border: none;
-    max-width: 960px;
+    max-width: 1180px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -946,19 +960,19 @@ footer h2,
   }
   footer #block-menu-menu-policy-and-feedback-links,
   #footer #block-menu-menu-policy-and-feedback-links {
-    width: 58.33333%;
+    width: 57.62712%;
     float: left;
-    margin-right: 0%;
-    margin-left: 33.33333%;
+    margin-right: 1.69492%;
+    margin-left: 33.89831%;
   }
   footer .user-menu-footer,
   #footer .user-menu-footer {
     text-align: right;
     padding-right: 1em;
-    width: 25%;
+    width: 23.72881%;
     float: left;
-    margin-right: 0%;
-    margin-left: 66.66667%;
+    margin-right: 1.69492%;
+    margin-left: 67.79661%;
   }
   footer .user-menu-footer div.content,
   #footer .user-menu-footer div.content {
@@ -981,10 +995,10 @@ footer h2,
   footer #block-views-library-social-media-block,
   #footer #block-views-1db01a8daceda9472cc9c604cabb179c,
   #footer #block-views-library-social-media-block {
-    width: 33.33333%;
+    width: 32.20339%;
     float: left;
-    margin-right: 0%;
-    margin-left: 58.33333%;
+    margin-right: 1.69492%;
+    margin-left: 59.32203%;
   }
   footer #block-views-1db01a8daceda9472cc9c604cabb179c ul.social-media-accounts-list,
   footer #block-views-library-social-media-block ul.social-media-accounts-list,
@@ -1086,7 +1100,7 @@ footer h2,
   }
   footer .utdirect-logo,
   #footer .utdirect-logo {
-    width: 8.33333%;
+    width: 6.77966%;
     float: right;
     margin-right: 0;
   }

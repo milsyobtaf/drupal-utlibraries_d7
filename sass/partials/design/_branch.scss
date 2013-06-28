@@ -1,3 +1,20 @@
+// Branch Variables, Mixins and Extends
+
+// Extend for Shadowed Boxes on Branch Pages
+.branch-boxes-shadowed {
+  border: 1px solid $gray-light;
+  box-shadow: 1px 1px 5px 1px $gray-light;
+  border-radius: 2px;
+}
+
+.frontpage-column-thirds {
+  @include span-columns(3.5,12);
+  @include squish(.4);
+  .last-col {
+    @include span-columns(3.5 omega, 12);
+  }
+}
+
 // Hack to remove the organic group tabs for anonymous users
 .not-logged-in div.tabs {
   display: none;
@@ -42,9 +59,7 @@ h1#page-title {
 }
 
 aside.sidebar-group {
-  border: 1px solid $gray-light;
-  box-shadow: 1px 1px 5px 1px $gray-light;
-  border-radius: 2px;
+  @extend .branch-boxes-shadowed;
   margin: 1em;
   ul {
     padding-left: 1em;
@@ -68,6 +83,7 @@ aside.sidebar-group {
 // Page content
 
 article div.content-group {
+  @include susy-grid-background;
   padding: .5em 1em;
 }
 
@@ -77,16 +93,14 @@ article div.content-group {
 // }
 
 // Front Page Blocks
-.frontpage-blocks {
+.frontpage-columns {
   margin-top: 1em;
-  .frontpage-block {
-    $gutter-width: 0px;
-    @include span-columns(3.5,12);
-    @include squish(.4);
+  .frontpage-column {
+    .frontpage-block {
     padding: 1em;
-    border: 1px solid $gray-light;
-    box-shadow: 1px 1px 5px 1px $gray-light;
-    border-radius: 2px;
+    margin-bottom: 1em;
+    @extend .branch-boxes-shadowed;
+    }
     div.view-content {
       margin: 10px 0;
     }
@@ -167,9 +181,7 @@ article div.content-group {
   @include pre(1);
   padding-top: 1em;
     iframe {
-      border: 1px solid $gray-light;
-      box-shadow: 1px 1px 5px 1px $gray-light;
-      border-radius: 2px;
+      @extend .branch-boxes-shadowed;
       width: 95%;
     }
 }
