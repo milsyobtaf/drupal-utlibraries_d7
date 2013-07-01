@@ -17,6 +17,9 @@ footer,
     #block-menu-menu-policy-and-feedback-links {
       @include span-columns(7, 12);
       @include push(4);
+      ul {
+        text-align: right;
+      }
     }
     .user-menu-footer {
       text-align: right;

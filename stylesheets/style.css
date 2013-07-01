@@ -684,6 +684,17 @@ article div.content-group {
   padding: 0.5em 1em;
 }
 
+.node-type-branch-pages thead {
+  display: none;
+}
+.node-type-branch-pages tbody {
+  border-top: 0px;
+}
+.node-type-branch-pages a.tabledrag-handle .handle {
+  height: 25px;
+  width: 25px;
+}
+
 .frontpage-columns {
   margin-top: 1em;
 }
@@ -779,21 +790,11 @@ article div.content-group {
   width: 95%;
 }
 
-div.branch-staff-list thead {
-  display: none;
-}
-div.branch-staff-list tbody {
-  border-top: 0px;
-}
 div.branch-staff-list .views-field-title {
   width: 20%;
 }
 div.branch-staff-list .views-field.views-field-field-phone-number {
   width: 17%;
-}
-div.branch-staff-list a.tabledrag-handle .handle {
-  height: 25px;
-  width: 25px;
 }
 
 .og-context-node-2 .group-nav-menu {
@@ -964,6 +965,10 @@ footer h2,
     float: left;
     margin-right: 1.69492%;
     margin-left: 33.89831%;
+  }
+  footer #block-menu-menu-policy-and-feedback-links ul,
+  #footer #block-menu-menu-policy-and-feedback-links ul {
+    text-align: right;
   }
   footer .user-menu-footer,
   #footer .user-menu-footer {
