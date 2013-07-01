@@ -62,7 +62,12 @@ aside.sidebar-group {
   @extend .branch-boxes-shadowed;
   margin: 1em;
   ul {
-    padding-left: 1em;
+    padding: 0 1em;
+    &.menu {
+      li {
+        margin: 0;
+      }
+    }
       li {
         list-style: none;
           a {
@@ -156,7 +161,35 @@ article div.content-group {
 }
 
 // Branch FAQ
-.branch-faq {}
+.branch-faq {
+  h4 {
+    display: inline-block;
+    // margin: 0 0 0 1em;
+  }
+  h4:target {
+    background: $highlight-yellow;
+    @include transition(background .5s ease-out);
+  }
+}
+
+.branch-faq-menu {
+  h3 {
+    margin: 0;
+    padding-left: .5em;
+  }
+  div >div {
+    p {
+      margin: 0 1em 1em;
+    }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  }
+}
 
 // Branch Announcements
 .branch-announcements-all {}
