@@ -87,10 +87,20 @@ article div.content-group {
   padding: .5em 1em;
 }
 
-// Removed this right side content padding since the content area was smooshed to 7col from 9col
-// article.sidebar-group div.content-group {
-//   padding: 0 1em 0 0;
-// }
+// Branch Tables (mostly used for sortable views outputs)
+
+.node-type-branch-pages {
+  thead {
+    display: none;
+  }
+  tbody {
+    border-top: 0px;
+  }
+  a.tabledrag-handle .handle {
+    height: 25px;
+    width: 25px;
+  }
+}
 
 // Front Page Blocks
 .frontpage-columns {
@@ -188,20 +198,10 @@ article div.content-group {
 
 // Branch Staff List
 div.branch-staff-list {
-  thead {
-    display: none;
-  }
-  tbody {
-    border-top: 0px;
-  }
   .views-field-title {
     width: 20%;
   }
   .views-field.views-field-field-phone-number {
     width: 17%;
-  }
-  a.tabledrag-handle .handle {
-    height: 25px;
-    width: 25px;
   }
 }
