@@ -1,4 +1,4 @@
-// Branch Variables, Mixins and Extends
+// Branch Specific Variables, Mixins and Extends
 
 // Extend for Shadowed Boxes on Branch Pages
 .branch-boxes-shadowed {
@@ -7,6 +7,7 @@
   border-radius: 2px;
 }
 
+// Extend for making three columns on front page of branches
 .frontpage-column-thirds {
   @include span-columns(3.5,12);
   @include squish(.4);
@@ -62,16 +63,17 @@ aside.sidebar-group {
   @extend .branch-boxes-shadowed;
   margin: 1em;
   ul {
-    padding-left: 1em;
+    padding: 0 1em;
+    &.menu {
+      li {
+        margin: 0;
+      }
+    }
       li {
         list-style: none;
           a {
-            color: #333333;
-            text-decoration: none;
-          &:hover,
-          &:focus {
-            text-decoration: underline;
-          }
+            color: $black-light;
+            @extend .clean-links;
           &.active-trail {
             font-weight: bold;
           }
@@ -118,11 +120,7 @@ article div.content-group {
     h3 {
       margin: 0 .3em;
       a {
-        text-decoration: none;
-        &:hover,
-        &:focus {
-          text-decoration: underline;
-        }
+        @extend .clean-links;
       }
     }
     p {
@@ -156,7 +154,30 @@ article div.content-group {
 }
 
 // Branch FAQ
-.branch-faq {}
+.branch-faq {
+  h4 {
+    display: inline-block;
+  }
+  h4:target {
+    background: $highlight-yellow;
+    @include transition(background .5s ease-out);
+  }
+}
+
+.branch-faq-menu {
+  h3 {
+    margin: 0;
+    padding-left: .5em;
+  }
+  div >div {
+    p {
+      margin: 0 1em 1em;
+    }
+  a {
+    @extend .clean-links;
+  }
+  }
+}
 
 // Branch Announcements
 .branch-announcements-all {}
@@ -164,12 +185,8 @@ article div.content-group {
 // Branch Contact Info
 .branch-location-block {
   a {
-    text-decoration: none;
+    @extend .clean-links;
     font-weight: bold;
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -199,9 +216,23 @@ article div.content-group {
 // Branch Staff List
 div.branch-staff-list {
   .views-field-title {
-    width: 20%;
+    a {
+      font-weight: bold;
+      @extend .clean-links;
+    }
   }
-  .views-field.views-field-field-phone-number {
-    width: 17%;
+  table {
+    tr {
+      &:hover {
+        background: $highlight-yellow;
+      }
+    }
+    td {
+      display: block;
+        &:first-of-type {
+          display:table-cell;
+          vertical-align: top;
+        }
+    }
   }
 }

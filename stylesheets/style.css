@@ -253,6 +253,16 @@ table {
   clear: both;
 }
 
+.clean-links, aside.sidebar-group ul li a, .frontpage-columns .frontpage-column div.view-content div a,
+.frontpage-columns .frontpage-column h3 a, .branch-faq-menu div > div a, .branch-location-block a, div.branch-staff-list .views-field-title a {
+  text-decoration: none;
+}
+.clean-links:hover, aside.sidebar-group ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
+.frontpage-columns .frontpage-column h3 a:hover, .branch-faq-menu div > div a:hover, .branch-location-block a:hover, div.branch-staff-list .views-field-title a:hover, .clean-links:focus, aside.sidebar-group ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:focus, .branch-faq-menu div > div a:focus, .branch-location-block a:focus, div.branch-staff-list .views-field-title a:focus {
+  text-decoration: underline;
+}
+
 /**
  * Defaults: For any general elements to apply to the whole page.
  */
@@ -656,17 +666,16 @@ aside.sidebar-group {
   margin: 1em;
 }
 aside.sidebar-group ul {
-  padding-left: 1em;
+  padding: 0 1em;
+}
+aside.sidebar-group ul.menu li {
+  margin: 0;
 }
 aside.sidebar-group ul li {
   list-style: none;
 }
 aside.sidebar-group ul li a {
   color: #333333;
-  text-decoration: none;
-}
-aside.sidebar-group ul li a:hover, aside.sidebar-group ul li a:focus {
-  text-decoration: underline;
 }
 aside.sidebar-group ul li a.active-trail {
   font-weight: bold;
@@ -709,15 +718,6 @@ article div.content-group {
 .frontpage-columns .frontpage-column h3 {
   margin: 0 0.3em;
 }
-.frontpage-columns .frontpage-column div.view-content div a,
-.frontpage-columns .frontpage-column h3 a {
-  text-decoration: none;
-}
-.frontpage-columns .frontpage-column div.view-content div a:hover, .frontpage-columns .frontpage-column div.view-content div a:focus,
-.frontpage-columns .frontpage-column h3 a:hover,
-.frontpage-columns .frontpage-column h3 a:focus {
-  text-decoration: underline;
-}
 .frontpage-columns .frontpage-column p {
   margin: 0 0 1em;
 }
@@ -752,12 +752,27 @@ article div.content-group {
   margin: 0 1.5em 0.5em 0;
 }
 
-.branch-location-block a {
-  text-decoration: none;
-  font-weight: bold;
+.branch-faq h4 {
+  display: inline-block;
 }
-.branch-location-block a:hover, .branch-location-block a:focus {
-  text-decoration: underline;
+.branch-faq h4:target {
+  background: #fefeca;
+  -webkit-transition: background 0.5s ease-out;
+  -moz-transition: background 0.5s ease-out;
+  -o-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+
+.branch-faq-menu h3 {
+  margin: 0;
+  padding-left: .5em;
+}
+.branch-faq-menu div > div p {
+  margin: 0 1em 1em;
+}
+
+.branch-location-block a {
+  font-weight: bold;
 }
 
 .branch-contactinfo-block {
@@ -790,11 +805,18 @@ article div.content-group {
   width: 95%;
 }
 
-div.branch-staff-list .views-field-title {
-  width: 20%;
+div.branch-staff-list .views-field-title a {
+  font-weight: bold;
 }
-div.branch-staff-list .views-field.views-field-field-phone-number {
-  width: 17%;
+div.branch-staff-list table tr:hover {
+  background: #fefeca;
+}
+div.branch-staff-list table td {
+  display: block;
+}
+div.branch-staff-list table td:first-of-type {
+  display: table-cell;
+  vertical-align: top;
 }
 
 .og-context-node-2 .group-nav-menu {

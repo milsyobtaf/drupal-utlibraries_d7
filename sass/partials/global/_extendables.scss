@@ -20,3 +20,13 @@
     clear: both;
   }
 }
+
+// Extend for removing the underline on links except in hover / focus states
+
+.clean-links {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
