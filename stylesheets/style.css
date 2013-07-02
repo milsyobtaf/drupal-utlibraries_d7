@@ -254,12 +254,12 @@ table {
 }
 
 .clean-links, aside.sidebar-group ul li a, .frontpage-columns .frontpage-column div.view-content div a,
-.frontpage-columns .frontpage-column h3 a, .branch-faq-menu div > div a, .branch-location-block a, div.branch-staff-list .views-field-title a {
+.frontpage-columns .frontpage-column h3 a, .branch-faq-menu div > div a, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
   text-decoration: none;
 }
 .clean-links:hover, aside.sidebar-group ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
-.frontpage-columns .frontpage-column h3 a:hover, .branch-faq-menu div > div a:hover, .branch-location-block a:hover, div.branch-staff-list .views-field-title a:hover, .clean-links:focus, aside.sidebar-group ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
-.frontpage-columns .frontpage-column h3 a:focus, .branch-faq-menu div > div a:focus, .branch-location-block a:focus, div.branch-staff-list .views-field-title a:focus {
+.frontpage-columns .frontpage-column h3 a:hover, .branch-faq-menu div > div a:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, aside.sidebar-group ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:focus, .branch-faq-menu div > div a:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
   text-decoration: underline;
 }
 
@@ -585,6 +585,9 @@ img.tower-header {
   line-height: 1em;
   padding: 0.4em 0.5em 0.4em 0.5em;
 }
+#block-menu-menu-primary-navigation ul li ul.menu:hover, #block-menu-menu-primary-navigation ul li ul.menu:focus {
+  background-color: #ececec;
+}
 #block-menu-menu-primary-navigation ul li:hover ul.menu, #block-menu-menu-primary-navigation ul li:focus ul.menu {
   display: block;
 }
@@ -805,12 +808,14 @@ article div.content-group {
   width: 95%;
 }
 
-div.branch-staff-list .views-field-title a {
+div.branch-staff-list .branch-staff-name span:first-of-type {
   font-size: 1.1em;
-  color: #333333;
   font-weight: bold;
 }
-div.branch-staff-list .views-field-field-colloquial-title {
+div.branch-staff-list .branch-staff-name span:first-of-type a {
+  color: #333333;
+}
+div.branch-staff-list .branch-staff-colloquial-title {
   font-weight: bold;
   font-style: italic;
 }
@@ -823,6 +828,10 @@ div.branch-staff-list table td {
 div.branch-staff-list table td:first-of-type {
   display: table-cell;
   vertical-align: top;
+}
+div.branch-staff-list table td span {
+  display: block;
+  padding-top: .5em;
 }
 
 .og-context-node-2 .group-nav-menu {

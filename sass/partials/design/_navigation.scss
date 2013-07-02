@@ -61,6 +61,10 @@
                 padding: 0.4em 0.5em 0.4em 0.5em;
               }
             }
+            &:hover,
+            &:focus {
+              background-color: $gray-highlight;
+            }
           }
           &:hover,
           &:focus {

@@ -54,4 +54,4 @@ settings[aurora_viewport_width] = 1
 settings[aurora_modernizr_debug] = 1
 
 ; Experimental Options
-settings['aurora_custom_js_handling'] = 0
+settings[aurora_custom_js_handling] = 0
