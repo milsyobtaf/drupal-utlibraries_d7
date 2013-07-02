@@ -585,7 +585,7 @@ img.tower-header {
   line-height: 1em;
   padding: 0.4em 0.5em 0.4em 0.5em;
 }
-#block-menu-menu-primary-navigation ul li ul.menu:hover, #block-menu-menu-primary-navigation ul li ul.menu:focus {
+#block-menu-menu-primary-navigation ul li ul.menu li:hover, #block-menu-menu-primary-navigation ul li ul.menu li:focus {
   background-color: #ececec;
 }
 #block-menu-menu-primary-navigation ul li:hover ul.menu, #block-menu-menu-primary-navigation ul li:focus ul.menu {
