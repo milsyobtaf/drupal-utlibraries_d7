@@ -217,9 +217,16 @@ article div.content-group {
 div.branch-staff-list {
   .views-field-title {
     a {
+      font-size: 1.1em;
+      color: $black-light;
       font-weight: bold;
       @extend .clean-links;
     }
+  }
+  .views-field-field-colloquial-title {
+    // color: $color-ut;
+    font-weight: bold;
+    font-style: italic;
   }
   table {
     tr {

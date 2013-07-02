@@ -806,7 +806,13 @@ article div.content-group {
 }
 
 div.branch-staff-list .views-field-title a {
+  font-size: 1.1em;
+  color: #333333;
   font-weight: bold;
+}
+div.branch-staff-list .views-field-field-colloquial-title {
+  font-weight: bold;
+  font-style: italic;
 }
 div.branch-staff-list table tr:hover {
   background: #fefeca;
