@@ -215,7 +215,7 @@ article div.content-group {
 
 // Branch Staff List
 div.branch-staff-list {
-  .views-field-title {
+  .branch-staff-colloquial-title {
     a {
       font-size: 1.1em;
       color: $black-light;
@@ -223,8 +223,7 @@ div.branch-staff-list {
       @extend .clean-links;
     }
   }
-  .views-field-field-colloquial-title {
-    // color: $color-ut;
+  .branch-staff-colloquial-title {
     font-weight: bold;
     font-style: italic;
   }
@@ -240,6 +239,10 @@ div.branch-staff-list {
           display:table-cell;
           vertical-align: top;
         }
+      span {
+        display: block;
+        padding-top: .5em;
+      }
     }
   }
 }
