@@ -85,26 +85,39 @@
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
     <?php endif; ?>
+    <?php if ($region['group_nav'] = render($region['group_nav'])): ?>
+      <div class="group-nav">
+        <?php print $region['group_nav']; ?>
+      </div>
+    <?php endif; ?>
     <?php print render($title_suffix); ?>
   </header>
 
-  <?php if ($display_submitted): ?>
-    <footer>
-      <?php print $user_picture; ?>
-      <p class="submitted"><?php print $submitted; ?></p>
-    </footer>
+  <?php if ($region['sidebar_first'] = render($region['sidebar_first'])): ?>
+    <aside class="sidebar-group sidebar-first">
+      <?php print $region['sidebar_first']; ?>
+    </aside>
   <?php endif; ?>
 
-  <div class="content"<?php print $content_attributes; ?>>
+  <div class="content content-group"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
       hide($content['links']);
       print render($content);
     ?>
+    <?php if ($region['content_suffix'] = render($region['content_suffix'])): ?>
+      <section class="content-suffix">
+        <?php print $region['content_suffix']; ?>
+      </section>
+    <?php endif; ?>
   </div>
 
+  <?php if ($region['sidebar_second'] = render($region['sidebar_second'])): ?>
+    <aside class="sidebar-group sidebar-second">
+      <?php print $region['sidebar_second']; ?>
+    </aside>
+  <?php endif; ?>
+
   <?php print render($content['links']); ?>
-  <?php print render($content['comments']); ?>
 
 </article>
