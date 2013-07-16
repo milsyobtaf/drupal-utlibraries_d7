@@ -162,6 +162,9 @@ article div.content-group {
     background: $highlight-yellow;
     @include transition(background .5s ease-out);
   }
+  .branch-faq-back-to-top {
+    float: right;
+  }
 }
 
 .branch-faq-menu {
