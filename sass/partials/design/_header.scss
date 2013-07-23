@@ -5,16 +5,68 @@ header,
   }
 }
 
-img.tower-header {
-  min-height: 35px;
+div.top-branding {
+  line-height: 0;
+  img.tower-header {
+    min-height: 35px;
+  }
+}
+
+div.region-header-prefix {
+  @include float(right);
+}
+
+#block-menu-menu-visitor-menu {
+  ul {
+  text-align: right;
+  margin: 18px 0 0;
+   li {
+    display: inline;
+    font-weight: bolder;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0;
+      &:after {
+        content:'\00a0\00a0|';
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+    }
+    .leaf {
+      padding: 0;
+    }
+    li.last {
+      &:after {
+        content:'';
+      }
+    }
+  }
+    li.last {
+      &:after {
+        content:'';
+      }
+      a {
+        display: inline-table;
+        @include replace-text-with-dimensions("support_us_header.png", 0, 0);
+        position: relative;
+        bottom: 15px;
+      }
+    }
+  }
 }
 
 #name-and-slogan {
-  // @include span-columns(3,12);
   height: 29px;
-  margin-top: -6px;
-  background-color: #cc5500; //Old browsers
-  @include background-image(linear-gradient(top, rgba(231,116,1,1) 4%,rgba(208,93,4,1) 37%,rgba(203,93,7,1) 63%,rgba(184,83,4,1) 83%,rgba(184,83,4,1) 87%,rgba(192,89,3,1) 90%,rgba(213,103,2,1) 100%));
+  background-color: #cc5500; // Old browsers
+  @include filter-gradient(#e77401, #d56702, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #e77401 4%,#d05d04 37%,#cb5d07 63%,#b85304 83%,#b85304 87%,#c05903 90%,#d56702 100%));
   border-top-right-radius: 5px;
   position: relative;
   z-index: 100;
@@ -26,46 +78,5 @@ img.tower-header {
   #site-slogan {
     @include squish-text;
     // @include clearfix;
-  }
-}
-
-#block-menu-menu-visitor-menu {
-  @include float(right);
-  ul.menu {
-    margin: 14px 0px -14px;
-    li {
-      // border-right: black 1px solid;
-        display: inline;
-        a {
-          text-decoration: none;
-          display: inline-block;
-          text-align: right;
-          &:hover,
-          &:focus {
-            text-decoration: underline;
-          }
-        }
-      font-weight: bolder;
-      font-size: 11px;
-      margin: 0;
-        &:after {
-          content:'\00a0\00a0|';
-        }
-      }
-      .leaf {
-        padding: 0;
-      }
-    li.last {
-      &:after {
-        content:'';
-      }
-      a {
-        @include replace-text("support_us_header.png", 0, 0);
-        height: 30px;
-        width: 54px;
-        position: relative;
-        bottom: 10px;
-      }
-    }
   }
 }
