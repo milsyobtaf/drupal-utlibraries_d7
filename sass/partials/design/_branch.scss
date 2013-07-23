@@ -123,6 +123,12 @@ article div.content-group {
         @extend .clean-links;
       }
     }
+    div.view-content div {
+      margin-bottom: .6em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     p {
       margin: 0 0 1em;
     }
