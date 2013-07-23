@@ -59,7 +59,7 @@ h1#page-title {
     }
 }
 
-aside.sidebar-group {
+article.group-nav aside.sidebar {
   @extend .branch-boxes-shadowed;
   margin: 1em;
   ul {
@@ -87,6 +87,9 @@ aside.sidebar-group {
 article div.content-group {
   @include susy-grid-background;
   padding: .5em 1em;
+  .content-suffix {
+    clear: both;
+  }
 }
 
 // Branch Tables (mostly used for sortable views outputs)
