@@ -66,15 +66,23 @@
  * @see template_process()
  */
 ?>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
   <div id="page" role="document">
     <header id="header" role="banner" class="clearfix">
-
-      <?php print render($page['header_prefix']); ?>
-
+    <div class="top-branding">
       <a href="http://www.utexas.edu" title="The University of Texas">
-        <img src="<?php print render($theme_path); ?>/images/tower-header.jpg" alt="The University of Texas" class="tower-header"/></a>
-
-    <hgroup id="name-and-slogan">
+        <img src="<?php print render($theme_path); ?>/images/tower-header.jpg" alt="The University of Texas" class="tower-header"/>
+      </a>
+      <?php print render($page['header_prefix']); ?>
+    </div>
+    <div id="name-and-slogan" class="gradient">
         <h1 id="site-name">
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
         </h1>
@@ -87,7 +95,7 @@
         <h3 id="site-slogan"><?php print $site_slogan; ?></h3>
       <?php endif; ?>
         <img id="site-slogan-image" src="<?php print render($theme_path); ?>/images/slogan.png" />
-    </hgroup><!-- #name-and-slogan -->
+    </div><!-- #name-and-slogan -->
 
       <?php print render($page['header']); ?>
 

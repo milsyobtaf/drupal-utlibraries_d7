@@ -94,7 +94,7 @@
   </header>
 
   <?php if ($region['sidebar_first'] = render($region['sidebar_first'])): ?>
-    <aside class="sidebar-group sidebar-first">
+    <aside class="sidebar sidebar-first">
       <?php print $region['sidebar_first']; ?>
     </aside>
   <?php endif; ?>
@@ -113,7 +113,7 @@
   </div>
 
   <?php if ($region['sidebar_second'] = render($region['sidebar_second'])): ?>
-    <aside class="sidebar-group sidebar-second">
+    <aside class="sidebar sidebar-second">
       <?php print $region['sidebar_second']; ?>
     </aside>
   <?php endif; ?>
