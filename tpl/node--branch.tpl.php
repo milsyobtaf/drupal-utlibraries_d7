@@ -108,8 +108,17 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title">Announcements</h3>
+        <hr>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_2');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_14');
+            print render($block['content']);
+          ?>
+      </div>
+      <div class="frontpage-block">
+        <h3 class="frontpage-block-title">Events</h3>
+        <hr>
+          <?php
+            $block = module_invoke('views', 'block_view', 'branch_views-block_15');
             print render($block['content']);
           ?>
       </div>
@@ -117,8 +126,9 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title">Exhibits</h3>
+        <hr>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_3');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_16');
             print render($block['content']);
           ?>
       </div>
@@ -126,8 +136,9 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title">Featured Collection</h3>
+        <hr>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_4');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_17');
             print render($block['content']);
           ?>
       </div>
