@@ -10,6 +10,7 @@ img.tower-header {
 }
 
 #name-and-slogan {
+  // @include span-columns(3,12);
   height: 29px;
   margin-top: -6px;
   background-color: #cc5500; //Old browsers
@@ -29,18 +30,16 @@ img.tower-header {
 }
 
 #block-menu-menu-visitor-menu {
-@include respond-to('full') {
   @include float(right);
   ul.menu {
-
-    // @include clearfix;
     margin: 14px 0px -14px;
     li {
       // border-right: black 1px solid;
-      display: inline;
-      text-align: left;
+        display: inline;
         a {
           text-decoration: none;
+          display: inline-block;
+          text-align: right;
           &:hover,
           &:focus {
             text-decoration: underline;
@@ -53,16 +52,20 @@ img.tower-header {
           content:'\00a0\00a0|';
         }
       }
+      .leaf {
+        padding: 0;
+      }
     li.last {
-      border: none;
-      @include replace-text-with-dimensions("support_us_header.png", 0, 0);
-      display: inline-block;
-      position: relative;
-      bottom: 10px;
-        &:after {
-          content:'';
-        }
+      &:after {
+        content:'';
+      }
+      a {
+        @include replace-text("support_us_header.png", 0, 0);
+        height: 30px;
+        width: 54px;
+        position: relative;
+        bottom: 10px;
+      }
     }
   }
-}
 }
