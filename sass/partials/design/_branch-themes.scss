@@ -31,8 +31,13 @@
   }
   div.frontpage-column {
     @extend .frontpage-column-thirds;
-    div.view-content {
-      border-top: 1px solid #e1c96b;
+    hr {
+      margin: 1em auto;
+      background-color: #E1C96B;
+      width: 95%;
+      text-align: center;
+      border: 0;
+      height: 1px;
     }
   }
 }
