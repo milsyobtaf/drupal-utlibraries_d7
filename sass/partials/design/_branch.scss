@@ -38,13 +38,13 @@ h1#page-title {
     ul {
       background-color: #cccccc; // Default color
       margin: 0;
-      padding: 5px 5px 3px;
+      padding: 5px 5px;
       text-align: center;
         li {
           margin: 0;
-          padding: 0;
+          padding: 6px 10px;
           a {
-            padding: 6px 10px 5px;
+            // padding: 5px 10px;
             // padding-bottom: 7px;
             text-decoration: none;
           }
@@ -191,8 +191,24 @@ article div.content-group {
   }
 }
 
-// Branch Announcements
-.branch-announcements-all {}
+// Branch News and Featured content
+.branch-news {
+  h3 {
+    line-height: 1.5em;
+    a {
+      @extend .clean-links;
+    }
+  }
+  a.views-more-link {
+    display: block;
+    text-align: right;
+    margin: 1em;
+  }
+  .branch-news-category {
+    font-style: italic;
+    margin: 0 .5em .5em;
+  }
+}
 
 // Branch Contact Info
 .branch-location-block {
