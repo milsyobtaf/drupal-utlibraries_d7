@@ -6,19 +6,19 @@
         background-color: #1b1b1b; // Old browsers
         @include background-image(linear-gradient(top, #1b1b1b 0%,#0e0e0e 4%,#313131 17%,#3f3f3f 26%,#414141 30%,#3d3d3d 39%,#373737 43%,#262626 52%,#1a1a1a 61%,#0f0f0f 74%,#0e0e0e 78%,#090909 83%,#0b0b0b 87%,#000000 96%,#131313 100%));
           li {
+            &:hover,
+            &:focus {
+              background-color: #757a63; // Old browsers
+              @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));
+            }
+            &.active-trail {
+              background-color: #757a63; // Old browsers
+              @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));
+              font-weight: bold;
+            }
             a {
               color: #ffffff;
               text-shadow: 1px 1px 2px $gray-dark;
-              &:hover,
-              &:focus {
-                background-color: #757a63; // Old browsers
-                @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));
-              }
-              &.active-trail {
-                background-color: #757a63; // Old browsers
-                @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));
-                font-weight: bold;
-              }
             }
           }
       }
