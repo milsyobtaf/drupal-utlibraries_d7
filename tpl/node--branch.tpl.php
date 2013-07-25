@@ -147,9 +147,16 @@
         <hr>
         <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Collections</a></p>
       </div>
+      <div class="frontpage-block">
+        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
+          <?php
+            $block = module_invoke('views', 'block_view', 'branch_views-block_2');
+            print render($block['content']);
+          ?>
+      </div>
       </div>
     </div>
   </div>
 </article>
 
-<?php drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.2, { minFontSize: "1em", maxFontSize: "1.1em" } );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)) ?>
+<?php drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)) ?>
