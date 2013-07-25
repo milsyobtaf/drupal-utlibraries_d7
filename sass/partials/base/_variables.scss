@@ -113,14 +113,24 @@ $selection-bg   : $highlight-yellow;
 $selection      : $black;
 
 // Social media icons
-$social-icon-delicious-sm: image-url("social-icons/sm/delicious.png");
 $social-icon-fb-sm: image-url("social-icons/sm/facebook.png");
 $social-icon-flickr-sm: image-url("social-icons/sm/flickr.png");
-$social-icon-ff-sm: image-url("social-icons/sm/friendfeed.png");
 $social-icon-gplus-sm: image-url("social-icons/sm/google-plus.png");
 $social-icon-pinterest-sm: image-url("social-icons/sm/pinterest.png");
 $social-icon-twitter-sm: image-url("social-icons/sm/twitter.png");
 $social-icon-youtube-sm: image-url("social-icons/sm/youtube.png");
+$social-icon-delicious-sm: image-url("social-icons/sm/delicious.png");
+$social-icon-ff-sm: image-url("social-icons/sm/friendfeed.png");
+
+$social-icon-fb-lg: image-url("social-icons/lg/fb.png");
+$social-icon-flickr-lg: image-url("social-icons/lg/flickr.png");
+$social-icon-gplus-lg: image-url("social-icons/lg/gplus.png");
+$social-icon-pinterest-lg: image-url("social-icons/lg/pinterest.png");
+$social-icon-twitter-lg: image-url("social-icons/lg/twttr.png");
+$social-icon-youtube-lg: image-url("social-icons/lg/yt.png");
+$social-icon-instagram-lg: image-url("social-icons/lg/instagram.png");
+$social-icon-rss-lg: image-url("social-icons/lg/rss.png");
+$social-icon-vimeo-lg: image-url("social-icons/lg/vimeo.png");
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 2em;
