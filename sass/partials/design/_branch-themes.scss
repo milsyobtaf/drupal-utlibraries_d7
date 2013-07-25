@@ -32,12 +32,7 @@
   div.frontpage-column {
     @extend .frontpage-column-thirds;
     hr {
-      margin: 1em auto;
       background-color: #E1C96B;
-      width: 95%;
-      text-align: center;
-      border: 0;
-      height: 1px;
     }
   }
 }
