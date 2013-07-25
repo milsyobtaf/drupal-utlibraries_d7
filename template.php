@@ -126,6 +126,11 @@ function utlibraries_d7_preprocess_node(&$vars) {
       $vars['region'][$region_key] = array();
     }
   }
+    if($vars['type'] == 'branch') {
+    // Add js
+    drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/fittext.js');
+      $variables['scripts'] = drupal_get_js();
+  }
 }
 /* // */
 
