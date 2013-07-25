@@ -254,12 +254,12 @@ table {
 }
 
 .clean-links, article.group-nav aside.sidebar ul li a, .frontpage-columns .frontpage-column div.view-content div a,
-.frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column p.more-in-category a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
+.frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column a.views-more-link, .frontpage-columns .frontpage-column p.more-in-category a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-news a.views-more-link, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
   text-decoration: none;
 }
 .clean-links:hover, article.group-nav aside.sidebar ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
-.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
-.frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
+.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column a.views-more-link:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-news a.views-more-link:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
   text-decoration: underline;
 }
 
@@ -829,6 +829,90 @@ article div.content-group .content-suffix {
 .branch-news .branch-news-category {
   font-style: italic;
   margin: 0 0.5em 0.5em;
+}
+
+ul.branch-social-media-accounts-list {
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+}
+ul.branch-social-media-accounts-list li {
+  display: inline;
+  margin: 0;
+}
+ul.branch-social-media-accounts-list li a {
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-fb {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/fb.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-flickr {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/flickr.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-gplus {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/gplus.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-pinterest {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/pinterest.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/twttr.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-yt {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/yt.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-instagram {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/instagram.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list li a.social-media-icon-vimeo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/lg/vimeo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .branch-location-block a {

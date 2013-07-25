@@ -164,6 +164,7 @@ article div.content-group {
       text-align: right;
       margin: -1em 1em 0;
       font-style: italic;
+      @extend .clean-links;
     }
     p.more-in-category {
       margin: 0 .3em;
@@ -228,11 +229,54 @@ article div.content-group {
     text-align: right;
     margin: 1em;
     font-style: italic;
+    @extend .clean-links;
   }
   .branch-news-category {
     font-style: italic;
     margin: 0 .5em .5em;
   }
+}
+
+// Branch Social Media
+ul.branch-social-media-accounts-list {
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+     li {
+      display: inline;
+      margin: 0;
+
+      a {
+        display: inline-block;
+        height: 72px;
+        width: 72px;
+        @include border-radius(2px);
+        &.social-media-icon-fb {
+          @include replace-text($social-icon-fb-lg);
+        }
+        &.social-media-icon-flickr {
+          @include replace-text($social-icon-flickr-lg);
+        }
+        &.social-media-icon-gplus {
+          @include replace-text($social-icon-gplus-lg);
+        }
+        &.social-media-icon-pinterest {
+          @include replace-text($social-icon-pinterest-lg);
+        }
+        &.social-media-icon-twitter {
+          @include replace-text($social-icon-twitter-lg);
+        }
+        &.social-media-icon-yt {
+          @include replace-text($social-icon-youtube-lg);
+        }
+        &.social-media-icon-instagram {
+          @include replace-text($social-icon-instagram-lg);
+        }
+        &.social-media-icon-vimeo {
+          @include replace-text($social-icon-vimeo-lg);
+        }
+      }
+    }
 }
 
 // Branch Contact Info
