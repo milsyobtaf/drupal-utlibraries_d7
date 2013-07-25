@@ -101,6 +101,7 @@
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
+      hide($content['field_url_short_title']);
       print render($content);
     ?>
 
@@ -108,39 +109,43 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Announcements</h3>
-        <hr>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_14');
             print render($block['content']);
           ?>
+        <hr>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements">More Announcements</a></p>
       </div>
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Events</h3>
-        <hr>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_15');
             print render($block['content']);
           ?>
+        <hr>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events">More Events</a></p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Exhibits</h3>
-        <hr>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_16');
             print render($block['content']);
           ?>
+        <hr>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibits">More Exhibits</a></p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Featured Collection</h3>
-        <hr>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_17');
             print render($block['content']);
           ?>
+        <hr>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Collections</a></p>
       </div>
       </div>
     </div>
