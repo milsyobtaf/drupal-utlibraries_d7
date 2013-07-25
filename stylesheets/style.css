@@ -832,7 +832,7 @@ article div.content-group .content-suffix {
 }
 
 ul.branch-social-media-accounts-list {
-  margin: 0;
+  margin: 0 0 -10px;
   text-align: center;
   list-style-type: none;
 }
