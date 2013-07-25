@@ -139,7 +139,7 @@
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Featured Collection</h3>
+        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Featured Collection</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_17');
             print render($block['content']);
@@ -151,3 +151,5 @@
     </div>
   </div>
 </article>
+
+<?php drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.2, { minFontSize: "1em", maxFontSize: "1.1em" } );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)) ?>
