@@ -22,7 +22,9 @@
 }
 
 h1#page-title {
-  @include squish-text;
+  // @include squish-text;
+  margin: 10px 15px 0;
+  color: $black-light;
 }
 
 // Navigation
