@@ -679,6 +679,9 @@ h1#page-title {
 article.group-nav aside.sidebar {
   margin: 1em;
 }
+article.group-nav aside.sidebar.sidebar-second {
+  margin: 1em 1em 0 0;
+}
 article.group-nav aside.sidebar ul {
   padding: 0 1em;
 }
