@@ -62,6 +62,9 @@ h1#page-title {
 article.group-nav aside.sidebar {
   @extend .branch-boxes-shadowed;
   margin: 1em;
+  &.sidebar-second {
+    margin: 1em 1em 0 0;
+  }
   ul {
     padding: 0 1em;
     &.menu {
