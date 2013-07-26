@@ -90,7 +90,7 @@
         <?php print $region['group_nav']; ?>
       </div>
     <?php endif; ?>
-    <?php print render($title_suffix); ?>
+        <?php print render($title_suffix); ?>
   </header>
 
   <?php if ($region['sidebar_first'] = render($region['sidebar_first'])): ?>
@@ -100,6 +100,7 @@
   <?php endif; ?>
 
   <div class="content content-group"<?php print $content_attributes; ?>>
+    <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
