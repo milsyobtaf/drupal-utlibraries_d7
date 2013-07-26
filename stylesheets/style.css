@@ -647,9 +647,8 @@ div.breadcrumb a:hover, div.breadcrumb a:focus {
 }
 
 h1#page-title {
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
+  margin: 10px 15px 0;
+  color: #333333;
 }
 
 .group-nav .branch-header-image {
