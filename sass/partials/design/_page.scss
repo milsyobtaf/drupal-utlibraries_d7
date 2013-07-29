@@ -18,6 +18,9 @@ article {
     @include span-columns(7,11);
     @include pre(0);
   }
+  &.node-branch-news-and-featured-content div.content-group {
+    @include span-columns(7,11);
+  }
   aside.sidebar-first {
     @include span-columns(2 alpha,12);
   }
