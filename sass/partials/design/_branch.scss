@@ -181,13 +181,16 @@ article div.content-group {
   }
 }
 
-.node-type-branch-exhibits article,
-.node-type-branch-digital-collection article {
-  padding: 0 1em;
-    .field-name-field-exhibit-promo-img img,
-    .field-name-field-collection-promo-img img {
-      @include float(left);
-      margin: 0 1.5em .5em 0;
+.node-branch-news-and-featured-content {
+    div.field-name-field-branch-event-date {
+      font-weight: bold;
+      padding: 1em 0;
+      margin-top: -1em;
+      // color: $gray-dark;
+    }
+    .field-name-field-branch-content-image img {
+      @include float(right);
+      margin: 0 0 .5em 1.5em;
     }
 }
 

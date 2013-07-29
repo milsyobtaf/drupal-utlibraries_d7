@@ -402,6 +402,11 @@ article.sidebar-second div.content-group {
   margin-right: 1.85185%;
   margin-left: 0%;
 }
+article.node-branch-news-and-featured-content div.content-group {
+  width: 62.96296%;
+  float: left;
+  margin-right: 1.85185%;
+}
 article aside.sidebar-first {
   width: 15.25424%;
   float: left;
@@ -783,17 +788,15 @@ article div.content-group .content-suffix {
   font-weight: bold;
 }
 
-.node-type-branch-exhibits article,
-.node-type-branch-digital-collection article {
-  padding: 0 1em;
+.node-branch-news-and-featured-content div.field-name-field-branch-event-date {
+  font-weight: bold;
+  padding: 1em 0;
+  margin-top: -1em;
 }
-.node-type-branch-exhibits article .field-name-field-exhibit-promo-img img,
-.node-type-branch-exhibits article .field-name-field-collection-promo-img img,
-.node-type-branch-digital-collection article .field-name-field-exhibit-promo-img img,
-.node-type-branch-digital-collection article .field-name-field-collection-promo-img img {
+.node-branch-news-and-featured-content .field-name-field-branch-content-image img {
   display: inline;
-  float: left;
-  margin: 0 1.5em 0.5em 0;
+  float: right;
+  margin: 0 0 0.5em 1.5em;
 }
 
 .branch-faq h4 {
