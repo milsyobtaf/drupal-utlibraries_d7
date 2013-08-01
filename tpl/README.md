@@ -1,3 +1,5 @@
-# Drupal Custom Template Folder
+# Branch front page templates
 
-Put any templates to override the Aurora templates in this folder.
+node--branch.tpl.php    -- Default template
+node--2.tpl.php         -- Benson Latin American Center
+node--181.tpl.php       -- Fine Arts Library
