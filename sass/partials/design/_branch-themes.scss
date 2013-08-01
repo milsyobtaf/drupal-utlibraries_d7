@@ -39,7 +39,6 @@ $experimental-support-for-svg: true;
   }
 }
 
-
 // Fine Arts Library Colors
 .og-context-node-181 {
   .group-nav-menu {
@@ -64,9 +63,10 @@ $experimental-support-for-svg: true;
     }
   }
   h3.frontpage-block-title {
-    color: #80a8b9;
+    // color: #80a8b9;
+    color: #ffffff;
+    font-weight: bold;
     text-shadow: 1px 1px 1px #000000;
-    text-transform: capitalize;
     background-color: #5e2e68; // Old browsers
     @include filter-gradient(#5e2e68, #5e2e69, vertical); // IE6-8
     @include background-image(linear-gradient(top,  #5e2e68 0%,#733a7f 13%,#773d84 17%,#7f408c 28%,#813f8f 35%,#7d3b8b 60%,#71357e 79%,#5e2e69 100%));
