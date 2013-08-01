@@ -683,9 +683,7 @@ h1#page-title {
 .group-nav-menu ul li.active-trail ul.menu {
   display: none;
 }
-.group-nav-menu ul li li.expanded,
-.group-nav-menu ul li li.collapsed,
-.group-nav-menu ul li li.leaf {
+.group-nav-menu ul li.active-trail.expanded, .group-nav-menu ul li.active-trail.collapsed, .group-nav-menu ul li.active-trail.leaf {
   padding: 0;
 }
 .group-nav-menu ul li a {
