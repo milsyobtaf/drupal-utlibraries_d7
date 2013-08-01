@@ -10,9 +10,9 @@ $experimental-support-for-svg: true;
         @include filter-gradient(#1b1b1b, #131313, vertical); // IE6-8
         @include background-image(linear-gradient(top,  #1b1b1b 0%,#0e0e0e 4%,#313131 17%,#3f3f3f 26%,#414141 30%,#3d3d3d 39%,#373737 43%,#262626 52%,#1a1a1a 61%,#0f0f0f 74%,#0e0e0e 78%,#090909 83%,#0b0b0b 87%,#000000 96%,#131313 100%));
           li {
-            &:hover,
-            &:focus,
-            &.active-trail {
+            &:hover a,
+            &:focus a,
+            &.active-trail a {
               background-color: #757a63; // Old browsers
               @include filter-gradient(#757a63, #53564f, vertical); // IE6-8
               @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));            }
@@ -42,17 +42,19 @@ $experimental-support-for-svg: true;
 // Fine Arts Library Colors
 .og-context-node-181 {
   .group-nav-menu {
+    margin: 10px 10px 0;
     ul {
       background-color: #ffffff; // Old browsers
       @include filter-gradient(#ffffff, #f7f7f7, vertical); // IE6-8
-      @include background-image(linear-gradient(top,  #ffffff 0%,#ccc6c6 4%,#6f6f6f 7%,#747474 89%,#ccc6c6 93%,#e8e8e8 96%,#f7f7f7 100%));
+      @include background-image(linear-gradient(top,  #ffffff 0%,#ccc6c6 2%,#6f6f6f 7%,#747474 95%,#f7f7f7 100%));
       li {
-        &:hover,
-        &:focus,
-        &.active-trail {
+        color: #ffffff;
+        &:hover a,
+        &:focus a,
+        &.active-trail a {
           text-decoration: underline;
         }
-        &.active-trail {
+        &.active-trail a {
           font-weight: bolder;
         }
         a {
