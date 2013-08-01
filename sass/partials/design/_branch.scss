@@ -16,6 +16,14 @@
   }
 }
 
+// Extend for making four columns on front page of branches
+.frontpage-column-fourths {
+  @include span-columns(3,12);
+  .last-col {
+    @include span-columns(3 omega, 12);
+  }
+}
+
 // Hack to remove the organic group tabs for anonymous users
 .not-logged-in div.tabs {
   display: none;
@@ -37,6 +45,7 @@ h1#page-title {
 }
 
 .group-nav-menu {
+  font-family: $verdana;
     ul {
       background-color: #cccccc; // Default color
       margin: 0;
@@ -45,18 +54,17 @@ h1#page-title {
         li {
           margin: 0;
           padding: 6px 10px;
+          &.active-trail {
+          font-weight: bold;
+            ul.menu {
+              display: none;
+          }
+        }
           a {
-            // padding: 5px 10px;
-            // padding-bottom: 7px;
             text-decoration: none;
           }
           height: 100%;
           display: inline;
-        }
-        li.active-trail {
-            ul.menu {
-              display: none;
-            }
         }
     }
 }
