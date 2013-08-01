@@ -11,17 +11,12 @@
 .frontpage-column-thirds {
   @include span-columns(3.5,12);
   @include squish(.4);
-  .last-col {
-    @include span-columns(3.5 omega, 12);
-  }
 }
 
 // Extend for making four columns on front page of branches
 .frontpage-column-fourths {
-  @include span-columns(3,12);
-  .last-col {
-    @include span-columns(3 omega, 12);
-  }
+  @include span-columns(2.7, 12);
+  @include squish(.2);
 }
 
 // Hack to remove the organic group tabs for anonymous users
