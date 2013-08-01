@@ -683,6 +683,11 @@ h1#page-title {
 .group-nav-menu ul li.active-trail ul.menu {
   display: none;
 }
+.group-nav-menu ul li li.expanded,
+.group-nav-menu ul li li.collapsed,
+.group-nav-menu ul li li.leaf {
+  padding: 0;
+}
 .group-nav-menu ul li a {
   text-decoration: none;
   padding: 6px 10px 7px;
