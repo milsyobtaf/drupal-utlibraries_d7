@@ -674,7 +674,6 @@ h1#page-title {
 }
 .group-nav-menu ul li {
   margin: 0;
-  padding: 6px 10px;
   height: 100%;
   display: inline;
 }
@@ -686,6 +685,7 @@ h1#page-title {
 }
 .group-nav-menu ul li a {
   text-decoration: none;
+  padding: 6px 10px 7px;
 }
 
 article.group-nav aside.sidebar {
@@ -999,7 +999,7 @@ div.branch-staff-list table td span {
   background-image: -o-linear-gradient(top, #1b1b1b 0%, #0e0e0e 4%, #313131 17%, #3f3f3f 26%, #414141 30%, #3d3d3d 39%, #373737 43%, #262626 52%, #1a1a1a 61%, #0f0f0f 74%, #0e0e0e 78%, #090909 83%, #0b0b0b 87%, #000000 96%, #131313 100%);
   background-image: linear-gradient(top, #1b1b1b 0%, #0e0e0e 4%, #313131 17%, #3f3f3f 26%, #414141 30%, #3d3d3d 39%, #373737 43%, #262626 52%, #1a1a1a 61%, #0f0f0f 74%, #0e0e0e 78%, #090909 83%, #0b0b0b 87%, #000000 96%, #131313 100%);
 }
-.og-context-node-2 .group-nav-menu ul li:hover, .og-context-node-2 .group-nav-menu ul li:focus, .og-context-node-2 .group-nav-menu ul li.active-trail {
+.og-context-node-2 .group-nav-menu ul li:hover a, .og-context-node-2 .group-nav-menu ul li:focus a, .og-context-node-2 .group-nav-menu ul li.active-trail a {
   background-color: #757a63;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF757A63', endColorstr='#FF53564F');
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc1N2E2MyIvPjxzdG9wIG9mZnNldD0iNCUiIHN0b3AtY29sb3I9IiM3NzdjNjUiLz48c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iIzk3OWQ4MSIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjOTY5Zjg0Ii8+PHN0b3Agb2Zmc2V0PSI0MyUiIHN0b3AtY29sb3I9IiM5Y2E1OGEiLz48c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzljYTU4YSIvPjxzdG9wIG9mZnNldD0iNTclIiBzdG9wLWNvbG9yPSIjOWFhMzg4Ii8+PHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM4Zjk4N2QiLz48c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iIzhmOTU3OSIvPjxzdG9wIG9mZnNldD0iNzQlIiBzdG9wLWNvbG9yPSIjOGE4Zjc4Ii8+PHN0b3Agb2Zmc2V0PSI3OCUiIHN0b3AtY29sb3I9IiM4MDg1NmYiLz48c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzdkODM2OSIvPjxzdG9wIG9mZnNldD0iODclIiBzdG9wLWNvbG9yPSIjNzQ3YjVjIi8+PHN0b3Agb2Zmc2V0PSI5MSUiIHN0b3AtY29sb3I9IiM2NDZhNGUiLz48c3RvcCBvZmZzZXQ9Ijk2JSIgc3RvcC1jb2xvcj0iIzVhNWU0ZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUzNTY0ZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -1032,21 +1032,27 @@ div.branch-staff-list table td span {
   background-color: #E1C96B;
 }
 
+.og-context-node-181 .group-nav-menu {
+  margin: 10px 10px 0;
+}
 .og-context-node-181 .group-nav-menu ul {
   background-color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF7F7F7');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNCUiIHN0b3AtY29sb3I9IiNjY2M2YzYiLz48c3RvcCBvZmZzZXQ9IjclIiBzdG9wLWNvbG9yPSIjNmY2ZjZmIi8+PHN0b3Agb2Zmc2V0PSI4OSUiIHN0b3AtY29sb3I9IiM3NDc0NzQiLz48c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iI2NjYzZjNiIvPjxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjZThlOGU4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjdmN2Y3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMiUiIHN0b3AtY29sb3I9IiNjY2M2YzYiLz48c3RvcCBvZmZzZXQ9IjclIiBzdG9wLWNvbG9yPSIjNmY2ZjZmIi8+PHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM3NDc0NzQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(4%, #ccc6c6), color-stop(7%, #6f6f6f), color-stop(89%, #747474), color-stop(93%, #ccc6c6), color-stop(96%, #e8e8e8), color-stop(100%, #f7f7f7));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ccc6c6 4%, #6f6f6f 7%, #747474 89%, #ccc6c6 93%, #e8e8e8 96%, #f7f7f7 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ccc6c6 4%, #6f6f6f 7%, #747474 89%, #ccc6c6 93%, #e8e8e8 96%, #f7f7f7 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #ccc6c6 4%, #6f6f6f 7%, #747474 89%, #ccc6c6 93%, #e8e8e8 96%, #f7f7f7 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ccc6c6 4%, #6f6f6f 7%, #747474 89%, #ccc6c6 93%, #e8e8e8 96%, #f7f7f7 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #ccc6c6), color-stop(7%, #6f6f6f), color-stop(95%, #747474), color-stop(100%, #f7f7f7));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
 }
-.og-context-node-181 .group-nav-menu ul li:hover, .og-context-node-181 .group-nav-menu ul li:focus, .og-context-node-181 .group-nav-menu ul li.active-trail {
+.og-context-node-181 .group-nav-menu ul li {
+  color: #ffffff;
+}
+.og-context-node-181 .group-nav-menu ul li:hover a, .og-context-node-181 .group-nav-menu ul li:focus a, .og-context-node-181 .group-nav-menu ul li.active-trail a {
   text-decoration: underline;
 }
-.og-context-node-181 .group-nav-menu ul li.active-trail {
+.og-context-node-181 .group-nav-menu ul li.active-trail a {
   font-weight: bolder;
 }
 .og-context-node-181 .group-nav-menu ul li a {
