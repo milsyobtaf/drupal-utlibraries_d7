@@ -53,11 +53,11 @@ h1#page-title {
             ul.menu {
               display: none;
           }
-        }
-        li.expanded,
-        li.collapsed,
-        li.leaf {
+          &.expanded,
+          &.collapsed,
+          &.leaf {
           padding: 0;
+          }
         }
           a {
             text-decoration: none;
