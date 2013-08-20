@@ -81,3 +81,41 @@ $experimental-support-for-svg: true;
     }
   }
 }
+
+// Life Science Colors
+.og-context-node-236 {
+  .group-nav-menu {
+      ul {
+        // background-color: #1b1b1b; // Old browsers
+        // @include filter-gradient(#1b1b1b, #131313, vertical); // IE6-8
+        // @include background-image(linear-gradient(top,  #1b1b1b 0%,#0e0e0e 4%,#313131 17%,#3f3f3f 26%,#414141 30%,#3d3d3d 39%,#373737 43%,#262626 52%,#1a1a1a 61%,#0f0f0f 74%,#0e0e0e 78%,#090909 83%,#0b0b0b 87%,#000000 96%,#131313 100%));
+          li {
+            &:hover a,
+            &:focus a,
+            &.active-trail a {
+              // background-color: #757a63; // Old browsers
+              // @include filter-gradient(#757a63, #53564f, vertical); // IE6-8
+              // @include background-image(linear-gradient(top, #757a63 0%,#777c65 4%,#979d81 30%,#969f84 35%,#9ca58a 43%,#9ca58a 52%,#9aa388 57%,#8f987d 65%,#8f9579 70%,#8a8f78 74%,#80856f 78%,#7d8369 83%,#747b5c 87%,#646a4e 91%,#5a5e4d 96%,#53564f 100%));
+            }
+            a {
+              color: #ffffff;
+              text-shadow: 1px 1px 2px $gray-dark;
+            }
+          }
+      }
+  }
+  h3.frontpage-block-title {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    // background-color: #6f7454; // Old browsers
+    // @include filter-gradient(#6f7454, #73735b, vertical); // IE6-8
+    // @include background-image(linear-gradient(top,  #6f7454 0%,#7c7c5a 5%,#888564 7%,#938f6a 11%,#9d9b74 14%,#9d9b72 16%,#a19f76 18%,#a8a77b 30%,#a7a678 36%,#a7a67a 45%,#9b9771 70%,#95916e 77%,#8b8764 82%,#868161 86%,#807b5b 89%,#807a64 91%,#787554 93%,#757553 95%,#73735b 98%,#73735b 100%));
+  }
+  div.frontpage-column {
+    @extend .frontpage-column-thirds;
+    hr {
+      // color: #E1C96B;
+      // background-color: #E1C96B;
+    }
+  }
+}
