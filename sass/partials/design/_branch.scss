@@ -26,7 +26,7 @@
 
 h1#page-title {
   // @include squish-text;
-  margin: 10px 0 0;
+  margin: 10px 0;
   color: $black-light;
 }
 
@@ -153,7 +153,6 @@ article div.content-group {
       background-color: #cccccc; // Default color
       font-size: 2em;
       line-height: 2em;
-      // word-break: break-all;
       margin: 0;
       padding: 0 1em;
       @include border-radius(2px);
@@ -193,8 +192,7 @@ article div.content-group {
     div.field-name-field-branch-event-date {
       font-weight: bold;
       padding: 1em 0;
-      margin-top: -1em;
-      // color: $gray-dark;
+      margin-top: -1.5em;
     }
     .field-name-field-branch-content-image img {
       @include float(right);
