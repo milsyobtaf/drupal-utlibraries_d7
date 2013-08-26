@@ -847,16 +847,16 @@ article div.content-group .content-suffix {
   margin: 0 0.5em 0.5em;
 }
 
-ul.branch-social-media-accounts-list {
+ul.branch-social-media-accounts-list-lg {
   margin: 0 0 -10px;
   text-align: center;
   list-style-type: none;
 }
-ul.branch-social-media-accounts-list li {
+ul.branch-social-media-accounts-list-lg li {
   display: inline;
   margin: 0;
 }
-ul.branch-social-media-accounts-list li a {
+ul.branch-social-media-accounts-list-lg li a {
   display: inline-block;
   height: 72px;
   width: 72px;
@@ -866,7 +866,7 @@ ul.branch-social-media-accounts-list li a {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-fb {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-fb {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -874,7 +874,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-fb {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-flickr {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-flickr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -882,7 +882,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-flickr {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-gplus {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-gplus {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -890,7 +890,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-gplus {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-pinterest {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-pinterest {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -898,7 +898,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-pinterest {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-twitter {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-twitter {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -906,7 +906,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-twitter {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-yt {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-yt {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -914,7 +914,7 @@ ul.branch-social-media-accounts-list li a.social-media-icon-yt {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-instagram {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-instagram {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -922,11 +922,79 @@ ul.branch-social-media-accounts-list li a.social-media-icon-instagram {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-ul.branch-social-media-accounts-list li a.social-media-icon-vimeo {
+ul.branch-social-media-accounts-list-lg li a.social-media-icon-vimeo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   background-image: url('../images/social-icons/lg/vimeo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+ul.branch-social-media-accounts-list-sm {
+  margin: 0 0 -10px;
+  text-align: center;
+  list-style-type: none;
+}
+ul.branch-social-media-accounts-list-sm li {
+  display: inline;
+  margin: 0;
+}
+ul.branch-social-media-accounts-list-sm li a {
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-fb {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/facebook.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-flickr {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/flickr.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-gplus {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/google-plus.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-pinterest {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/pinterest.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ul.branch-social-media-accounts-list-sm li a.social-media-icon-yt {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/social-icons/sm/youtube.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

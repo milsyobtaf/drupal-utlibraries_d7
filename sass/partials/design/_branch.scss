@@ -252,7 +252,8 @@ article div.content-group {
 }
 
 // Branch Social Media
-ul.branch-social-media-accounts-list {
+// For branches that use large social media icons
+ul.branch-social-media-accounts-list-lg {
     margin: 0 0 -10px;
     text-align: center;
     list-style-type: none;
@@ -289,6 +290,49 @@ ul.branch-social-media-accounts-list {
         &.social-media-icon-vimeo {
           @include replace-text($social-icon-vimeo-lg);
         }
+      }
+    }
+}
+// For branches that use small social media icons
+ul.branch-social-media-accounts-list-sm {
+    margin: 0 0 -10px;
+    text-align: center;
+    list-style-type: none;
+     li {
+      display: inline;
+      margin: 0;
+
+      a {
+        display: inline-block;
+        height: 72px;
+        width: 72px;
+        @include border-radius(2px);
+        &.social-media-icon-fb {
+          @include replace-text($social-icon-fb-sm);
+        }
+        &.social-media-icon-flickr {
+          @include replace-text($social-icon-flickr-sm);
+        }
+        &.social-media-icon-gplus {
+          @include replace-text($social-icon-gplus-sm);
+        }
+        &.social-media-icon-pinterest {
+          @include replace-text($social-icon-pinterest-sm);
+        }
+        &.social-media-icon-twitter {
+          @include replace-text($social-icon-twitter-sm);
+        }
+        &.social-media-icon-yt {
+          @include replace-text($social-icon-youtube-sm);
+        }
+        // Currently no small instagram icon
+        // &.social-media-icon-instagram {
+        //   @include replace-text($social-icon-instagram-sm);
+        // }
+        // Currently no small vimeo icon
+        // &.social-media-icon-vimeo {
+        //   @include replace-text($social-icon-vimeo-sm);
+        // }
       }
     }
 }
