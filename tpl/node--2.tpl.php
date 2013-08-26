@@ -142,13 +142,6 @@
         <hr>
         <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Collections</a></p>
       </div>
-      <div class="frontpage-block">
-        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_2');
-            print render($block['content']);
-          ?>
-      </div>
       </div>
     </div>
   </div>
