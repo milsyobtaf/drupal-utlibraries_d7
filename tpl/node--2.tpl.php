@@ -108,22 +108,17 @@
     <div class="frontpage-columns">
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Announcements</h3>
+        <h3 class="frontpage-block-title gradient">News and Events</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_14');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_21');
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements">More Announcements</a></p>
-      </div>
-      <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Events</h3>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/">More News and Events</a></p>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_15');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_22');
             print render($block['content']);
-          ?>
-        <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events">More Events</a></p>
+          ?>        
       </div>
       </div>
       <div class="frontpage-column">
