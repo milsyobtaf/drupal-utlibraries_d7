@@ -114,7 +114,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/">More News and Events</a></p>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news-and-events/">More News and Events</a></p>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_22');
             print render($block['content']);
