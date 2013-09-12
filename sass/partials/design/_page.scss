@@ -59,5 +59,14 @@ article {
         margin: 8px;
       }
   }
+  div.caption {
+    background-color: $gray-highlight;
+    padding: 5px;
+    @include border-radius(2px);
+    p {
+      font-size: .8em;
+      line-height: 1.2em;
+    }
+  }
 
 }
