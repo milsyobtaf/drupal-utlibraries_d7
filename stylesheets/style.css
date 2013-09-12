@@ -446,6 +446,9 @@ article p {
 article p img {
   margin: 8px;
 }
+article p img.caption {
+  margin: 0 0 8px;
+}
 article div.caption {
   background-color: #ececec;
   padding: 5px;
@@ -454,6 +457,12 @@ article div.caption {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
+}
+article div.caption.left {
+  margin: 5px 10px 5px 5px;
+}
+article div.caption.right {
+  margin: 5px 5px 5px 10px;
 }
 article div.caption p {
   font-size: .8em;

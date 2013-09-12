@@ -57,12 +57,21 @@ article {
     margin: .5em 0;
       img {
         margin: 8px;
+          &.caption {
+            margin: 0 0 8px;
+          }
       }
   }
   div.caption {
     background-color: $gray-highlight;
     padding: 5px;
     @include border-radius(2px);
+      &.left {
+        margin: 5px 10px 5px 5px;
+      }
+      &.right {
+       margin: 5px 5px 5px 10px;
+      }
     p {
       font-size: .8em;
       line-height: 1.2em;
