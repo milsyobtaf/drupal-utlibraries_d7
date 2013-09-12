@@ -4,7 +4,7 @@
 .branch-boxes-shadowed {
   border: 1px solid $gray-light;
   box-shadow: 1px 1px 5px 1px $gray-light;
-  border-radius: 2px;
+  @include border-radius(2px);
 }
 
 // Extend for making three columns on front page of branches

@@ -446,6 +446,19 @@ article p {
 article p img {
   margin: 8px;
 }
+article div.caption {
+  background-color: #ececec;
+  padding: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+article div.caption p {
+  font-size: .8em;
+  line-height: 1.2em;
+}
 
 header a,
 #header a {
@@ -632,6 +645,10 @@ div.breadcrumb a:hover, div.breadcrumb a:focus {
 .branch-boxes-shadowed, article.group-nav aside.sidebar, .frontpage-columns .frontpage-column .frontpage-block, .branch-googlemap-block iframe {
   border: 1px solid #cccccc;
   box-shadow: 1px 1px 5px 1px #cccccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
 }
 
