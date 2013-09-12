@@ -123,9 +123,9 @@
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Exhibits</h3>
+        <h3 class="frontpage-block-title gradient">Exhibitions</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_16');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_23');
             print render($block['content']);
           ?>
         <hr>
@@ -136,7 +136,7 @@
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Featured Collection</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_17');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_24');
             print render($block['content']);
           ?>
         <hr>
