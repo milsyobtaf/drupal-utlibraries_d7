@@ -108,44 +108,15 @@
     <div class="frontpage-columns">
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Announcements</h3>
+        <h3 class="frontpage-block-title gradient">Featured</h3>
+        <div class="view-content"><!-- This div, and the next one, are wholly superfluous, but necessary to style this block content without a lot of heartache -->
+          <div>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_14');
+            $block = module_invoke('block', 'block_view', '2');
             print render($block['content']);
           ?>
-        <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements">More Announcements</a></p>
-      </div>
-      <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Events</h3>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_15');
-            print render($block['content']);
-          ?>
-        <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events">More Events</a></p>
-      </div>
-      </div>
-      <div class="frontpage-column">
-      <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Exhibits</h3>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_16');
-            print render($block['content']);
-          ?>
-        <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibits">More Exhibits</a></p>
-      </div>
-      </div>
-      <div class="frontpage-column">
-      <div class="frontpage-block">
-        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Featured Collection</h3>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_17');
-            print render($block['content']);
-          ?>
-        <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Collections</a></p>
+          </div>
+        </div>
       </div>
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
@@ -153,6 +124,27 @@
             $block = module_invoke('views', 'block_view', 'branch_views-block_2');
             print render($block['content']);
           ?>
+      </div>
+      </div>
+      <div class="frontpage-column">
+      <div class="frontpage-block">
+        <h3 class="frontpage-block-title gradient">Subjects</h3>
+        <ul>
+          <li>Biology</li>
+          <li>Medicine</li>
+          <li>Nutrition</li>
+          <li>Pharmacy</li>
+        </ul>          
+      </div>      </div>
+      <div class="frontpage-column">
+      <div class="frontpage-block">
+        <h3 class="frontpage-block-title gradient">News and Events</h3>
+          <?php
+            $block = module_invoke('views', 'block_view', 'branch_views-block_21');
+            print render($block['content']);
+          ?>
+        <hr>
+        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news-and-events/">More News and Events</a></p>
       </div>
       </div>
     </div>
