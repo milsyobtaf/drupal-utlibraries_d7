@@ -2,7 +2,7 @@
 <h2>User Login</h2>
 <div class="user-login-box-shibboleth">
   <p class="user-login-button-shibboleth">
-    <a href="https://cms-d7.lib.utexas.edu/Shibboleth.sso/Login?target=https%3A%2F%2Fcms-d7.lib.utexas.edu%2F%3Fq%3Dshib_login%2Fuser">Login Using Your UT EID</a>
+    <a href="https://cms-d7.lib.utexas.edu/Shibboleth.sso/Login?target=https%3A%2F%2Fcms-d7.lib.utexas.edu%2Fd7%2F%3Fq%3Dshib_login%2Fuser">Login Using Your UT EID</a>
   </p>
 </div>
 
