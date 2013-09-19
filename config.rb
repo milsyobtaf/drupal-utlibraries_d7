@@ -2,7 +2,7 @@
 require 'aurora'
 
 # Set this to the root of your project when deployed:
-http_path = "/sites/all/themes/utlibraries_d7"
+http_path = "/d7/sites/all/themes/utlibraries_d7"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"
