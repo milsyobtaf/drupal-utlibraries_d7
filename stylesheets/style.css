@@ -685,9 +685,52 @@ h1#page-title {
   color: #333333;
 }
 
-.group-nav .branch-header-image {
+div.group-nav .branch-header-image-container {
+  position: relative;
+}
+div.group-nav .branch-header-image {
   line-height: 0;
   text-align: center;
+}
+div.group-nav .branch-header-image-attribution {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  line-height: 1em;
+  overflow: hidden;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+div.group-nav .branch-header-image-attribution a:before {
+  content: '\00ab';
+  color: white;
+  font-size: 1.5em;
+}
+div.group-nav .branch-header-image-attribution a {
+  color: #333333;
+  text-decoration: none;
+}
+div.group-nav .branch-header-image-attribution:hover, div.group-nav .branch-header-image-attribution:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  width: auto;
+  padding: 5px 10px;
+}
+div.group-nav .branch-header-image-attribution:hover a, div.group-nav .branch-header-image-attribution:focus a {
+  color: white;
+}
+div.group-nav .branch-header-image-attribution:hover a:before, div.group-nav .branch-header-image-attribution:focus a:before {
+  content: '';
+}
+div.group-nav .branch-header-image-attribution:hover a:hover, div.group-nav .branch-header-image-attribution:hover a:focus, div.group-nav .branch-header-image-attribution:focus a:hover, div.group-nav .branch-header-image-attribution:focus a:focus {
+  text-decoration: underline;
 }
 
 .group-nav-menu {
