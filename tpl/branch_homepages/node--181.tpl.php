@@ -114,7 +114,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements">More Recent Arrivals</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements" alt="More Recent Arrivals">More Recent Arrivals</a></p>
       </div>
       </div>
       <div class="frontpage-column">
@@ -125,14 +125,14 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events">More Events</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events" alt="More Events">More Events</a></p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Rotating Features</h3>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Features</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections" alt="More Features">More Features</a></p>
       </div>
       </div>
       <div class="frontpage-column">
@@ -147,5 +147,3 @@
     </div>
   </div>
 </article>
-
-<?php drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)) ?>

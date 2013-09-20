@@ -114,7 +114,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements">More Announcements</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements" alt="More Announcements">More Announcements</a></p>
       </div>
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Events</h3>
@@ -123,7 +123,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events">More Events</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events" alt="More Events">More Events</a></p>
       </div>
       </div>
       <div class="frontpage-column">
@@ -134,7 +134,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibits">More Exhibits</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibits" alt="More Exhibits">More Exhibits</a></p>
       </div>
       </div>
       <div class="frontpage-column">
@@ -145,7 +145,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections">More Collections</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections" alt="More Collections">More Collections</a></p>
       </div>
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
@@ -158,5 +158,3 @@
     </div>
   </div>
 </article>
-
-<?php drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)) ?>
