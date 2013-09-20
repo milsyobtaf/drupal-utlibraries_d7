@@ -61,6 +61,9 @@ function utlibraries_d7_preprocess_html(&$vars) {
 /* -- Delete this line if you want to use this function */
 function utlibraries_d7_preprocess_page(&$vars) {
   $vars['theme_path'] = '/d7/' . drupal_get_path('theme', variable_get('theme_default', NULL));
+  if (isset($vars['node']) && $vars['node']->type == 'branch') {
+    drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+    }
 }
 /**
  * Override or insert variables into the region templates.
