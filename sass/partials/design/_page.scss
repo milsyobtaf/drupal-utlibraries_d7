@@ -55,7 +55,6 @@ article {
   }
   p {
     margin: .5em 0;
-    clear: both;
       img {
         margin: 8px;
           &.caption {
@@ -63,20 +62,19 @@ article {
           }
       }
   }
-  div.caption {
-    background-color: $gray-highlight;
-    padding: 5px;
-    @include border-radius(2px);
-      &.left {
-        margin: 5px 10px 5px 5px;
-      }
-      &.right {
-       margin: 5px 5px 5px 10px;
-      }
-    p {
-      font-size: .8em;
-      line-height: 1.2em;
+}
+div.caption {
+  background-color: $gray-highlight;
+  padding: 5px;
+  @include border-radius(2px);
+    &.left {
+      margin: 5px 10px 5px 5px;
     }
+    &.right {
+     margin: 5px 5px 5px 10px;
+    }
+  p {
+    font-size: .8em;
+    line-height: 1.2em;
   }
-
 }
