@@ -771,6 +771,9 @@ article.group-nav aside.sidebar ul {
   padding: 0 1em;
 }
 article.group-nav aside.sidebar ul.menu li {
+  margin: 0 0 0.4em 0;
+}
+article.group-nav aside.sidebar ul.menu li.last {
   margin: 0;
 }
 article.group-nav aside.sidebar ul li {
