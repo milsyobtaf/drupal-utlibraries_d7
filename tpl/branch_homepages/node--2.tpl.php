@@ -140,7 +140,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections" alt="More Featured Collections">More Featured Collections</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/featured-collections" alt="More Featured Collections">More Featured Collections</a></p>
       </div>
       </div>
     </div>
