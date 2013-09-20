@@ -129,12 +129,12 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibits" alt="More Exhibits">More Exhibits</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/exhibitions" alt="More Exhibitions">More Exhibitions</a></p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Featured Collection</h3>
+        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Featured Collections</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_24');
             print render($block['content']);
