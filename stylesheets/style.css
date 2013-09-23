@@ -253,12 +253,12 @@ table {
   clear: both;
 }
 
-.clean-links, article.group-nav aside.sidebar ul li a, .frontpage-columns .frontpage-column div.view-content div a,
+.clean-links, article.group-nav aside.sidebar h2 a, article.group-nav aside.sidebar ul li a, .frontpage-columns .frontpage-column div.view-content div a,
 .frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column a.views-more-link, .frontpage-columns .frontpage-column p.more-in-category a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-news a.views-more-link, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
   text-decoration: none;
 }
-.clean-links:hover, article.group-nav aside.sidebar ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
-.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.clean-links:hover, article.group-nav aside.sidebar h2 a:hover, article.group-nav aside.sidebar ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
+.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar h2 a:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
 .frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column a.views-more-link:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-news a.views-more-link:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
   text-decoration: underline;
 }
@@ -644,6 +644,9 @@ div.breadcrumb {
   margin-bottom: 2px;
   padding: 4px 6px 3px 8px;
 }
+div.breadcrumb span.last {
+  font-weight: bolder;
+}
 div.breadcrumb a {
   text-decoration: none;
   color: black;
@@ -767,8 +770,17 @@ article.group-nav aside.sidebar {
 article.group-nav aside.sidebar.sidebar-second {
   margin: 1em 1em 0 0;
 }
-article.group-nav aside.sidebar ul {
+article.group-nav aside.sidebar h2 {
+  font-size: 1.2em;
   padding: 0 1em;
+  margin-top: .5em;
+}
+article.group-nav aside.sidebar h2 a {
+  color: #333333;
+}
+article.group-nav aside.sidebar ul {
+  padding: 0 1em 0 2em;
+  margin-top: 0;
 }
 article.group-nav aside.sidebar ul.menu li {
   margin: 0 0 0.4em 0;
