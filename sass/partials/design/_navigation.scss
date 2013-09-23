@@ -98,6 +98,9 @@ div.breadcrumb {
   border-top: 2px solid $white;
   margin-bottom: 2px;
   padding: 4px 6px 3px 8px;
+  span.last {
+    font-weight: bolder;
+  }
     a {
       text-decoration: none;
       color: $black;
