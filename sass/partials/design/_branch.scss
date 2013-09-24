@@ -267,6 +267,10 @@ article div.content-group {
   }
   .branch-faq-back-to-top {
     float: right;
+    font-size: .8em;
+      a {
+        @extend .clean-links;
+        }
   }
 }
 
