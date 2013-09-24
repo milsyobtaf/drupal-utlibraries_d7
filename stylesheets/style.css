@@ -254,12 +254,12 @@ table {
 }
 
 .clean-links, article.group-nav aside.sidebar h2 a, article.group-nav aside.sidebar ul li a, .frontpage-columns .frontpage-column div.view-content div a,
-.frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column a.views-more-link, .frontpage-columns .frontpage-column p.more-in-category a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-news a.views-more-link, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
+.frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column a.views-more-link, .frontpage-columns .frontpage-column p.more-in-category a, .branch-faq .branch-faq-back-to-top a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-news a.views-more-link, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a {
   text-decoration: none;
 }
 .clean-links:hover, article.group-nav aside.sidebar h2 a:hover, article.group-nav aside.sidebar ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
-.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar h2 a:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
-.frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column a.views-more-link:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-news a.views-more-link:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
+.frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover, .branch-faq .branch-faq-back-to-top a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, .clean-links:focus, article.group-nav aside.sidebar h2 a:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+.frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column a.views-more-link:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus, .branch-faq .branch-faq-back-to-top a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-news a.views-more-link:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus {
   text-decoration: underline;
 }
 
@@ -488,37 +488,37 @@ div.region-header-prefix {
   height: 0;
 }
 
-#block-menu-menu-visitor-menu ul {
+#block-menu-menu-visitor-menu ul.menu {
   text-align: right;
   margin: 18px 0 0;
 }
-#block-menu-menu-visitor-menu ul li {
+#block-menu-menu-visitor-menu ul.menu li {
   display: inline;
   font-weight: bolder;
   font-size: 11px;
   line-height: 11px;
   margin: 0;
 }
-#block-menu-menu-visitor-menu ul li:after {
+#block-menu-menu-visitor-menu ul.menu li:after {
   content: '\00a0\00a0|';
 }
-#block-menu-menu-visitor-menu ul li a {
+#block-menu-menu-visitor-menu ul.menu li a {
   display: inline-block;
   text-decoration: none;
 }
-#block-menu-menu-visitor-menu ul li a:hover, #block-menu-menu-visitor-menu ul li a:focus {
+#block-menu-menu-visitor-menu ul.menu li a:hover, #block-menu-menu-visitor-menu ul.menu li a:focus {
   text-decoration: underline;
 }
-#block-menu-menu-visitor-menu ul li .leaf {
+#block-menu-menu-visitor-menu ul.menu li .leaf {
   padding: 0;
 }
-#block-menu-menu-visitor-menu ul li li.last:after {
+#block-menu-menu-visitor-menu ul.menu li li.last:after {
   content: '';
 }
-#block-menu-menu-visitor-menu ul li.last:after {
+#block-menu-menu-visitor-menu ul.menu li.last:after {
   content: '';
 }
-#block-menu-menu-visitor-menu ul li.last a {
+#block-menu-menu-visitor-menu ul.menu li.last a {
   display: inline-table;
   text-indent: -119988px;
   overflow: hidden;
@@ -907,6 +907,7 @@ article div.content-group .content-suffix {
 }
 .branch-faq .branch-faq-back-to-top {
   float: right;
+  font-size: .8em;
 }
 
 .branch-faq-menu h3 {
@@ -1428,6 +1429,11 @@ footer h2,
   }
   footer .user-menu-footer #shib_login_url a,
   #footer .user-menu-footer #shib_login_url a {
+    padding-left: .2em;
+    margin-left: .5em;
+  }
+  footer .user-menu-footer #cms-d7_login_url a,
+  #footer .user-menu-footer #cms-d7_login_url a {
     padding-left: .2em;
     margin-left: .5em;
   }
