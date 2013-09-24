@@ -647,7 +647,7 @@ div.breadcrumb {
 div.breadcrumb span.last {
   font-weight: bolder;
 }
-div.breadcrumb span.last .first {
+div.breadcrumb span.last.first {
   font-weight: normal;
 }
 div.breadcrumb a {
