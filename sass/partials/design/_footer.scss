@@ -24,25 +24,25 @@ footer,
     .user-menu-footer {
       text-align: right;
       padding-right: 1em;
-      div.content {
-        display: inline-block;
-      }
-      &:before {
-        content: "CMS: ";
-      }
-      @include span-columns(3, 12);
-      @include push(8);
-      ul.menu {
-        padding-left: 0;
-      }
-      #shib_login_url a {
-        padding-left: .2em;
-        margin-left: .5em;
-      }
-      #cms-d7_login_url a {
-        padding-left: .2em;
-        margin-left: .5em;
-      }
+        div.content {
+          display: inline-block;
+        }
+        &:before {
+          content: "CMS: ";
+        }
+        @include span-columns(3, 12);
+        @include push(8);
+        ul.menu {
+          padding-left: 0;
+        }
+        #shib_login_url a {
+          padding-left: .2em;
+          margin-left: .5em;
+        }
+        #cms-d7_login_url a {
+          padding-left: .2em;
+          margin-left: .5em;
+        }
     }
     #block-views-1db01a8daceda9472cc9c604cabb179c,
     #block-views-library-social-media-block {
