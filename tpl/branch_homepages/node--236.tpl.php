@@ -129,12 +129,16 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Subjects</h3>
-        <ul>
-          <li>Biology</li>
-          <li>Medicine</li>
-          <li>Nutrition</li>
-          <li>Pharmacy</li>
-        </ul>          
+        <table>
+          <tr>
+            <td><a href="/d7/subject/biology/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-biology.png"></a></td>
+            <td><a href="/d7/subject/medicine/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-medicine.png"></a></td>
+          </tr>
+          <tr>
+            <td><a href="/d7/subject/nutrition/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-nutrition.png"></a></td>
+            <td><a href="/d7/subject/pharmacy/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-pharmacy.png"></a></td>
+          </tr>
+        </table>
       </div>      </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
