@@ -133,7 +133,8 @@ function utlibraries_d7_preprocess_node(&$vars) {
     // Add js
     drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/fittext.js');
       $variables['scripts'] = drupal_get_js();
-  }
+    }
+    $vars['theme_path'] = '/d7/' . drupal_get_path('theme', variable_get('theme_default', NULL));
 }
 /* // */
 
