@@ -22,6 +22,9 @@ regions[sidebar_second]       = Secondary Sidebar
 regions[main_suffix]          = Main Region Suffix
 regions[footer]               = Footer
 
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = tpl/panels
+
 ; THEME OPTIONS
 
 ; Chrome Frame Options
