@@ -775,8 +775,9 @@ article.group-nav aside.sidebar.sidebar-second {
 }
 article.group-nav aside.sidebar h2 {
   font-size: 1.2em;
+  line-height: 1.4em;
   padding: 0 1em;
-  margin-top: .5em;
+  margin: 0.5em 0 0.2em 0;
 }
 article.group-nav aside.sidebar h2 a {
   color: #333333;
