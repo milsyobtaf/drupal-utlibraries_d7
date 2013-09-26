@@ -120,8 +120,9 @@ article.group-nav aside.sidebar {
   }
   h2 {
     font-size: 1.2em;
+    line-height: 1.4em;
     padding: 0 1em;
-    margin-top: .5em;
+    margin: .5em 0 .2em 0;
       a {
         color: $black-light;
         @extend .clean-links;
