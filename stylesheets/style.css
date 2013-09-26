@@ -1430,11 +1430,6 @@ footer h2,
   #footer .user-menu-footer ul.menu {
     padding-left: 0;
   }
-  footer .user-menu-footer #shib_login_url a,
-  #footer .user-menu-footer #shib_login_url a {
-    padding-left: .2em;
-    margin-left: .5em;
-  }
   footer .user-menu-footer #cms-d7_login_url a,
   #footer .user-menu-footer #cms-d7_login_url a {
     padding-left: .2em;
@@ -1613,6 +1608,10 @@ footer .utdirect-logo img,
 footer .utdirect-logo span,
 #footer .utdirect-logo span {
   font-size: .8em;
+}
+
+.logged-in #footer .user-menu-footer ul.menu li.first.leaf {
+  display: none;
 }
 
 table th {
