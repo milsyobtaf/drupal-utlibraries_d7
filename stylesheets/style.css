@@ -1192,25 +1192,30 @@ div.branch-staff-list table td span {
   background-color: #E1C96B;
 }
 
-.og-context-node-181 .group-nav-menu {
-  margin: 10px 10px 0;
-}
 .og-context-node-181 .group-nav-menu ul {
-  background-color: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF7F7F7');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMiUiIHN0b3AtY29sb3I9IiNjY2M2YzYiLz48c3RvcCBvZmZzZXQ9IjclIiBzdG9wLWNvbG9yPSIjNmY2ZjZmIi8+PHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM3NDc0NzQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-color: #3e3c36;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3E3C36', endColorstr='#FF403E38');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNlM2MzNiIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjNzU3MzZlIi8+PHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiM2NDYzNjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MDNlMzgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #ccc6c6), color-stop(7%, #6f6f6f), color-stop(95%, #747474), color-stop(100%, #f7f7f7));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ccc6c6 2%, #6f6f6f 7%, #747474 95%, #f7f7f7 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e3c36), color-stop(25%, #75736e), color-stop(72%, #646360), color-stop(100%, #403e38));
+  background-image: -webkit-linear-gradient(top, #3e3c36 0%, #75736e 25%, #646360 72%, #403e38 100%);
+  background-image: -moz-linear-gradient(top, #3e3c36 0%, #75736e 25%, #646360 72%, #403e38 100%);
+  background-image: -o-linear-gradient(top, #3e3c36 0%, #75736e 25%, #646360 72%, #403e38 100%);
+  background-image: linear-gradient(top, #3e3c36 0%, #75736e 25%, #646360 72%, #403e38 100%);
 }
 .og-context-node-181 .group-nav-menu ul li {
   color: #ffffff;
 }
 .og-context-node-181 .group-nav-menu ul li:hover a, .og-context-node-181 .group-nav-menu ul li:focus a, .og-context-node-181 .group-nav-menu ul li.active-trail a {
-  text-decoration: underline;
+  background-color: #5a797d;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5A797D', endColorstr='#FF5B7A7F');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhNzk3ZCIvPjxzdG9wIG9mZnNldD0iMTklIiBzdG9wLWNvbG9yPSIjODBhOGI5Ii8+PHN0b3Agb2Zmc2V0PSI2NyUiIHN0b3AtY29sb3I9IiM5Y2JmYzIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1YjdhN2YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a797d), color-stop(19%, #80a8b9), color-stop(67%, #9cbfc2), color-stop(100%, #5b7a7f));
+  background-image: -webkit-linear-gradient(top, #5a797d 0%, #80a8b9 19%, #9cbfc2 67%, #5b7a7f 100%);
+  background-image: -moz-linear-gradient(top, #5a797d 0%, #80a8b9 19%, #9cbfc2 67%, #5b7a7f 100%);
+  background-image: -o-linear-gradient(top, #5a797d 0%, #80a8b9 19%, #9cbfc2 67%, #5b7a7f 100%);
+  background-image: linear-gradient(top, #5a797d 0%, #80a8b9 19%, #9cbfc2 67%, #5b7a7f 100%);
 }
 .og-context-node-181 .group-nav-menu ul li.active-trail a {
   font-weight: bolder;
