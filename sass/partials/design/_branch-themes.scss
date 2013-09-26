@@ -42,17 +42,18 @@ $experimental-support-for-svg: true;
 // Fine Arts Library Colors
 .og-context-node-181 {
   .group-nav-menu {
-    margin: 10px 10px 0;
     ul {
-      background-color: #ffffff; // Old browsers
-      @include filter-gradient(#ffffff, #f7f7f7, vertical); // IE6-8
-      @include background-image(linear-gradient(top,  #ffffff 0%,#ccc6c6 2%,#6f6f6f 7%,#747474 95%,#f7f7f7 100%));
+      background-color: #3e3c36; // Old browsers
+      @include filter-gradient(#3e3c36, #403e38, vertical); // IE6-8
+      @include background-image(linear-gradient(top,  #3e3c36 0%,#75736e 25%,#646360 72%,#403e38 100%));
       li {
         color: #ffffff;
         &:hover a,
         &:focus a,
         &.active-trail a {
-          text-decoration: underline;
+          background-color: #5a797d; // Old browsers
+          @include filter-gradient(#5a797d, #5b7a7f, vertical); // IE6-8
+          @include background-image(linear-gradient(top,  #5a797d 0%,#80a8b9 19%,#9cbfc2 67%,#5b7a7f 100%));
         }
         &.active-trail a {
           font-weight: bolder;
