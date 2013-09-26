@@ -35,10 +35,6 @@ footer,
         ul.menu {
           padding-left: 0;
         }
-        #shib_login_url a {
-          padding-left: .2em;
-          margin-left: .5em;
-        }
         #cms-d7_login_url a {
           padding-left: .2em;
           margin-left: .5em;
@@ -116,6 +112,20 @@ footer,
     }
     span {
       font-size: .8em;
+    }
+  }
+}
+
+// Overly specific selector to remove the Login link from the User Menu when a person is already logged in
+
+.logged-in {
+  #footer {
+    .user-menu-footer {
+      ul.menu {
+        li.first.leaf {
+          display:none;
+        }
+      }
     }
   }
 }
