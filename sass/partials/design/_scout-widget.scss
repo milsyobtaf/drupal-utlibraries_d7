@@ -4,21 +4,13 @@ div.scout-wrapper div.pane-content {
 .scout-widget {
   margin: -7px -7px 0;
   width: auto;
+  height: 70px;
   padding: 10px;
+  // text-align: center;
   background-color: #9bc8cb; // Old browsers
   @include filter-gradient(#9bc8cb, #8db0ae, vertical); // IE6-8
-  @include background-image(linear-gradient(top,  #9bc8cb 1%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%));
+  @include background-image(linear-gradient(top,  #9bc8cb 0%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%));
   @include border-bottom-radius(4px);
-    // p {
-    // font-variant: small-caps;
-    //   font-weight: bold;
-    //   color: $black;
-    // text-shadow: 1px 1px 1px $gray-highlight;
-    //   position: relative;
-    //   top: 15px;
-    //   left: 2px;
-    // }
-
     a {
       text-decoration: none;
       border: none;
@@ -27,36 +19,57 @@ div.scout-wrapper div.pane-content {
       margin: 0;
     }
     .scout-widget-narrow {
-      // width: 250px;
+      input {
+        &.scout-widget-form-searchbox {
+          width: 55%;
+          float: right;
+        }
+        &.scout-widget-button {
+          display: block;
+          margin-top: 5px;
+          float: right;
+        }
+      }
     }
     .scout-widget-wide {
-      // width: 300px;
-        p {
-          position: relative;
-          // top: 5px;
-        }
+      input {
+        margin-top: 10px;
+        margin-left: 10px;
+          &.scout-widget-form-searchbox {
+            width: 60%;
+          }
+          &.scout-widget-button {
+          }
+      }
+    }
+    input.scout-widget-form-searchbox .scout-widget-narrow {
+      width: 675px;
+    }
+    .scout-widget-form-searchbox {
+      &:focus::-webkit-input-placeholder {
+        transition: opacity 0.5s 0.5s ease;
+        opacity: 0;
+      }
     }
     .scout-widget-logo {
-      float: left;
-      margin-left: -5px;
-      margin-right: 15px;
       width: 75px;
-      height: auto;
+      float: left;
+      @include clearfix;
     }
     .scout-widget-button {
       @include single-box-shadow(#c7e0d4, 0px, 1px, 0px, 0px, inset);
       background-color: #397977;
       @include border-radius(6px);
       border: 1px solid #4b5e55;
-      display: inline-block;
+      // display: inline-block;
       color: $white;
       font-family: Verdana, Geneva;
       // font-size: .8em;
       padding: 5px 18px;
       text-decoration: none;
       text-shadow: 1px 1px 0px $black-light;
-      float: right;
-      margin-top: -2px;
+      // float: right;
+      // margin-top: -2px;
         &:hover {
           background: #52adaa;
           -webkit-transition: all 0.2s ease;
@@ -67,22 +80,5 @@ div.scout-wrapper div.pane-content {
           position: relative;
           top: 1px;
         }
-    }
-    .scout-widget-form-searchbox {
-      &:focus::-webkit-input-placeholder {
-        transition: opacity 0.5s 0.5s ease;
-        opacity: 0;
-      }
-    }
-
-    input.scout-widget-form-searchbox .scout-widget-narrow {
-      width: 675px;
-    }
-    .scout-widget-wide .scout-widget-form-searchbox {
-      width: 65%;
-    }
-    .scout-widget-wide form {
-      position: relative;
-      top: 12px;
     }
 }
