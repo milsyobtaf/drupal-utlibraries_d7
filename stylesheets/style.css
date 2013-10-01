@@ -1721,14 +1721,20 @@ div.scout-wrapper div.pane-content {
 .scout-widget form {
   margin: 0;
 }
+.scout-widget .scout-widget-narrow .scout-widget-logo {
+  width: 25%;
+}
 .scout-widget .scout-widget-narrow input.scout-widget-form-searchbox {
-  width: 55%;
+  width: 70%;
   float: right;
 }
 .scout-widget .scout-widget-narrow input.scout-widget-button {
   display: block;
   margin-top: 5px;
   float: right;
+}
+.scout-widget .scout-widget-wide .scout-widget-logo {
+  width: 75px;
 }
 .scout-widget .scout-widget-wide input {
   margin-top: 10px;
@@ -1745,7 +1751,6 @@ div.scout-wrapper div.pane-content {
   opacity: 0;
 }
 .scout-widget .scout-widget-logo {
-  width: 75px;
   float: left;
   overflow: hidden;
 }
