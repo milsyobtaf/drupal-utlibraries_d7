@@ -19,9 +19,12 @@ div.scout-wrapper div.pane-content {
       margin: 0;
     }
     .scout-widget-narrow {
+      .scout-widget-logo {
+        width: 25%;
+      }
       input {
         &.scout-widget-form-searchbox {
-          width: 55%;
+          width: 70%;
           float: right;
         }
         &.scout-widget-button {
@@ -32,6 +35,9 @@ div.scout-wrapper div.pane-content {
       }
     }
     .scout-widget-wide {
+      .scout-widget-logo {
+        width: 75px;
+      }
       input {
         margin-top: 10px;
         margin-left: 10px;
@@ -52,7 +58,6 @@ div.scout-wrapper div.pane-content {
       }
     }
     .scout-widget-logo {
-      width: 75px;
       float: left;
       @include clearfix;
     }
