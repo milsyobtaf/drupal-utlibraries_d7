@@ -1,0 +1,88 @@
+.scout-widget-250 p,
+.scout-widget-300 p {
+  font-family: 'Verdana';
+  font-size: .7em;
+  color: #555555;
+}
+.scout-widget-300 p {
+  position: relative;
+  top: 5px;
+}
+.scout-widget-250 a,
+.scout-widget-300 a {
+  text-decoration: none;
+  border: none;
+}
+.scout-widget-250 form,
+.scout-widget-300 form {
+  margin: 0;
+}
+.scout-widget-250 {
+  width: 250px;
+}
+.scout-widget-300 {
+  width: 300px;
+}
+.scout-widget-250,
+.scout-widget-300 {
+  padding: 10px;
+  background: #9bc8cb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #9bc8cb 1%, #d1e1e0 30%, #d1e1e0 50%, #8db0ae 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#9bc8cb), color-stop(30%,#d1e1e0), color-stop(50%,#d1e1e0), color-stop(100%,#8db0ae)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #9bc8cb 1%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #9bc8cb 1%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #9bc8cb 1%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #9bc8cb 1%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc8cb', endColorstr='#8db0ae',GradientType=0 ); /* IE6-9 */
+  border-radius: 4px;
+}
+.scout-widget-250-logo,
+.scout-widget-300-logo {
+  float: left;
+  margin-left: -5px;
+  margin-right: 5px;
+  width: 75px;
+}
+.scout-widget-250-button,
+.scout-widget-300-button {
+  -moz-box-shadow: inset 0px 1px 0px 0px #c7e0d4;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #c7e0d4;
+  box-shadow: inset 0px 1px 0px 0px #c7e0d4;
+  background-color: #397977;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #4b5e55;
+
+  display: inline-block;
+  color: #fff;
+  font-family: Verdana, Geneva;
+  font-size: .8em;
+  padding: 5px 18px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #424744;
+  float: right;
+  margin-top: -2px;
+}
+.scout-widget-250-button:hover,
+.scout-widget-300-button:hover {
+  background: #52adaa;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.scout-widget-250-button:active,
+.scout-widget-300-button:active {
+  position: relative;
+  top: 1px;
+}
+.scout-widget-250 form input[type=text] {
+  width: 175px;
+}
+.scout-widget-300 form input[type=text] {
+  width: 145px;
+}
+.scout-widget-300 form {
+  position: relative;
+  top: 12px;
+}
