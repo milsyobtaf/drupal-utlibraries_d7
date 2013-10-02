@@ -1,89 +1,86 @@
+// This chunk is for scoUT panes in panels pages like Research Guides
 div.scout-wrapper div.pane-content {
   border: none;
-}
-.scout-widget {
-  margin: -7px -7px 0;
-  width: auto;
-  height: 70px;
-  padding: 10px;
-  // text-align: center;
-  background-color: #9bc8cb; // Old browsers
-  @include filter-gradient(#9bc8cb, #8db0ae, vertical); // IE6-8
-  @include background-image(linear-gradient(top,  #9bc8cb 0%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%));
-  @include border-bottom-radius(4px);
-    a {
-      text-decoration: none;
-      border: none;
-    }
-    form {
-      margin: 0;
-    }
-    .scout-widget-narrow {
-      .scout-widget-logo {
-        width: 25%;
-      }
-      input {
-        &.scout-widget-form-searchbox {
-          width: 70%;
-          float: right;
+    .scout-widget {
+      margin: -7px -7px 0;
+      width: auto;
+      height: 70px;
+      padding: 10px;
+      background-color: #9bc8cb; // Old browsers
+      @include filter-gradient(#9bc8cb, #8db0ae, vertical); // IE6-8
+      @include background-image(linear-gradient(top,  #9bc8cb 0%,#d1e1e0 30%,#d1e1e0 50%,#8db0ae 100%));
+      @include border-bottom-radius(4px);
+        a {
+          text-decoration: none;
+          border: none;
         }
-        &.scout-widget-button {
-          display: block;
-          margin-top: 5px;
-          float: right;
+        form {
+          margin: 0;
         }
-      }
-    }
-    .scout-widget-wide {
-      .scout-widget-logo {
-        width: 75px;
-      }
-      input {
-        margin-top: 10px;
-        margin-left: 10px;
-          &.scout-widget-form-searchbox {
-            width: 60%;
+        .scout-widget-narrow {
+          .scout-widget-logo {
+            width: 25%;
           }
-          &.scout-widget-button {
+          input {
+            &.scout-widget-form-searchbox {
+              width: 70%;
+              float: right;
+            }
+            &.scout-widget-button {
+              display: block;
+              margin-top: 5px;
+              float: right;
+            }
           }
-      }
-    }
-    input.scout-widget-form-searchbox .scout-widget-narrow {
-      width: 675px;
-    }
-    .scout-widget-form-searchbox {
-      &:focus::-webkit-input-placeholder {
-        transition: opacity 0.5s 0.5s ease;
-        opacity: 0;
-      }
-    }
-    .scout-widget-logo {
-      float: left;
-      @include clearfix;
-    }
-    .scout-widget-button {
-      @include single-box-shadow(#c7e0d4, 0px, 1px, 0px, 0px, inset);
-      background-color: #397977;
-      @include border-radius(6px);
-      border: 1px solid #4b5e55;
-      // display: inline-block;
-      color: $white;
-      font-family: Verdana, Geneva;
-      // font-size: .8em;
-      padding: 5px 18px;
-      text-decoration: none;
-      text-shadow: 1px 1px 0px $black-light;
-      // float: right;
-      // margin-top: -2px;
-        &:hover {
-          background: #52adaa;
-          -webkit-transition: all 0.2s ease;
-          -moz-transition: all 0.2s ease;
-          -o-transition: all 0.2s ease;
         }
-        &:active {
-          position: relative;
-          top: 1px;
+        .scout-widget-wide {
+          .scout-widget-logo {
+            width: 75px;
+          }
+          input {
+            margin-top: 10px;
+            margin-left: 10px;
+              &.scout-widget-form-searchbox {
+                width: 60%;
+              }
+              &.scout-widget-button {
+              }
+          }
+        }
+        .scout-widget-form-searchbox {
+          &:focus::-webkit-input-placeholder {
+            transition: opacity 0.5s 0.5s ease;
+            opacity: 0;
+          }
+        }
+        .scout-widget-logo {
+          float: left;
+          @include clearfix;
+        }
+        .scout-widget-button {
+          @include single-box-shadow(#c7e0d4, 0px, 1px, 0px, 0px, inset);
+          background-color: #397977;
+          @include border-radius(6px);
+          border: 1px solid #4b5e55;
+          // display: inline-block;
+          color: $white;
+          font-family: Verdana, Geneva;
+          // font-size: .8em;
+          padding: 5px 18px;
+          text-decoration: none;
+          text-shadow: 1px 1px 0px $black-light;
+          // float: right;
+          // margin-top: -2px;
+            &:hover {
+              background: #52adaa;
+              -webkit-transition: all 0.2s ease;
+              -moz-transition: all 0.2s ease;
+              -o-transition: all 0.2s ease;
+            }
+            &:active {
+              position: relative;
+              top: 1px;
+            }
         }
     }
 }
