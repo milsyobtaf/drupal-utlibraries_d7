@@ -1692,8 +1692,7 @@ div.user-login-wrapper a:hover, div.user-login-wrapper a:focus {
 div.scout-wrapper div.pane-content {
   border: none;
 }
-
-.scout-widget {
+div.scout-wrapper div.pane-content .scout-widget {
   margin: -7px -7px 0;
   width: auto;
   height: 70px;
@@ -1714,47 +1713,44 @@ div.scout-wrapper div.pane-content {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.scout-widget a {
+div.scout-wrapper div.pane-content .scout-widget a {
   text-decoration: none;
   border: none;
 }
-.scout-widget form {
+div.scout-wrapper div.pane-content .scout-widget form {
   margin: 0;
 }
-.scout-widget .scout-widget-narrow .scout-widget-logo {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-narrow .scout-widget-logo {
   width: 25%;
 }
-.scout-widget .scout-widget-narrow input.scout-widget-form-searchbox {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-narrow input.scout-widget-form-searchbox {
   width: 70%;
   float: right;
 }
-.scout-widget .scout-widget-narrow input.scout-widget-button {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-narrow input.scout-widget-button {
   display: block;
   margin-top: 5px;
   float: right;
 }
-.scout-widget .scout-widget-wide .scout-widget-logo {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-wide .scout-widget-logo {
   width: 75px;
 }
-.scout-widget .scout-widget-wide input {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-wide input {
   margin-top: 10px;
   margin-left: 10px;
 }
-.scout-widget .scout-widget-wide input.scout-widget-form-searchbox {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-wide input.scout-widget-form-searchbox {
   width: 60%;
 }
-.scout-widget input.scout-widget-form-searchbox .scout-widget-narrow {
-  width: 675px;
-}
-.scout-widget .scout-widget-form-searchbox:focus::-webkit-input-placeholder {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-form-searchbox:focus::-webkit-input-placeholder {
   transition: opacity 0.5s 0.5s ease;
   opacity: 0;
 }
-.scout-widget .scout-widget-logo {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-logo {
   float: left;
   overflow: hidden;
 }
-.scout-widget .scout-widget-button {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-button {
   -webkit-box-shadow: inset 0px 1px 0px 0px #c7e0d4;
   -moz-box-shadow: inset 0px 1px 0px 0px #c7e0d4;
   box-shadow: inset 0px 1px 0px 0px #c7e0d4;
@@ -1771,13 +1767,13 @@ div.scout-wrapper div.pane-content {
   text-decoration: none;
   text-shadow: 1px 1px 0px #333333;
 }
-.scout-widget .scout-widget-button:hover {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-button:hover {
   background: #52adaa;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
-.scout-widget .scout-widget-button:active {
+div.scout-wrapper div.pane-content .scout-widget .scout-widget-button:active {
   position: relative;
   top: 1px;
 }
