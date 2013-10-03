@@ -119,4 +119,39 @@ $experimental-support-for-svg: true;
       background-color: #dacd67;
     }
   }
+  ul.lsl-research-guide-grid {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0;
+     li {
+      display: inline;
+      margin: 5px 0;
+      @include breakpoint(min-width 1020px) {
+        &:nth-child(odd) {
+          margin-right: 5px;
+        }
+      }
+        a {
+          display: inline-block;
+          height: 100px;
+          width: 120px;
+            &:first-child {
+              margin-bottom: 10px;
+            }
+            &.lsl-biology {
+              @include replace-text(image-url('branch-theme-images/lsl-biology.png'));
+            }
+            &.lsl-medicine {
+              @include replace-text(image-url('branch-theme-images/lsl-medicine.png'));
+            }
+            &.lsl-nutrition {
+              @include replace-text(image-url('branch-theme-images/lsl-nutrition.png'));
+            }
+            &.lsl-pharmacy {
+              @include replace-text(image-url('branch-theme-images/lsl-pharmacy.png'));
+            }
+          }
+    }
+  }
 }
