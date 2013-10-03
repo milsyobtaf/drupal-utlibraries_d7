@@ -658,6 +658,10 @@ div.breadcrumb a:hover, div.breadcrumb a:focus {
   text-decoration: underline;
 }
 
+tbody {
+  border-top: 0;
+}
+
 .branch-boxes-shadowed, article.group-nav aside.sidebar, .frontpage-columns .frontpage-column .frontpage-block, .branch-googlemap-block iframe {
   border: 1px solid #cccccc;
   box-shadow: 1px 1px 5px 1px #cccccc;
@@ -1286,6 +1290,61 @@ div.branch-staff-list table td span {
 .og-context-node-236 div.frontpage-column hr {
   color: #dacd67;
   background-color: #dacd67;
+}
+.og-context-node-236 ul.lsl-research-guide-grid {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0 0;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li {
+  display: inline;
+  margin: 5px 0;
+}
+@media (min-width: 1020px) {
+  .og-context-node-236 ul.lsl-research-guide-grid li:nth-child(odd) {
+    margin-right: 5px;
+  }
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a {
+  display: inline-block;
+  height: 100px;
+  width: 120px;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a:first-child {
+  margin-bottom: 10px;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a.lsl-biology {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/branch-theme-images/lsl-biology.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a.lsl-medicine {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/branch-theme-images/lsl-medicine.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a.lsl-nutrition {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/branch-theme-images/lsl-nutrition.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.og-context-node-236 ul.lsl-research-guide-grid li a.lsl-pharmacy {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/branch-theme-images/lsl-pharmacy.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 div.panel-panel {
