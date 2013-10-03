@@ -129,16 +129,12 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Subjects</h3>
-        <table>
-          <tr>
-            <td><a href="/d7/subject/biology/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-biology.png"></a></td>
-            <td><a href="/d7/subject/medicine/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-medicine.png"></a></td>
-          </tr>
-          <tr>
-            <td><a href="/d7/subject/nutrition/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-nutrition.png"></a></td>
-            <td><a href="/d7/subject/pharmacy/"><img src="<?php print render($theme_path); ?>/images/branch-theme-images/lsl-pharmacy.png"></a></td>
-          </tr>
-        </table>
+         <ul class="lsl-research-guide-grid">
+             <li><a href="/d7/subject/biology/" class="lsl-biology">Biology</a></li>
+             <li><a href="/d7/subject/medicine/" class="lsl-medicine">Medicine</a></li>
+             <li><a href="/d7/subject/nutrition/" class="lsl-nutrition">Nutrition</a></li>
+             <li><a href="/d7/subject/pharmacy/" class="lsl-pharmacy">Pharmacy</a></li>
+          </ul>
       </div>      </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
