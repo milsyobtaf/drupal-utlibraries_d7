@@ -182,9 +182,19 @@ article div.content-group {
   margin-top: 1em;
   .frontpage-column {
     .frontpage-block {
-    padding: 1em;
-    margin-bottom: 1em;
-    @extend .branch-boxes-shadowed;
+      padding: 1em;
+      margin-bottom: 1em;
+      @extend .branch-boxes-shadowed;
+        p {
+          @include force-wrap;
+        }
+        .ask-a-librarian-widget {
+          iframe {
+            width: 100%;
+            height: 350px;
+          }
+          margin-bottom: 25px;
+        }
     }
     div.view-content {
       margin: 10px 0;
@@ -356,7 +366,7 @@ ul.branch-social-media-accounts-list-lg {
 }
 // For branches that use small social media icons
 ul.branch-social-media-accounts-list-sm {
-    margin: -30px 0 -10px;
+    margin: -30px 0 -20px;
     text-align: right;
     list-style-type: none;
      li {
