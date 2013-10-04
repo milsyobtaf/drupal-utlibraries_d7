@@ -109,19 +109,14 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Recent Arrivals</h3>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_14');
-            print render($block['content']);
-          ?>
-        <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/announcements" alt="More Recent Arrivals">More Recent Arrivals</a></p>
+          <p>Recent Arrivals Feed Here</p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">FAL News</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_15');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_21');
             print render($block['content']);
           ?>
         <hr>
@@ -131,15 +126,17 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Rotating Features</h3>
-        <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/collections" alt="More Features">More Features</a></p>
+          <p>Branch Features Here</p>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
+          <div class="ask-a-librarian-widget">
+            <iframe style="width: 98%; height: 300px;" src="http://libraryh3lp.com/chat/askalibutexas@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian" frameborder="0"></iframe>
+          </div>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_2');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_22');
             print render($block['content']);
           ?>
       </div>
