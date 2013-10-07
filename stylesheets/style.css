@@ -768,7 +768,6 @@ div.group-nav .branch-header-image-attribution:hover a:hover, div.group-nav .bra
 .group-nav-menu ul li a {
   text-decoration: none;
   padding: 8px 10px 6px;
-  position: relative;
   height: 100%;
 }
 
