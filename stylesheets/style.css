@@ -749,13 +749,12 @@ div.group-nav .branch-header-image-attribution:hover a:hover, div.group-nav .bra
 .group-nav-menu ul {
   background-color: #cccccc;
   margin: 0;
-  padding: 5px 5px;
+  padding: 5px;
   text-align: center;
 }
 .group-nav-menu ul li {
   margin: 0;
-  height: 100%;
-  display: inline;
+  display: inline-block;
 }
 .group-nav-menu ul li.active-trail {
   font-weight: bold;
@@ -768,7 +767,9 @@ div.group-nav .branch-header-image-attribution:hover a:hover, div.group-nav .bra
 }
 .group-nav-menu ul li a {
   text-decoration: none;
-  padding: 6px 10px 7px;
+  padding: 8px 10px 6px;
+  position: relative;
+  height: 100%;
 }
 
 article.group-nav aside.sidebar {
