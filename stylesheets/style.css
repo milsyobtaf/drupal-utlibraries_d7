@@ -1858,3 +1858,147 @@ div.scout-wrapper div.pane-content .scout-widget .scout-widget-button:active {
   position: relative;
   top: 1px;
 }
+
+div.recent-arrivals-full {
+  /* The google button needed to be resized to the same width as the bookcover */
+}
+div.recent-arrivals-full div.topnav,
+div.recent-arrivals-full div.bottomnav {
+  text-align: center;
+}
+div.recent-arrivals-full div.topnav .pagination,
+div.recent-arrivals-full div.bottomnav .pagination {
+  display: block;
+}
+div.recent-arrivals-full div.topnav .pagination img,
+div.recent-arrivals-full div.bottomnav .pagination img {
+  border: 0px;
+  vertical-align: middle;
+}
+div.recent-arrivals-full div.topnav .results-per-page,
+div.recent-arrivals-full div.bottomnav .results-per-page {
+  margin-bottom: 5px;
+}
+div.recent-arrivals-full div.topnav .results-per-page label,
+div.recent-arrivals-full div.bottomnav .results-per-page label {
+  display: inline;
+}
+div.recent-arrivals-full div.topnav #currentpage,
+div.recent-arrivals-full div.bottomnav #currentpage {
+  border: 1px solid #333333;
+  background-color: #333;
+  color: #fff;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+div.recent-arrivals-full div.topnav .pagination-numbers a:link,
+div.recent-arrivals-full div.bottomnav .pagination-numbers a:link {
+  color: #000;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+div.recent-arrivals-full div.topnav .pagination-numbers a:visited,
+div.recent-arrivals-full div.bottomnav .pagination-numbers a:visited {
+  color: #000;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+div.recent-arrivals-full div.topnav .pagination-numbers a:hover,
+div.recent-arrivals-full div.bottomnav .pagination-numbers a:hover {
+  background-color: #999;
+}
+div.recent-arrivals-full div.topnav .sort,
+div.recent-arrivals-full div.bottomnav .sort {
+  margin-top: 5px;
+}
+div.recent-arrivals-full div.topnav .currentsort,
+div.recent-arrivals-full div.bottomnav .currentsort {
+  font-weight: bold;
+}
+div.recent-arrivals-full div.topnav span.ellipsis,
+div.recent-arrivals-full div.bottomnav span.ellipsis {
+  padding-right: 4px;
+  font-size: 1.2em;
+}
+div.recent-arrivals-full .filter {
+  border: 1px solid #cccccc;
+  padding: 15px;
+  width: 90%;
+}
+div.recent-arrivals-full .filterselect {
+  width: 25%;
+  margin-right: 6%;
+  float: left;
+  margin-bottom: 10px;
+}
+div.recent-arrivals-full .filterselect select {
+  width: 100%;
+  font-size: 80%;
+}
+div.recent-arrivals-full .icons {
+  float: left;
+  width: 30px;
+  margin-top: 10px;
+}
+div.recent-arrivals-full .icons img {
+  border: 0px;
+  margin-bottom: 2px;
+}
+div.recent-arrivals-full .largeicons {
+  float: left;
+  padding: 0px;
+  /*min-width:95px;*/
+  /*min-height:90px;*/
+}
+div.recent-arrivals-full .largeicons img {
+  border: 0px;
+}
+div.recent-arrivals-full .bookcover {
+  margin-bottom: 5px;
+}
+div.recent-arrivals-full .googleimage {
+  border: 0px;
+  width: 60px;
+  height: 35px;
+}
+div.recent-arrivals-full .result {
+  width: 100%;
+  padding-top: 20px;
+  list-style: none;
+  clear: both;
+}
+div.recent-arrivals-full .meta-recentarrivals {
+  font-size: 80%;
+  margin-top: 0px;
+  margin-left: 130px !important;
+  padding-left: 10px;
+  width: 60%;
+}
+div.recent-arrivals-full .meta-recentarrivals a:link {
+  color: #000;
+  text-decoration: underline;
+}
+div.recent-arrivals-full .meta-recentarrivals a:visited {
+  color: #00FF00;
+}
+div.recent-arrivals-full .meta-recentarrivals a:hover {
+  color: #FF00FF;
+}
+div.recent-arrivals-full .meta-recentarrivals a:active {
+  color: #0000FF;
+}
+div.recent-arrivals-full .darker {
+  color: #000;
+}
+div.recent-arrivals-full .diamond {
+  vertical-align: middle;
+}
+div.recent-arrivals-full .text h4,
+div.recent-arrivals-full .text h5 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  margin-left: 130px;
+}
