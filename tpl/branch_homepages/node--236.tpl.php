@@ -112,12 +112,18 @@
         <div class="view-content"><!-- This div, and the next one, are wholly superfluous, but necessary to style this block content without a lot of heartache -->
           <div>
           <?php
-            $block = module_invoke('block', 'block_view', '2');
+            $block = block_load('block', '2');
+            print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+          ?>
+          <p>&nbsp;</p>
+          <?php
+            $block = module_invoke('views', 'block_view', 'branch_views-block_22');
             print render($block['content']);
           ?>
           </div>
         </div>
       </div>
+<!--
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
           <?php
@@ -125,6 +131,7 @@
             print render($block['content']);
           ?>
       </div>
+-->
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
