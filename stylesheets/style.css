@@ -1881,6 +1881,11 @@ div.recent-arrivals-full div.bottomnav .pagination a {
 div.recent-arrivals-full div.topnav .pagination a:hover, div.recent-arrivals-full div.topnav .pagination a:focus,
 div.recent-arrivals-full div.bottomnav .pagination a:hover,
 div.recent-arrivals-full div.bottomnav .pagination a:focus {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   background-color: #333;
   color: #fff;
 }
@@ -1893,6 +1898,11 @@ div.recent-arrivals-full div.topnav .pagination #currentpage,
 div.recent-arrivals-full div.bottomnav .pagination #currentpage {
   background-color: #333;
   color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   padding: 0 2px;
 }
 div.recent-arrivals-full div.topnav form,
