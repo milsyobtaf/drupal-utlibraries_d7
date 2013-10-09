@@ -4,42 +4,37 @@ div.recent-arrivals-full {
     text-align: center;
       .pagination {
         display: block;
+        margin-bottom: .5em;
+          a {
+            @extend .clean-links;
+            padding: 0 2px;
+            &:hover,
+            &:focus {
+              background-color: #333;
+              color: #fff;
+            }
+          }
+          img {
+            border: 0px;
+            vertical-align:middle;
+          }
+          #currentpage {
+            background-color: #333;
+            color: #fff;
+            padding: 0 2px;
+          }
       }
-      .pagination img {
-        border: 0px;
-        vertical-align:middle;
-        }
+      form {
+        display: inline;
+        margin-right: 10px;
+      }
       .results-per-page {
-        margin-bottom: 5px;
           label {
             display: inline;
           }
       }
-      #currentpage {
-        border:1px solid #333;
-        background-color:#333;
-        color:#fff;
-        padding-left:2px;
-        padding-right:2px;
-        margin-right:2px;
-        margin-left:2px;
-      }
-      .pagination-numbers a:link {
-        color:#000;
-        padding-left:2px;
-        padding-right:2px;
-      }
-      .pagination-numbers a:visited {
-        color:#000;
-        padding-left:2px;
-        padding-right:2px;
-      }
-
-      .pagination-numbers a:hover {
-        background-color:#999;
-      }
       .sort {
-        margin-top: 5px;
+        display: inline;
       }
       .currentsort {
         font-weight:bold;
@@ -49,8 +44,6 @@ div.recent-arrivals-full {
         font-size: 1.2em;
       }
   }
-
-
   .filter {
     border:1px solid #ccc;
     padding:15px;
@@ -74,27 +67,23 @@ div.recent-arrivals-full {
     float:left;
     width:30px;
     margin-top:10px;
-    }
-
-  .icons img {
-    border:0px;
-    margin-bottom:2px;
-    }
+      img {
+        border:0px;
+        margin-bottom:2px;
+      }
+  }
 
   .largeicons {
     float:left;
     padding:0px;
-    /*min-width:95px;*/
-    /*min-height:90px;*/
-    }
-
-  .largeicons img {
-    border:0px;
+      img {
+        border:0px;
+      }
     }
 
   .bookcover {
     margin-bottom:5px;
-    }
+  }
 
   /* The google button needed to be resized to the same width as the bookcover */
 
