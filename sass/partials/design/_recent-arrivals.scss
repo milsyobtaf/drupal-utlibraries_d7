@@ -1,0 +1,135 @@
+div.recent-arrivals-full {
+  div.topnav,
+  div.bottomnav {
+    text-align: center;
+      .pagination {
+        display: block;
+        margin-bottom: .5em;
+          a {
+            @extend .clean-links;
+            padding: 0 2px;
+            &:hover,
+            &:focus {
+              @include border-radius(2px);
+              background-color: #333;
+              color: #fff;
+            }
+          }
+          img {
+            border: 0px;
+            vertical-align:middle;
+          }
+          #currentpage {
+            background-color: #333;
+            color: #fff;
+            @include border-radius(2px);
+            padding: 0 2px;
+          }
+      }
+      form {
+        display: inline;
+        margin-right: 10px;
+      }
+      .results-per-page {
+          label {
+            display: inline;
+          }
+      }
+      .sort {
+        display: inline;
+      }
+      .currentsort {
+        font-weight:bold;
+        }
+      span.ellipsis {
+        padding-right: 4px;
+        font-size: 1.2em;
+      }
+  }
+  .filter {
+    border:1px solid #ccc;
+    padding:15px;
+    width:90%;
+    }
+
+  .filterselect {
+    width:25%;
+    margin-right:6%;
+    float:left;
+    margin-bottom:10px;
+    }
+
+  .filterselect select {
+    width:100%;
+    font-size:80%;
+    }
+
+
+  .icons {
+    float:left;
+    width:30px;
+    margin-top:10px;
+      img {
+        border:0px;
+        margin-bottom:2px;
+      }
+  }
+
+  .largeicons {
+    float:left;
+    padding:0px;
+      img {
+        border:0px;
+      }
+    }
+
+  .bookcover {
+    margin-bottom:5px;
+  }
+
+  /* The google button needed to be resized to the same width as the bookcover */
+
+  .googleimage {
+    border: 0px;
+    width: 60px;
+    height: 35px;
+    }
+
+
+  .result {
+    width:100%;
+    padding-top:20px;
+    list-style:none;
+    clear:both;
+    }
+
+  .meta-recentarrivals {
+    font-size:80%;
+    margin-top:0px;
+    margin-left:130px !important;
+    padding-left:10px;
+    width: 60%;
+    }
+
+  .meta-recentarrivals a:link {color: #000;text-decoration:underline;}
+  .meta-recentarrivals a:visited {color: #00FF00}
+  .meta-recentarrivals a:hover {color: #FF00FF}
+  .meta-recentarrivals a:active {color: #0000FF}
+
+  .darker {
+    color:#000;
+    }
+
+  .diamond {
+    vertical-align:middle;
+    }
+
+
+  .text h4,
+  .text h5 {
+    margin:0px;
+    margin-bottom:10px;
+    padding-left:0px;
+    margin-left:130px;
+    }
+}
