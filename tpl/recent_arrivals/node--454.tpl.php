@@ -945,7 +945,6 @@ if ($num_items == 0) {
 
 
 print "
-<form action='".$clean['this_script']."' method='get'>
 <div class=\"bottomnav\">
 ";
 
@@ -957,26 +956,48 @@ if ($num_items > 0) {
 
 	print "
 	<!-- Limit results per page -->
-	<span class='results-per-page'><label for='results_per_page_bottom'>Results per page: </label>
-	<input type='hidden' name='start' value='".$clean['start']."'>
-	<input type='hidden' name='location' value='".$clean['location']."'>
-	<input type='hidden' name='type' value='".$clean['type']."'>
-	<input type='hidden' name='language' value='".$clean['language']."'>
-	<input type='hidden' name='sort_by' value='".$clean['sort_by']."'>
-	<select onchange='form.submit()' name='results_per_page' id='results_per_page_bottom'>";
-	foreach($results_per_page_array as $results_per_page_option) {
-		if ($results_per_page_option == $clean['results_per_page']) {
-			print "<option selected='selected' value=".$results_per_page_option.">".$results_per_page_option."</option>";
-		} else {
-			print "<option value=".$results_per_page_option.">".$results_per_page_option."</option>";
+	<form action='".$clean['this_script']."' method='get'>
+  	<span class='results-per-page'><label for='results_per_page_bottom'>Results per page: </label>
+  	<input type='hidden' name='start' value='".$clean['start']."'>
+  	<input type='hidden' name='location' value='".$clean['location']."'>
+  	<input type='hidden' name='type' value='".$clean['type']."'>
+  	<input type='hidden' name='language' value='".$clean['language']."'>
+  	<input type='hidden' name='sort_by' value='".$clean['sort_by']."'>
+  	<select onchange='form.submit()' name='results_per_page' id='results_per_page_bottom'>";
+    foreach($results_per_page_array as $results_per_page_option) {
+		  if ($results_per_page_option == $clean['results_per_page']) {
+			  print "<option selected='selected' value=".$results_per_page_option.">".$results_per_page_option."</option>";
+      } else {
+			  print "<option value=".$results_per_page_option.">".$results_per_page_option."</option>";
 		}
 	}
 	print "
-	</select>
-	</span>
-	</div>
+  	</select>
+    </span>
 	</form>";
 }
+
+//Sort Options
+print"
+<!-- Sort options -->
+<div class=\"sort\">
+Sort by: ";
+$sort_count = count(sort_ary);
+$i = 0;
+foreach ($sort_by_array as $sort_option) {
+	if ($sort_option == $clean['sort_by']) {
+		print "<span class=\"currentsort\">".$sort_by_long[$sort_option]."</span>";
+	} else {
+		print "<a href='".$clean['this_script']."?language=".$clean['language']."&sort_by=".$sort_option."&results_per_page=".$clean['results_per_page']."&start=".$clean['start']."&location=".$clean['location']."&type=".$clean['type']."'>".$sort_by_long[$sort_option]."</a>";
+	}
+	if ($i != $sort_count) {
+		print " | ";
+	}
+	$i++;
+}
+print"
+</div>
+</div>";
 
 /*  #############
  	# Functions #
