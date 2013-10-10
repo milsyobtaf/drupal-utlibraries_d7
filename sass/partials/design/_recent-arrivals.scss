@@ -5,15 +5,17 @@ div.recent-arrivals-full {
       .pagination {
         display: block;
         margin-bottom: .5em;
-          a {
-            @extend .clean-links;
-            padding: 0 2px;
-            &:hover,
-            &:focus {
-              @include border-radius(2px);
-              background-color: #333;
-              color: #fff;
-            }
+          .pagination-numbers {
+              a {
+                @extend .clean-links;
+                padding: 0 2px;
+                &:hover,
+                &:focus {
+                  @include border-radius(2px);
+                  background-color: #333;
+                  color: #fff;
+                }
+              }
           }
           img {
             border: 0px;
