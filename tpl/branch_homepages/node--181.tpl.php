@@ -109,7 +109,60 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Recent Arrivals</h3>
-          <p>Recent Arrivals Feed Here</p>
+          <p><!-- Begin Recent Arrivals Block -->
+          <?php
+            $stylesheet = "/usr/local/docs/sites/all/themes/utlibraries_d7/tpl/recent_arrivals/arrivals_spotlight.xsl";         //location of stylesheet
+            //$request_directory = $_SERVER['DOCUMENT_ROOT'] ."/recentarrivals/xml"; //directory of xml files
+            $file = array("fi.xml"); //location of xml file
+            $request = "/home/utlol/htdocs/lib-recentarrivals/xml/". $file[0];
+            //$request = "/usr/local/docs/sites/all/themes/utlibraries/inc/xml/". $file[0];
+            
+            /*
+            #############
+            # functions #
+            #############
+            */
+            
+            function isbn_split($isbn) {
+                    $isbn_image = explode(" ", $isbn);
+                    $image = $isbn_image[0];
+                    return $image;
+            }
+            function recentarrivals_title($title) {
+                    $newtitle = explode("/", $title);
+                    return $newtitle[0];
+            }
+            
+            /*
+            #########################
+            ######## MAIN ###########
+            #########################
+            #Create documents,      #
+            #Load XML and Transform #
+            #using XSL StyleSheets  #
+            #########################
+            */
+            // Create document to work in and load content of file
+            $XML = new DOMDocument();
+            $XML->load( $request );
+            
+            // Start XSLT
+            $XSLT = new XSLTProcessor();    
+                    
+            //Create document for stylesheet and load contents of xsl
+            $XSL = new DOMDocument();
+            $XSL->load( $stylesheet );
+            $XSLT->importStylesheet( $XSL );  //import stylesheet
+             
+            $XSLT->registerPHPFunctions();  //register PHP functions
+              
+            print $XSLT->transformToXML( $XML );  //transform XML with StyleSheet
+            
+            
+          ?>
+          </p>
+          <hr>
+          <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/recent-arrivals" alt="More Recent Arrivals">More Recent Arrivals</a></p>
       </div>
       </div>
       <div class="frontpage-column">
