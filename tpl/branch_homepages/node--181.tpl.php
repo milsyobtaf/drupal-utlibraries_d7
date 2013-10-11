@@ -109,7 +109,7 @@
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Recent Arrivals</h3>
-          <p><!-- Begin Recent Arrivals Block -->
+          <!-- Begin Recent Arrivals Block -->
           <?php
             $stylesheet = "/usr/local/docs/sites/all/themes/utlibraries_d7/tpl/recent_arrivals/arrivals_spotlight.xsl";         //location of stylesheet
             //$request_directory = $_SERVER['DOCUMENT_ROOT'] ."/recentarrivals/xml"; //directory of xml files
@@ -160,7 +160,6 @@
             
             
           ?>
-          </p>
           <hr>
           <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/recent-arrivals" alt="More Recent Arrivals">More Recent Arrivals</a></p>
       </div>

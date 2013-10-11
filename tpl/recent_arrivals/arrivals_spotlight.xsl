@@ -8,11 +8,10 @@
 
     </xsl:template>
 
-
     <xsl:template match="new_books/record">
-
         <xsl:choose>
             <xsl:when test="isbn">
+              <div class="frontpage-recent-arrivals-image">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:text>http://catalog.lib.utexas.edu/search/?searchtype=.&amp;searcharg=</xsl:text>
@@ -35,8 +34,10 @@
                     </xsl:attribute>
                     </img>
                 </a>
+              </div>
             </xsl:when>
             <xsl:otherwise>
+              <div class="frontpage-recent-arrivals-image">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:text>http://catalog.lib.utexas.edu/search/?searchtype=.&amp;searcharg=</xsl:text>
@@ -57,13 +58,11 @@
                     </xsl:attribute>
                     </img>
                 </a>
-                <br />
+              </div>
             </xsl:otherwise>
         </xsl:choose>
-        <p>
-            <xsl:attribute name="class">
-                <xsl:text>spotlightdesc</xsl:text>
-            </xsl:attribute>
+        <div class="frontpage-recent-arrivals-description">
+            <h4>
             <a>
                 <xsl:attribute name="href">
                     <xsl:text>http://catalog.lib.utexas.edu/search/?searchtype=.&amp;searcharg=</xsl:text>
@@ -88,10 +87,10 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </a>
-            <br />
-            <br />
+            </h4>
             <xsl:choose>
                 <xsl:when test="author">
+                  <p>
                     <a>
                         <xsl:attribute name="href">
                             <xsl:text>http://catalog.lib.utexas.edu/search/a?SEARCH=</xsl:text>
@@ -111,9 +110,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </a>
-                    <br />
-                    <br />
-
+                  </p>
                 </xsl:when>
             </xsl:choose>
 
@@ -131,7 +128,7 @@
       </xsl:choose> 
       <br /><br />-->
             <!--<xsl:value-of select="$location"/><br />-->
-        </p>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>
