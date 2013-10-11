@@ -1,3 +1,4 @@
+// Branch Recent Arrivals Full Page Styling
 div.recent-arrivals-full {
   div.topnav,
   div.bottomnav {
@@ -134,4 +135,16 @@ div.recent-arrivals-full {
     padding-left:0px;
     margin-left:130px;
     }
+}
+// Branch Recent Arrivals Front Page Block Styling
+.frontpage-block {
+  .frontpage-recent-arrivals-description {
+    margin: 0 .3em .6em;
+      h4 {
+        margin-bottom: .3em;
+      }
+      a {
+        @extend .clean-links;
+      }
+  }
 }
