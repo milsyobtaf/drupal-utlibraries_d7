@@ -793,10 +793,10 @@ article.group-nav aside.sidebar ul {
   padding: 0 1em 0 2em;
   margin-top: 0;
 }
-article.group-nav aside.sidebar ul.menu li {
+article.group-nav aside.sidebar ul li {
   margin: 0 0 0.4em 0;
 }
-article.group-nav aside.sidebar ul.menu li.last {
+article.group-nav aside.sidebar ul li.last {
   margin: 0;
 }
 article.group-nav aside.sidebar ul li {
