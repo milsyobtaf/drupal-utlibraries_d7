@@ -177,8 +177,11 @@
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Rotating Features</h3>
-          <p>Branch Features Here</p>
+        <h3 class="frontpage-block-title gradient">Rotating Features</h3>
+          <?php
+            $block = module_invoke('views', 'block_view', 'featured_resources-block_2');
+            print render($block['content']);
+          ?>
       </div>
       </div>
       <div class="frontpage-column">
