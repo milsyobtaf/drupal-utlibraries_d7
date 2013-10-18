@@ -132,12 +132,10 @@ article.group-nav aside.sidebar {
   ul {
     padding: 0 1em 0 2em;
     margin-top: 0;
-    &.menu {
       li {
         margin: 0 0 .4em 0;
-      &.last {
-        margin: 0;
-      }
+          &.last {
+            margin: 0;
       }
     }
       li {
