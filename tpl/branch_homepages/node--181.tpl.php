@@ -177,7 +177,7 @@
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
-        <h3 class="frontpage-block-title gradient">Rotating Features</h3>
+        <h3 class="frontpage-block-title gradient">Featured Resource</h3>
           <?php
             $block = module_invoke('views', 'block_view', 'featured_resources-block_2');
             print render($block['content']);
