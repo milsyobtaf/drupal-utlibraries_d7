@@ -188,7 +188,7 @@
       <div class="frontpage-block">
         <h3 id="frontpage-block-title" class="frontpage-block-title gradient">Connect With Us</h3>
           <div class="ask-a-librarian-widget">
-            <iframe style="width: 98%; height: 300px;" src="http://libraryh3lp.com/chat/utexas-fal@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian&css=https://cms-d7.lib.utexas.edu/sites/all/themes/utlibraries_d7/stylesheets/partials/design/chat-widget.css" frameborder="0"></iframe>
+            <iframe style="width: 98%; height: 300px;" src="//libraryh3lp.com/chat/utexas-fal@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian&css=//cms-d7.lib.utexas.edu/sites/all/themes/utlibraries_d7/stylesheets/partials/design/chat-widget.css" frameborder="0"></iframe>
           </div>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_22');
