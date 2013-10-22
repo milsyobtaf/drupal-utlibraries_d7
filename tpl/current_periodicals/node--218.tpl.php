@@ -1,3 +1,7 @@
+<!-- I hate having to do this, but for now I do to get the links to work reliably -->
+
+<?php $url_prefix = 'd7/fal/about/holdings/currentperiodicals'; ?>
+
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <header>
@@ -40,7 +44,7 @@
             	while ($row = mysql_fetch_array($result)) {
             	$title = $row['title'];
             	$ugl_serials_id = $row['ugl_serials_id'];
-    		$display .= "<li><a href=\"currentperiodicals/view_full_rec.php?ugl_serials_id=$ugl_serials_id\">$title</a></li>
+    		$display .= "<li><a href=\"/$url_prefix/view_full_rec.php?ugl_serials_id=$ugl_serials_id\">$title</a></li>
     		";
     		}
     
