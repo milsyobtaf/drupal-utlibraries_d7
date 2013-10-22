@@ -1,0 +1,25 @@
+<?php 
+include_once("config.php");
+include_once("functions.php");
+include_once("login_test.php");
+
+/* Filter Input */
+if (! isset($_GET["kardex_id"])) {
+	exit;
+}
+$kardex_id = $_GET["kardex_id"];
+if (!is_numeric($kardex_id)) {
+	exit();
+} 
+
+$connection = connect();
+
+$sql = "DELETE 
+        FROM ugl_kardex
+		WHERE kardex_id = $kardex_id";
+		
+$result = @mysql_query($sql,$connection) or die ("whoops");
+
+header("Location: staff_full_rec.php?ugl_serials_id=$ugl_serials_id");
+
+?>
