@@ -1,0 +1,47 @@
+.current-periodicals {
+  &.current-periodicals-full {
+    ul.current-periodicals-list {
+      margin: 0;
+      padding-left: 20px;
+        li {
+          font-size: 1.2em;
+          list-style-type: none;
+          line-height: 1.5em;
+            a {
+              @extend .clean-links;
+            }
+        }
+    }
+  }
+  &.current-periodicals-detail {
+    div {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      padding-left: 25px;
+      a {
+        @extend .clean-links;
+      }
+    }
+    div.holdings {
+      td {
+        text-align: center;
+      }
+    }
+    table {
+      td {
+        border: 2px solid $white;
+        @include border-radius(5px);
+          &.header,
+          &.kardex_header {
+            background-color: #ddddee;
+            font-weight: bold;
+          }
+          &.header {
+            text-align: right;
+          }
+      }
+    }
+  }
+}
