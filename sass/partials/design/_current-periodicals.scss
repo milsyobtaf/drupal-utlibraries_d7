@@ -1,4 +1,7 @@
 .current-periodicals {
+  a {
+    @extend .clean-links;
+  }
   &.current-periodicals-full {
     ul.current-periodicals-list {
       margin: 0;
@@ -7,9 +10,6 @@
           font-size: 1.2em;
           list-style-type: none;
           line-height: 1.5em;
-            a {
-              @extend .clean-links;
-            }
         }
     }
   }
@@ -20,9 +20,6 @@
     }
     p {
       padding-left: 25px;
-      a {
-        @extend .clean-links;
-      }
     }
     div.holdings {
       td {
