@@ -161,7 +161,7 @@
             
           ?>
           <hr>
-          <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/recent-arrivals" alt="More Recent Arrivals">More Recent Arrivals</a></p>
+          <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals" alt="More Recent Arrivals">More Recent Arrivals</a></p>
       </div>
       </div>
       <div class="frontpage-column">
