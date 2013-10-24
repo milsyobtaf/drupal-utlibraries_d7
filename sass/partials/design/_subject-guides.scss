@@ -69,3 +69,18 @@ div.ctools-collapsible-container {
     }
   }
 }
+
+div.rg-header-image-and-title-pane {
+    position: relative;
+      img {
+        line-height: 0;
+        text-align: center;
+        margin: 0 auto;
+      }
+      h2 {
+        position: absolute;
+        bottom: 0;
+        font-size: 2em;
+        margin: 0 0 15px 25px;
+      }
+}
