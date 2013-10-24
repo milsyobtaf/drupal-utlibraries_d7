@@ -1461,6 +1461,21 @@ div.ctools-collapsible-container div.ctools-collapsible-content p {
   margin-top: 0;
 }
 
+div.rg-header-image-and-title-pane {
+  position: relative;
+}
+div.rg-header-image-and-title-pane img {
+  line-height: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+div.rg-header-image-and-title-pane h2 {
+  position: absolute;
+  bottom: 0;
+  font-size: 2em;
+  margin: 0 0 15px 25px;
+}
+
 footer,
 #footer {
   margin-top: 10px;
