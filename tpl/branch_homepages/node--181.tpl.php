@@ -172,7 +172,7 @@
             print render($block['content']);
           ?>
         <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/events" alt="More Events">More Events</a></p>
+        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/" alt="More News">More News</a></p>
       </div>
       </div>
       <div class="frontpage-column">
