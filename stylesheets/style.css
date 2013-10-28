@@ -841,12 +841,10 @@ article div.content-group .content-suffix {
 .frontpage-columns {
   margin-top: 1em;
 }
-.frontpage-columns .frontpage-column {
-  position: relative;
-}
 .frontpage-columns .frontpage-column .frontpage-block {
   padding: 1em;
   margin-bottom: 1em;
+  position: relative;
 }
 .frontpage-columns .frontpage-column .frontpage-block p {
   white-space: pre;
@@ -1280,7 +1278,7 @@ div.branch-staff-list table td span {
   background-image: -o-linear-gradient(top, #5e2e68 0%, #733a7f 13%, #773d84 17%, #7f408c 28%, #813f8f 35%, #7d3b8b 60%, #71357e 79%, #5e2e69 100%);
   background-image: linear-gradient(top, #5e2e68 0%, #733a7f 13%, #773d84 17%, #7f408c 28%, #813f8f 35%, #7d3b8b 60%, #71357e 79%, #5e2e69 100%);
 }
-.og-context-node-181 div.frontpage-column {
+.og-context-node-181 div.frontpage-column div.frontpage-block {
   min-height: 500px;
 }
 .og-context-node-181 div.frontpage-column hr {
