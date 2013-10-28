@@ -1725,9 +1725,10 @@ footer .utdirect-logo span,
 
 table th {
   background: #cccccc;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
   text-transform: none;
+  border-bottom: 1px solid #333333;
 }
 
 table th a {
@@ -1740,6 +1741,10 @@ table th {
 
 table th.views-field-operations-dropbutton {
   width: 175px;
+}
+
+table tr {
+  border: 1px solid #333333;
 }
 
 table td {
