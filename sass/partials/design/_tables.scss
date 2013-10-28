@@ -1,8 +1,9 @@
 table th {
   background: $gray-light;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
   text-transform: none;
+  border-bottom: 1px solid $black-light;
 }
 
 table th a {
@@ -15,6 +16,10 @@ table th {
 
 table th.views-field-operations-dropbutton {
   width: 175px;
+}
+
+table tr {
+  border: 1px solid $black-light;
 }
 
 table td {
