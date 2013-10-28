@@ -184,7 +184,6 @@ article div.content-group {
     .frontpage-block {
       padding: 1em;
       margin-bottom: 1em;
-      min-height: 500px;
       @extend .branch-boxes-shadowed;
         p {
           @include force-wrap;

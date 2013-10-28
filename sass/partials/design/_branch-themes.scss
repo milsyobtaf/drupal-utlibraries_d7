@@ -78,6 +78,7 @@ $experimental-support-for-svg: true;
     @include background-image(linear-gradient(top,  #5e2e68 0%,#733a7f 13%,#773d84 17%,#7f408c 28%,#813f8f 35%,#7d3b8b 60%,#71357e 79%,#5e2e69 100%));
   }
   div.frontpage-column {
+    min-height: 500px;
     @extend .frontpage-column-fourths;
     hr {
       color: #cccbcb;
