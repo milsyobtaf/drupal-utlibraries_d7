@@ -80,7 +80,14 @@ $experimental-support-for-svg: true;
   div.frontpage-column {
     @extend .frontpage-column-fourths;
     div.frontpage-block {
-      min-height: 500px;
+      min-height: 550px;
+    }
+    span.field-content {
+      a {
+        div.frontpage-block-footer {
+          margin: 0 -.6em;
+        }
+      }
     }
     hr {
       color: #cccbcb;
