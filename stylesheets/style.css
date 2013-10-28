@@ -841,9 +841,13 @@ article div.content-group .content-suffix {
 .frontpage-columns {
   margin-top: 1em;
 }
+.frontpage-columns .frontpage-column {
+  position: relative;
+}
 .frontpage-columns .frontpage-column .frontpage-block {
   padding: 1em;
   margin-bottom: 1em;
+  min-height: 500px;
 }
 .frontpage-columns .frontpage-column .frontpage-block p {
   white-space: pre;
@@ -861,6 +865,11 @@ article div.content-group .content-suffix {
 .frontpage-columns .frontpage-column .frontpage-block .ask-a-librarian-widget iframe {
   width: 100%;
   height: 350px;
+}
+.frontpage-columns .frontpage-column .frontpage-block .frontpage-block-footer {
+  width: 90%;
+  position: absolute;
+  bottom: 20px;
 }
 .frontpage-columns .frontpage-column div.view-content {
   margin: 10px 0 0;
