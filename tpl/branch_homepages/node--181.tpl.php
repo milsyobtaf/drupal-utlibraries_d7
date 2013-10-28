@@ -160,19 +160,27 @@
             
             
           ?>
-          <hr>
-          <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals" alt="More Recent Arrivals">More Recent Arrivals</a></p>
+          <div class="frontpage-block-footer">
+            <hr>
+            <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals" alt="All Recent Arrivals">All Recent Arrivals</a></p>
+            <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals??sort_by=date_added&results_per_page=20&location=fi&type=a&language=any" alt="Recent Book Arrivals">Recent Book Arrivals</a></p>
+            <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals??sort_by=date_added&results_per_page=20&location=fi&type=l&language=any" alt="Recent DVD Arrivals">Recent DVD Arrivals</a></p>
+            <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals??sort_by=date_added&results_per_page=20&location=fi&type=h&language=any" alt="Recent CD Arrivals">Recent CD Arrivals</a></p>
+            <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/about/holdings/recent-arrivals??sort_by=date_added&results_per_page=20&location=fi&type=c&language=any" alt="Recent Score Arrivals">Recent Score Arrivals</a></p>
+          </div>
       </div>
       </div>
       <div class="frontpage-column">
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">FAL News</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_21');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_29');
             print render($block['content']);
           ?>
-        <hr>
-        <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/" alt="More News">More News</a></p>
+        <div class="frontpage-block-footer">  
+          <hr>
+          <p class="more-in-category"><a href="/d7/<?php print render($content['field_url_short_title'][0]['#markup']); ?>/news/" alt="More News">More News</a></p>
+        </div>
       </div>
       </div>
       <div class="frontpage-column">
@@ -190,10 +198,14 @@
           <div class="ask-a-librarian-widget">
             <iframe style="width: 98%; height: 300px;" src="//libraryh3lp.com/chat/utexas-fal@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian&css=//cms-d7.lib.utexas.edu/sites/all/themes/utlibraries_d7/stylesheets/partials/design/chat-widget.css" frameborder="0"></iframe>
           </div>
-          <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_22');
-            print render($block['content']);
-          ?>
+          <div class="frontpage-block-footer">
+            <hr>
+            <p class="more-in-category"><a href="http://lib.utexas.edu/services/reference/chat/">After Hours Chat</p>
+              <?php
+                $block = module_invoke('views', 'block_view', 'branch_views-block_22');
+                print render($block['content']);
+              ?>
+          </div>
       </div>
       </div>
     </div>
