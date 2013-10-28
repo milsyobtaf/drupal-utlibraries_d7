@@ -168,7 +168,7 @@
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">FAL News</h3>
           <?php
-            $block = module_invoke('views', 'block_view', 'branch_views-block_21');
+            $block = module_invoke('views', 'block_view', 'branch_views-block_29');
             print render($block['content']);
           ?>
         <hr>
