@@ -866,7 +866,7 @@ article div.content-group .content-suffix {
 .frontpage-columns .frontpage-column .frontpage-block .frontpage-block-footer {
   width: 90%;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
 }
 .frontpage-columns .frontpage-column div.view-content {
   margin: 10px 0 0;
@@ -1279,7 +1279,10 @@ div.branch-staff-list table td span {
   background-image: linear-gradient(top, #5e2e68 0%, #733a7f 13%, #773d84 17%, #7f408c 28%, #813f8f 35%, #7d3b8b 60%, #71357e 79%, #5e2e69 100%);
 }
 .og-context-node-181 div.frontpage-column div.frontpage-block {
-  min-height: 500px;
+  min-height: 550px;
+}
+.og-context-node-181 div.frontpage-column span.field-content a div.frontpage-block-footer {
+  margin: 0 -0.6em;
 }
 .og-context-node-181 div.frontpage-column hr {
   color: #cccbcb;
