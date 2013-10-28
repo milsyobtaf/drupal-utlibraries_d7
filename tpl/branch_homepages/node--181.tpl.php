@@ -190,6 +190,8 @@
           <div class="ask-a-librarian-widget">
             <iframe style="width: 98%; height: 300px;" src="//libraryh3lp.com/chat/utexas-fal@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian&css=//cms-d7.lib.utexas.edu/sites/all/themes/utlibraries_d7/stylesheets/partials/design/chat-widget.css" frameborder="0"></iframe>
           </div>
+          <hr>
+          <p class="more-in-category"><a href="http://lib.utexas.edu/services/reference/chat/">After Hours Chat</p>
           <?php
             $block = module_invoke('views', 'block_view', 'branch_views-block_22');
             print render($block['content']);
