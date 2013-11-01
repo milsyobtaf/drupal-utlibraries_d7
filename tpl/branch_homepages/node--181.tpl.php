@@ -111,7 +111,7 @@
         <h3 class="frontpage-block-title gradient">Recent Arrivals</h3>
           <!-- Begin Recent Arrivals Block -->
           <?php
-            $stylesheet = "/usr/local/docs/sites/all/themes/utlibraries_d7/tpl/recent_arrivals/arrivals_spotlight.xsl";         //location of stylesheet
+            $stylesheet = "/usr/local/docs/sites/all/themes/utlibraries_d7/tpl/recent_arrivals/arrivals_spotlight_extended.xsl";         //location of stylesheet
             //$request_directory = $_SERVER['DOCUMENT_ROOT'] ."/recentarrivals/xml"; //directory of xml files
             $file = array("fi.xml"); //location of xml file
             $request = "/home/utlol/htdocs/lib-recentarrivals/xml/". $file[0];
