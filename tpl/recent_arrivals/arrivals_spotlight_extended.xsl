@@ -2,21 +2,13 @@
     <xsl:param name="randomselect" select="php:functionString('rand',1,8)" />
     <xsl:output omit-xml-declaration="yes" />
 
-<xsl:template match="text">
-  <body>
-    <xsl:value-of select="." disable-output-escaping="yes" />
-  </body>
-</xsl:template>
-
     <xsl:template match="/">
 
         <xsl:apply-templates select="new_books/record[position()= $randomselect]">
         </xsl:apply-templates>
 
     </xsl:template>
-    
-    
-    
+
     <xsl:template match="new_books/record">
         <xsl:choose>
             <xsl:when test="isbn">
@@ -80,27 +72,25 @@
                 
                 <xsl:variable name="titlelength" select="string-length(normalize-space(title))" />
                 <xsl:choose>
-                    <!-- if title is 74 characters or longer, display the first 500 characters and add an ellipsis -->
+                    <!-- if title is 500 characters or longer, display the first 500 characters and add an ellipsis -->
                     <xsl:when test="$titlelength &gt;= 500">
-                        <!--<xsl:value-of select="substring(normalize-space(title),1,74)" disable-output-escaping="yes"  
-/>-->
-                        <!--<xsl:value-of select="php:functionString('titleformat', title)" disable-output-escaping="yes" 
-/>-->
-                        <xsl:value-of select="substring(php:function('recentarrivals_title',string(title)),1,500)" />
-                        <xsl:text>...</xsl:text>
+                      <xsl:value-of select="substring(php:function('recentarrivals_title',string(title)),1,500)" disable-output-escaping="yes" />
+                      <xsl:text disable-output-escaping="yes">&#8230;</xsl:text>
                     </xsl:when>
                     <!-- if title is shorter than 74 characters, display it unmodified -->
                     <xsl:otherwise>
                         <!--<xsl:value-of select="normalize-space(title)" disable-output-escaping="yes" />-->
                         <!--<xsl:value-of select="php:functionString('titleformat', title)" />-->
-                        <xsl:value-of select="php:function('recentarrivals_title',string(title))" />
+                        <xsl:value-of select="php:function('recentarrivals_title',string(title))" disable-output-escaping="yes" />
                     </xsl:otherwise>
                 </xsl:choose>
             </a>
             </h4>
+            </div>
+            <div class="frontpage-recent-arrivals-metadata">
             <xsl:choose>
                 <xsl:when test="author">
-                  <p>
+                  <p class="frontpage-recent-arrivals-author">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:text>http://catalog.lib.utexas.edu/search/a?SEARCH=</xsl:text>
@@ -123,7 +113,9 @@
                   </p>
                 </xsl:when>
             </xsl:choose>
-
+            <p class="frontpage-recent-arrivals-publisher">Published: <xsl:value-of select="normalize-space(pub_info)" disable-output-escaping="yes" /></p>
+            <p class="frontpage-recent-arrivals-catalogdate">Added: <xsl:value-of select="normalize-space(cat_date)" disable-output-escaping="yes" /></p>
+            </div>
             <!--<xsl:variable name="desclength" select="string-length(normalize-space(pub_info))"/>
       <xsl:choose>-->
             <!-- if description is 54 characters or longer, display the first 54 characters and add an ellipsis -->
@@ -138,7 +130,6 @@
       </xsl:choose> 
       <br /><br />-->
             <!--<xsl:value-of select="$location"/><br />-->
-        </div>
     </xsl:template>
 
 </xsl:stylesheet>
