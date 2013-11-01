@@ -138,13 +138,18 @@ div.recent-arrivals-full {
 }
 // Branch Recent Arrivals Front Page Block Styling
 .frontpage-block {
-  .frontpage-recent-arrivals-description {
+  .frontpage-recent-arrivals-description,
+  .frontpage-recent-arrivals-metadata {
     margin: 0 .3em .6em;
       h4 {
         margin-bottom: .3em;
       }
       a {
         @extend .clean-links;
+      }
+      p {
+        font-style: italic;
+        margin: 0 0 .5em;
       }
   }
 }

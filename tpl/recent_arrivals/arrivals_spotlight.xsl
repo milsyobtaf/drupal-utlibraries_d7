@@ -76,21 +76,23 @@
 />-->
                         <!--<xsl:value-of select="php:functionString('titleformat', title)" disable-output-escaping="yes" 
 />-->
-                        <xsl:value-of select="substring(php:function('recentarrivals_title',string(title)),1,74)" />
+                        <xsl:value-of select="substring(php:function('recentarrivals_title',string(title)),1,74)" disable-output-escaping="yes" />
                         <xsl:text>...</xsl:text>
                     </xsl:when>
                     <!-- if title is shorter than 74 characters, display it unmodified -->
                     <xsl:otherwise>
                         <!--<xsl:value-of select="normalize-space(title)" disable-output-escaping="yes" />-->
                         <!--<xsl:value-of select="php:functionString('titleformat', title)" />-->
-                        <xsl:value-of select="php:function('recentarrivals_title',string(title))" />
+                        <xsl:value-of select="php:function('recentarrivals_title',string(title))" disable-output-escaping="yes" />
                     </xsl:otherwise>
                 </xsl:choose>
             </a>
             </h4>
+            </div>
+            <div class="frontpage-recent-arrivals-metadata">
             <xsl:choose>
                 <xsl:when test="author">
-                  <p>
+                  <p class="frontpage-recent-arrivals-author">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:text>http://catalog.lib.utexas.edu/search/a?SEARCH=</xsl:text>
@@ -113,7 +115,9 @@
                   </p>
                 </xsl:when>
             </xsl:choose>
-
+            <p class="frontpage-recent-arrivals-publisher">Published: <xsl:value-of select="normalize-space(pub_info)" disable-output-escaping="yes" /></p>
+            <p class="frontpage-recent-arrivals-catalogdate">Added: <xsl:value-of select="normalize-space(cat_date)" disable-output-escaping="yes" /></p>
+            </div>
             <!--<xsl:variable name="desclength" select="string-length(normalize-space(pub_info))"/>
       <xsl:choose>-->
             <!-- if description is 54 characters or longer, display the first 54 characters and add an ellipsis -->
@@ -128,7 +132,6 @@
       </xsl:choose> 
       <br /><br />-->
             <!--<xsl:value-of select="$location"/><br />-->
-        </div>
     </xsl:template>
-
+    
 </xsl:stylesheet>
