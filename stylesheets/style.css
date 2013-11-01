@@ -256,16 +256,19 @@ table {
 .clean-links, article.group-nav aside.sidebar h2 a, article.group-nav aside.sidebar ul li a, .frontpage-columns .frontpage-column div.view-content div a,
 .frontpage-columns .frontpage-column h3 a, .frontpage-columns .frontpage-column a.views-more-link, .frontpage-columns .frontpage-column p.more-in-category a,
 .frontpage-columns .frontpage-column p.more-about-resource a, .branch-faq .branch-faq-back-to-top a, .branch-faq-menu div > div a, .branch-news h3 a, .branch-news a.views-more-link, .branch-location-block a, div.branch-staff-list .branch-staff-name span:first-of-type a, div.recent-arrivals-full div.topnav .pagination .pagination-numbers a,
-div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a, .frontpage-block .frontpage-recent-arrivals-description a, .current-periodicals a {
+div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a, .frontpage-block .frontpage-recent-arrivals-description a,
+.frontpage-block .frontpage-recent-arrivals-metadata a, .current-periodicals a {
   text-decoration: none;
 }
 .clean-links:hover, article.group-nav aside.sidebar h2 a:hover, article.group-nav aside.sidebar ul li a:hover, .frontpage-columns .frontpage-column div.view-content div a:hover,
 .frontpage-columns .frontpage-column h3 a:hover, .frontpage-columns .frontpage-column a.views-more-link:hover, .frontpage-columns .frontpage-column p.more-in-category a:hover,
 .frontpage-columns .frontpage-column p.more-about-resource a:hover, .branch-faq .branch-faq-back-to-top a:hover, .branch-faq-menu div > div a:hover, .branch-news h3 a:hover, .branch-news a.views-more-link:hover, .branch-location-block a:hover, div.branch-staff-list .branch-staff-name span:first-of-type a:hover, div.recent-arrivals-full div.topnav .pagination .pagination-numbers a:hover,
-div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a:hover, .frontpage-block .frontpage-recent-arrivals-description a:hover, .current-periodicals a:hover, .clean-links:focus, article.group-nav aside.sidebar h2 a:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
+div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a:hover, .frontpage-block .frontpage-recent-arrivals-description a:hover,
+.frontpage-block .frontpage-recent-arrivals-metadata a:hover, .current-periodicals a:hover, .clean-links:focus, article.group-nav aside.sidebar h2 a:focus, article.group-nav aside.sidebar ul li a:focus, .frontpage-columns .frontpage-column div.view-content div a:focus,
 .frontpage-columns .frontpage-column h3 a:focus, .frontpage-columns .frontpage-column a.views-more-link:focus, .frontpage-columns .frontpage-column p.more-in-category a:focus,
 .frontpage-columns .frontpage-column p.more-about-resource a:focus, .branch-faq .branch-faq-back-to-top a:focus, .branch-faq-menu div > div a:focus, .branch-news h3 a:focus, .branch-news a.views-more-link:focus, .branch-location-block a:focus, div.branch-staff-list .branch-staff-name span:first-of-type a:focus, div.recent-arrivals-full div.topnav .pagination .pagination-numbers a:focus,
-div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a:focus, .frontpage-block .frontpage-recent-arrivals-description a:focus, .current-periodicals a:focus {
+div.recent-arrivals-full div.bottomnav .pagination .pagination-numbers a:focus, .frontpage-block .frontpage-recent-arrivals-description a:focus,
+.frontpage-block .frontpage-recent-arrivals-metadata a:focus, .current-periodicals a:focus {
   text-decoration: underline;
 }
 
@@ -2042,11 +2045,18 @@ div.recent-arrivals-full .text h5 {
   margin-left: 130px;
 }
 
-.frontpage-block .frontpage-recent-arrivals-description {
+.frontpage-block .frontpage-recent-arrivals-description,
+.frontpage-block .frontpage-recent-arrivals-metadata {
   margin: 0 0.3em 0.6em;
 }
-.frontpage-block .frontpage-recent-arrivals-description h4 {
+.frontpage-block .frontpage-recent-arrivals-description h4,
+.frontpage-block .frontpage-recent-arrivals-metadata h4 {
   margin-bottom: .3em;
+}
+.frontpage-block .frontpage-recent-arrivals-description p,
+.frontpage-block .frontpage-recent-arrivals-metadata p {
+  font-style: italic;
+  margin: 0 0 0.5em;
 }
 
 .current-periodicals.current-periodicals-full ul.current-periodicals-list {
