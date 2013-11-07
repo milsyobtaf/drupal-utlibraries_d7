@@ -33,7 +33,8 @@ div.recent-arrivals-full {
         display: inline;
         margin-right: 10px;
       }
-      .results-per-page {
+      .results-per-page,
+      .filter-by-type {
           label {
             display: inline;
           }
@@ -54,19 +55,6 @@ div.recent-arrivals-full {
     padding:15px;
     width:90%;
     }
-
-  .filterselect {
-    width:25%;
-    margin-right:6%;
-    float:left;
-    margin-bottom:10px;
-    }
-
-  .filterselect select {
-    width:100%;
-    font-size:80%;
-    }
-
 
   .icons {
     float:left;
