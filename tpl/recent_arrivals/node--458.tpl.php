@@ -237,7 +237,7 @@ function ra_sess_gc()
 $default_location = "fi";				//Default branch location
 $this_script = "recent-arrivals"; 	//The name of this script
 $display_filter = 0; 					// Set to 1 to display branch filter 
-	
+$display_filter_type = 1;     // Set to 1 to display type filter	
 
 /*
 ########
@@ -723,6 +723,28 @@ if ($num_items > 0) {
 	<p>".$num_items." Results | Page ".ceil((($clean['start'] + 1)/$clean['results_per_page']))." of ".ceil($num_items/$clean['results_per_page'])."</p>";
 	paginate($clean['start'], $num_items, $clean['this_script'], $clean['results_per_page'], $clean['type'], $clean['location'], $clean['language'], $clean['sort_by']);
 
+//Display Type Filter
+if ($display_filter_type) {
+	print "
+	<form action='".$clean['this_script']."' method='get'>
+	<input type='hidden' name='sort_by' value='".$clean['sort_by']."'>
+	<input type='hidden' name='results_per_page' value='".$clean['results_per_page']."'>
+	<span class='filter-by-type'>
+	<label for='type'>Material Type:</label>
+	<select onchange='form.submit()' name='type' id='type'>";
+	foreach ($type_array as $type) {
+		if ($type == $clean['type']) {
+			print "<option value='".$type."' SELECTED>".$type_long[$type]."</option>";
+		} else {
+			print "<option value='".$type."'>".$type_long[$type]."</option>";
+		}
+	}
+	print "
+	</select>
+	</span>
+	</form>";
+}
+
 	print "
 	<!-- Limit results per page -->
   <form action='".$clean['this_script']."' method='get'>
@@ -953,6 +975,28 @@ if ($num_items > 0) {
 	print "<!-- # of results, page number -->
 	<p>".$num_items." Results | Page ".ceil((($clean['start'] + 1)/$clean['results_per_page']))." of ".ceil($num_items/$clean['results_per_page'])."</p>";
 	paginate($clean['start'], $num_items, $clean['this_script'], $clean['results_per_page'], $clean['type'], $clean['location'], $clean['language'], $clean['sort_by']);
+
+//Display Type Filter
+if ($display_filter_type) {
+	print "
+	<form action='".$clean['this_script']."' method='get'>
+	<input type='hidden' name='sort_by' value='".$clean['sort_by']."'>
+	<input type='hidden' name='results_per_page' value='".$clean['results_per_page']."'>
+	<span class='filter-by-type'>
+	<label for='type'>Material Type:</label>
+	<select onchange='form.submit()' name='type' id='type'>";
+	foreach ($type_array as $type) {
+		if ($type == $clean['type']) {
+			print "<option value='".$type."' SELECTED>".$type_long[$type]."</option>";
+		} else {
+			print "<option value='".$type."'>".$type_long[$type]."</option>";
+		}
+	}
+	print "
+	</select>
+	</span>
+	</form>";
+}
 
 	print "
 	<!-- Limit results per page -->
