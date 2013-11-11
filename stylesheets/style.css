@@ -1950,7 +1950,9 @@ div.recent-arrivals-full div.bottomnav form {
   margin-right: 10px;
 }
 div.recent-arrivals-full div.topnav .results-per-page label,
-div.recent-arrivals-full div.bottomnav .results-per-page label {
+div.recent-arrivals-full div.topnav .filter-by-type label,
+div.recent-arrivals-full div.bottomnav .results-per-page label,
+div.recent-arrivals-full div.bottomnav .filter-by-type label {
   display: inline;
 }
 div.recent-arrivals-full div.topnav .sort,
@@ -1970,16 +1972,6 @@ div.recent-arrivals-full .filter {
   border: 1px solid #cccccc;
   padding: 15px;
   width: 90%;
-}
-div.recent-arrivals-full .filterselect {
-  width: 25%;
-  margin-right: 6%;
-  float: left;
-  margin-bottom: 10px;
-}
-div.recent-arrivals-full .filterselect select {
-  width: 100%;
-  font-size: 80%;
 }
 div.recent-arrivals-full .icons {
   float: left;
