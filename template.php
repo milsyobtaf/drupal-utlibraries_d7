@@ -64,6 +64,11 @@ function utlibraries_d7_preprocess_page(&$vars) {
   if (isset($vars['node']) && $vars['node']->type == 'branch') {
     drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
     }
+/*
+  if ($vars['nid'] == '529') {
+    drupal_add_js('jwplayer("video-player").setup({flashplayer: "//lib.utexas.edu/sitescripts/js/jwplayer/player.swf",streamer: "rtmp://streaming.lib.utexas.edu/open",file: "mp4:fal/LP_Tutorial_512_15_Best.mp4",width: 320,height: 240);', array('type' => 'inline', 'scope' => 'header', 'weight' => -15));
+  }
+*/
 }
 /**
  * Override or insert variables into the region templates.
@@ -129,12 +134,17 @@ function utlibraries_d7_preprocess_node(&$vars) {
       $vars['region'][$region_key] = array();
     }
   }
-    if($vars['type'] == 'branch') {
-    // Add js
+  if ($vars['type'] == 'branch') {
     drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/fittext.js');
-      $variables['scripts'] = drupal_get_js();
-    }
-    $vars['theme_path'] = '/d7/' . drupal_get_path('theme', variable_get('theme_default', NULL));
+    $variables['scripts'] = drupal_get_js();
+  }
+/* Commenting out for now until I get back to this
+  if ($vars['nid'] == '529') {
+    drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/jwplayer.js');
+    $variables['scripts'] = drupal_get_js();
+  }
+*/
+  $vars['theme_path'] = '/d7/' . drupal_get_path('theme', variable_get('theme_default', NULL));
 }
 /* // */
 
