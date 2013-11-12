@@ -1183,10 +1183,6 @@ function xml_decode($value)
 
 ?>
 
-
-    <div class="taxonomy"><?php print $terms?></div>
-    <?php if ($links) { ?><div class="links">&raquo; <?php print $links?></div><?php }; ?>
-  </div>
   <?php if ($region['sidebar_second'] = render($region['sidebar_second'])): ?>
     <aside class="sidebar sidebar-second">
       <?php print $region['sidebar_second']; ?>
