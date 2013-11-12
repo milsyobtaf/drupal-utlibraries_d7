@@ -2010,19 +2010,6 @@ div.recent-arrivals-full .meta-recentarrivals {
   padding-left: 10px;
   width: 60%;
 }
-div.recent-arrivals-full .meta-recentarrivals a:link {
-  color: #000;
-  text-decoration: underline;
-}
-div.recent-arrivals-full .meta-recentarrivals a:visited {
-  color: #00FF00;
-}
-div.recent-arrivals-full .meta-recentarrivals a:hover {
-  color: #FF00FF;
-}
-div.recent-arrivals-full .meta-recentarrivals a:active {
-  color: #0000FF;
-}
 div.recent-arrivals-full .darker {
   color: #000;
 }
