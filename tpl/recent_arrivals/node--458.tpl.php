@@ -48,11 +48,13 @@ function get_ra_session_query($location, $type, $language, $sort_by)
 	$SITESESSNAME = "new_items";
     session_set_save_handler('ra_sess_open','ra_sess_close','ra_sess_read','ra_sess_write','ra_sess_destroy','ra_sess_gc');
     session_name($SITESESSNAME);
-	session_start();
+    if(!isset($_SESSION)) { 
+      session_start();
+    }
 	
 	$return_early = 0;
 		
-	if (! isset($_SESSION["session_query_var"])) {
+	if (!isset($_SESSION["session_query_var"])) {
 		//No session variable ret. return.	
 		return;
 	}
@@ -103,7 +105,9 @@ function set_ra_session_query($query_ary, $location, $type, $language, $sort_by)
 	$SITESESSNAME = "new_items";
     session_set_save_handler('ra_sess_open','ra_sess_close','ra_sess_read','ra_sess_write','ra_sess_destroy','ra_sess_gc');
     session_name($SITESESSNAME);
-	session_start();
+    if(!isset($_SESSION)) { 
+      session_start();
+    }
 	
 	$count = count($query_ary);
 
