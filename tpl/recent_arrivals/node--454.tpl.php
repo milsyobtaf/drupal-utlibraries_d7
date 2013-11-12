@@ -640,7 +640,7 @@ if (empty($sess_records)) {
 			$sort_marc_245 = (string)$node->marc_245;
 
 			//Format $sort_title to remove articles
-			$sort_title = substr($sort_title, $sort_marc_245);
+			$sort_title = substr($sort_title, $sort_marc_245, 1);
 
 			if ($clean['sort_by'] == 'title') {
 				$sort_value =  $sort_title.":".$sort_record_id;
@@ -885,7 +885,7 @@ if ($num_items == 0) {
 
 		if (isset($record['isbn'])) {
 			$isbn = $record['isbn'];
-			$isbn_ary = split(" ", $isbn);
+			$isbn_ary = explode(" ", $isbn);
 			$isbn = array_shift($isbn_ary);
 		} else {
 			$isbn = "";
@@ -910,13 +910,13 @@ if ($num_items == 0) {
 
 		//Format Title - Remove the '/(Author)' substring
 		$title = $record['title'];
-		$title_ary = split("/", $title);
+		$title_ary = explode("/", $title);
 		$title = array_shift($title_ary);
 		unset($title_ary);
 
 		if (isset($record['other_title']) && (!empty($record['other_title']))) {
 			$other_title = $record['other_title'];
-			$other_title_ary = split("/", $other_title);
+			$other_title_ary = explode("/", $other_title);
 			$other_title = array_shift($other_title_ary);
 			unset($other_title_ary);
 		}
