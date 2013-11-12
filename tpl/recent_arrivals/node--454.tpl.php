@@ -838,8 +838,8 @@ print"
 <!-- Sort options -->
 <div class=\"sort\">
 Sort by: ";
-$sort_count = count(sort_ary);
-$i = 0;
+$sort_count = count($sort_by_array);
+$i = 1;
 foreach ($sort_by_array as $sort_option) {
 	if ($sort_option == $clean['sort_by']) {
 		print "<span class=\"currentsort\">".$sort_by_long[$sort_option]."</span>";
@@ -1030,8 +1030,8 @@ print"
 <!-- Sort options -->
 <div class=\"sort\">
 Sort by: ";
-$sort_count = count(sort_ary);
-$i = 0;
+$sort_count = count($sort_by_array);
+$i = 1;
 foreach ($sort_by_array as $sort_option) {
 	if ($sort_option == $clean['sort_by']) {
 		print "<span class=\"currentsort\">".$sort_by_long[$sort_option]."</span>";
