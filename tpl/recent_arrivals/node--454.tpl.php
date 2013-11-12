@@ -640,7 +640,7 @@ if (empty($sess_records)) {
 			$sort_marc_245 = (string)$node->marc_245;
 
 			//Format $sort_title to remove articles
-			$sort_title = substr($sort_title, $sort_marc_245);
+			$sort_title = substr($sort_title, $sort_marc_245, 1);
 
 			if ($clean['sort_by'] == 'title') {
 				$sort_value =  $sort_title.":".$sort_record_id;
