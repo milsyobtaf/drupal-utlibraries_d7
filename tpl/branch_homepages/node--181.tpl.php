@@ -198,6 +198,10 @@
           <div class="ask-a-librarian-widget">
             <iframe style="width: 98%; height: 300px;" src="//libraryh3lp.com/chat/utexas-fal@chat.libraryh3lp.com?sounds=true&title=Ask+A+Librarian&css=//cms-d7.lib.utexas.edu/sites/all/themes/utlibraries_d7/stylesheets/partials/design/chat-widget.css" frameborder="0"></iframe>
           </div>
+          <div class="ask-a-librarian-text">
+            <p>Hours: M-F 8am-5pm</p>
+            <p>During these hours, if you get no response in 5 minutes, please <a href="mailto:mailto:fal-ref@utlists.utexas.edu">email us</a>.</p>
+          </div>
           <div class="frontpage-block-footer">
             <hr>
             <p class="more-in-category"><a href="http://lib.utexas.edu/services/reference/chat/">After Hours Chat</p>
