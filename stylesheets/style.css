@@ -1284,6 +1284,9 @@ div.branch-staff-list table td span {
 .og-context-node-181 div.frontpage-column div.frontpage-block {
   min-height: 650px;
 }
+.og-context-node-181 div.frontpage-column div.frontpage-block .ask-a-librarian-text {
+  margin: -25px 1em 0;
+}
 .og-context-node-181 div.frontpage-column span.field-content a div.frontpage-block-footer {
   margin: 0 -0.6em;
 }
