@@ -81,6 +81,9 @@ $experimental-support-for-svg: true;
     @extend .frontpage-column-fourths;
     div.frontpage-block {
       min-height: 650px;
+        .ask-a-librarian-text {
+          margin: -25px 1em 0;
+        }
     }
     span.field-content {
       a {
