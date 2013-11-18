@@ -64,7 +64,12 @@ function utlibraries_d7_preprocess_page(&$vars) {
   if (isset($vars['node']) && $vars['node']->type == 'branch') {
     drupal_add_js('window.fitText( document.getElementsByClassName("frontpage-block-title"), 1.3 );', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
     }
-/*
+/* This is a disabled feature for creating content type specific page tpls. Was intended for use with Basic Content - No Template, but you only need to worry about node tpls for that
+  if (isset($vars['node']->type)) {
+    $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
+  }
+*/
+/* This is a shelved experiment to get jwplayer working properly with Wowza, our streaming server
   if ($vars['nid'] == '529') {
     drupal_add_js('jwplayer("video-player").setup({flashplayer: "//lib.utexas.edu/sitescripts/js/jwplayer/player.swf",streamer: "rtmp://streaming.lib.utexas.edu/open",file: "mp4:fal/LP_Tutorial_512_15_Best.mp4",width: 320,height: 240);', array('type' => 'inline', 'scope' => 'header', 'weight' => -15));
   }
