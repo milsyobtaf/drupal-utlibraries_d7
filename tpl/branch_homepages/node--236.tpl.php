@@ -137,10 +137,10 @@
       <div class="frontpage-block">
         <h3 class="frontpage-block-title gradient">Subjects</h3>
          <ul class="lsl-research-guide-grid">
-             <li><a href="/d7/subject/biology/" class="lsl-biology">Biology</a></li>
-             <li><a href="/d7/subject/medicine/" class="lsl-medicine">Medicine</a></li>
-             <li><a href="/d7/subject/nutrition/" class="lsl-nutrition">Nutrition</a></li>
-             <li><a href="/d7/subject/pharmacy/" class="lsl-pharmacy">Pharmacy</a></li>
+             <li><a href="http://lib.utexas.edu/subject/biology/" class="lsl-biology">Biology</a></li>
+             <li><a href="http://lib.utexas.edu/subject/medicine/" class="lsl-medicine">Medicine</a></li>
+             <li><a href="http://lib.utexas.edu/subject/nutrition/" class="lsl-nutrition">Nutrition</a></li>
+             <li><a href="http://lib.utexas.edu/subject/pharmacy/" class="lsl-pharmacy">Pharmacy</a></li>
           </ul>
       </div>      </div>
       <div class="frontpage-column">

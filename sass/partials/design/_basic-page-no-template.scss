@@ -1,0 +1,41 @@
+article.node-basic-page-no-template {
+  h1#page-title {
+    width: 95%;
+    margin: 10px auto;
+  }
+  div.business-info-center-table {
+    // This is styling specifically for the Business Info Center tables like those linked in popups from http://lib.utexas.edu/subject/business
+    h5,
+    table {
+      width: 95%;
+      margin: 0 auto;
+    }
+    table {
+        a {
+          @extend .clean-links;
+        }
+      td,
+      th {
+        padding: 5px;
+        text-align: center;
+      }
+      th:nth-of-type(1),
+      td:nth-of-type(1) {
+        text-align: left;
+      }
+      th {
+        font-size: 12px;
+      }
+      tr {
+        border: none;
+        border-bottom: 1px solid $gray-light;
+          &:nth-child(even) {
+            background: $gray-highlight;
+          }
+          &:last-child {
+            border: none;
+          }
+      }
+    }
+  }
+}
