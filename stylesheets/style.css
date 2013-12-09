@@ -330,6 +330,16 @@ h6 {
   margin-bottom: 2em;
 }
 
+a {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
 a:link {
   color: #098484;
 }
@@ -851,16 +861,6 @@ article div.content-group .content-suffix {
   padding: 1em;
   margin-bottom: 1em;
   position: relative;
-}
-.frontpage-columns .frontpage-column .frontpage-block p {
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
 }
 .frontpage-columns .frontpage-column .frontpage-block .ask-a-librarian-widget {
   margin-bottom: 25px;
