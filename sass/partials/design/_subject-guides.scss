@@ -30,34 +30,35 @@ div.panel-panel {
 
 div.panel-pane,
 div.ctools-collapsible-container {
-  margin: 4px 0 20px;
+  margin: 4px 0 15px;
   h2 {
     font-family: Verdana, $arial;
     font-size: 1.2em;
+    line-height: 1.4em;
     font-weight: normal;
     &.pane-title {
       text-align: left;
       background-color: $blue;
       margin: 0;
       color: $white;
-      padding: 0 10px;
+      padding: 3px 5px 5px 15px;
       @include border-top-radius(10px);
     }
   }
   span.ctools-toggle {
     background-image: image-url('ui/down.gif');
     float: left;
-    width: 20px;
-    height: 25px;
-    background-position: 0;
+    width: 15px;
+    height: 27px;
+    background-position: -2px;
     cursor: pointer;
     background-repeat: no-repeat;
   }
   span.ctools-toggle.ctools-toggle-collapsed {
     background-image: image-url('ui/right.gif');
-    width: 20px;
+    width: 15px;
     height: 25px;
-    background-position: 8px;
+    background-position: 6px;
   }
   div.pane-content,
   div.ctools-collapsible-content {
@@ -68,6 +69,11 @@ div.ctools-collapsible-container {
       margin-top: 0;
     }
   }
+}
+
+// Tighter bottom margin so these don't look quite so barren when collapsed, particularly in a cluster like on /subject/english
+div.ctools-collapsible-container {
+  margin-bottom: 5px;
 }
 
 div.rg-header-image-and-title-pane {
