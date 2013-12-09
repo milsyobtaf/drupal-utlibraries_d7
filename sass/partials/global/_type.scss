@@ -83,7 +83,7 @@ a {
 
   }
 // Forces long links to wrap themselves so they don't run off the page
-  @include force-wrap;
+  word-wrap: break-word;
 }
 
 
