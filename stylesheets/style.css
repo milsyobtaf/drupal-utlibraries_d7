@@ -331,10 +331,13 @@ h6 {
 }
 
 a:link {
-  color: #cc5500;
+  color: #098484;
 }
 a:visited {
-  color: #994000;
+  color: #065454;
+}
+a:hover, a:focus {
+  color: #065454;
 }
 
 ul ul,

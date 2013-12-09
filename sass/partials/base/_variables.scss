@@ -107,7 +107,9 @@ $color-fk       : #66B360;
 
 
 // Base color variables.
-$link           : $color-ut;
+// $link           : $color-ut;
+// $visited        : darken($link, 10%);
+$link           : $color-libgreen;
 $visited        : darken($link, 10%);
 $selection-bg   : $highlight-yellow;
 $selection      : $black;
