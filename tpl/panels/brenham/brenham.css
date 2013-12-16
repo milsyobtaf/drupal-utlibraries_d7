@@ -3,9 +3,9 @@
  * Brenham panel layout
 **/
 
-.brenham-container {
+/*.brenham-container {
   margin-bottom: 1em;
-}
+}*/
 
 .brenham-sidebar {
   min-height: 1px;
@@ -29,9 +29,9 @@
     width: 100%;
     float: none;
   }
-  
+
   .brenham-sidebar-inner {
     margin-right: 0;
   }
-  
+
 }

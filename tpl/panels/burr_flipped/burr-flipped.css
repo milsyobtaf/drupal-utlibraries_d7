@@ -3,9 +3,9 @@
  * Burr panel layout
 **/
 
-.burr-flipped-container {
+/*.burr-flipped-container {
   margin-bottom: 1em;
-}
+}*/
 
 .burr-flipped-sidebar {
   min-height: 1px;
@@ -21,7 +21,7 @@
   .burr-flipped-content-inner {
     margin-right: 20px;
   }
-  
+
 /* iPhone [portrait + landscape] */
 @media only screen and (max-width: 480px) {
   .burr-flipped-content,
@@ -29,7 +29,7 @@
     width: 100%;
     float: none;
   }
-  
+
   .burr-flipped-content-inner {
     margin-right: 0;
   }

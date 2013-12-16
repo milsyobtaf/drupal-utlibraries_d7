@@ -1495,6 +1495,13 @@ div.rg-header-image-and-title-pane h2 {
   margin: 0 0 5px 25px;
 }
 
+h2.pane-node-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #cc5500;
+  margin: 0;
+}
+
 footer,
 #footer {
   margin-top: 10px;
