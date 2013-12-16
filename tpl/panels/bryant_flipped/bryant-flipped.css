@@ -3,9 +3,9 @@
  * Bryant Flipped panel layout
 **/
 
-.bryant-flipped-container {
+/*.bryant-flipped-container {
   margin-bottom: 1em;
-}
+}*/
 
 .bryant-flipped-sidebar {
   min-height: 1px;
@@ -22,7 +22,7 @@
   .bryant-flipped-content-inner {
     margin-right: 20px;
   }
-  
+
 /* iPhone [portrait + landscape] */
 @media only screen and (max-width: 480px) {
   .bryant-flipped-sidebar,
@@ -30,9 +30,9 @@
     width: 100%;
     float: none;
   }
-  
+
   .bryant-flipped-content-inner {
     margin-right: 0;
   }
-  
+
 }
