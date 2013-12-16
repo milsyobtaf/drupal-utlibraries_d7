@@ -1412,6 +1412,12 @@ div.panel-panel .pane-node-title .pane-content {
   border: none;
   padding-bottom: 0px;
 }
+div.panel-panel .pane-node-title .pane-content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #cc5500;
+  margin: 0;
+}
 
 div.panel-pane,
 div.ctools-collapsible-container {
