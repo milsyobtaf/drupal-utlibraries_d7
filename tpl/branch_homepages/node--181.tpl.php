@@ -200,7 +200,7 @@
           </div>
           <div class="ask-a-librarian-text">
             <p>Hours: M-F 8am-5pm</p>
-            <p>During these hours, if you get no response in 5 minutes, please <a href="mailto:mailto:fal-ref@utlists.utexas.edu">email us</a>.</p>
+            <p>During these hours, if you get no response in 5 minutes, please <a href="mailto:fal-ref@utlists.utexas.edu">email us</a>.</p>
           </div>
           <div class="frontpage-block-footer">
             <hr>
