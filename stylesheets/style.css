@@ -485,6 +485,10 @@ div.caption p {
   line-height: 1.2em;
 }
 
+div.messages {
+  margin: 6px;
+}
+
 header a,
 #header a {
   color: black;
