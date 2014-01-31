@@ -439,6 +439,10 @@ article aside.sidebar-second {
   padding: 0 1em;
 }
 
+.page-node-done div.content {
+  padding: 0 2em;
+}
+
 div#main {
   border: 15px #cccccc solid;
   border-top: none;
