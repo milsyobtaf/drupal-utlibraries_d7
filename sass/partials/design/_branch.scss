@@ -143,6 +143,7 @@ article.group-nav aside.sidebar {
           a {
             color: $black-light;
             @extend .clean-links;
+            word-wrap: normal;
           &.active-trail {
             font-weight: bold;
           }
