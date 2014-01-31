@@ -122,7 +122,7 @@ article.group-nav aside.sidebar {
   h2 {
     font-size: 1.2em;
     line-height: 1.4em;
-    padding: 0 1em;
+    padding: 0 .8em;
     margin: .5em 0 .2em 0;
       a {
         color: $black-light;
@@ -130,10 +130,10 @@ article.group-nav aside.sidebar {
       }
   }
   ul {
-    padding: 0 1em 0 2em;
+    padding: 0 1em;
     margin-top: 0;
       li {
-        margin: 0 0 .4em 0;
+        margin: 0 0 .2em 0;
           &.last {
             margin: 0;
       }
