@@ -824,6 +824,7 @@ article.group-nav aside.sidebar ul li {
 }
 article.group-nav aside.sidebar ul li a {
   color: #333333;
+  word-wrap: normal;
 }
 article.group-nav aside.sidebar ul li a.active-trail {
   font-weight: bold;
