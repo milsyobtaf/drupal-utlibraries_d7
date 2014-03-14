@@ -98,10 +98,31 @@
   <div class="content content-group calendar-event calendar-event-public"<?php print $content_attributes; ?>>
     <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
     <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['links']);
-      print render($content);
-    ?>
+      // We hide the content here so we can print it by individual field later
+      hide($content);
+      ?>
+
+      <?php // Beginning of custom content output ?>
+      <div class="cal-display-details"><!-- Beginning of calendar event detail display -->
+        <p><?php print render($content['field_cal_event_date']); ?></p>
+        <p class="cal-display-details-location"><?php print render($content['field_cal_event_location']) . 'in' . render($content['field_cal_event_room']); ?></p>
+        <?php print render($content['field_cal_event_description']); ?>
+      </div><!-- End of calendar event detail display -->
+
+      <div class="cal-display-metadata"><!-- Beginning of calendar image and map display -->
+        <?php print render($content['field_cal_event_image']); ?>
+        <?php if ($content['field_cal_event_location']['#items']['0']['value'] !== 'online'): /* Checking to make sure the type has a mappable location */ ?>
+        <div class="cal-event-location-map">
+          <a href="http://www.google.com/maps/place/<?php print urlencode(render($content['field_cal_event_location']['0'])); ?>"target="_blank">
+            <img src="http://www.utexas.edu/maps/main/buildings/graphics/insets/<?php print render($content['field_cal_event_location']['#items']['0']['value']);?>_inset.gif" />
+          </a>
+          <p><a href="http://www.google.com/maps/place/<?php print urlencode(render($content['field_cal_event_location']['0'])); ?>" target="_blank">Click Here To Open Map In A New Page</a></p>
+        </div>
+        <?php else: print 'butt'; ?>
+        <?php endif; ?>
+      </div><!-- End of calendar image and map display -->
+
+
     <?php if ($region['content_suffix'] = render($region['content_suffix'])): ?>
       <section class="content-suffix">
         <?php print $region['content_suffix']; ?>
