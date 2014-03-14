@@ -143,7 +143,7 @@ function utlibraries_d7_preprocess_node(&$vars) {
     drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/fittext.js');
     $variables['scripts'] = drupal_get_js();
   }
-/* Commenting out for now until I get back to this
+/* Commenting out for now until I get back to this, part of a shelved experiment to get jwplayer working properly with Wowza, our streaming server
   if ($vars['nid'] == '529') {
     drupal_add_js(drupal_get_path('theme', 'utlibraries_d7') . '/javascripts/jwplayer.js');
     $variables['scripts'] = drupal_get_js();
