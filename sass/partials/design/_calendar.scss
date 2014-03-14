@@ -1,3 +1,28 @@
 article.node-calendar-event-public {
-  background-color: cornflowerblue;
+  #page-title {
+    margin-bottom: 0px;
+  }
+  .field-name-field-cal-event-date {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .cal-display-details-location {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  .cal-display-details {
+    @include span-columns(3, 6);
+  }
+  .cal-display-metadata {
+    @include span-columns(3 omega,6);
+    margin-top: 5px;
+      .cal-event-location-map {
+      }
+  }
+  img {
+    max-width: 380px;
+  }
+  a {
+    @extend .clean-links;
+  }
 }
