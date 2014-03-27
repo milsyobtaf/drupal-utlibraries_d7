@@ -2145,8 +2145,15 @@ article.node-calendar-event-public .cal-display-metadata {
   width: 48.27586%;
   float: right;
   margin-right: 0;
-  margin-top: 5px;
 }
-article.node-calendar-event-public img {
-  max-width: 380px;
+article.node-calendar-event-public .cal-display-metadata h4 {
+  font-size: 1.1em;
+  margin-top: 0;
+}
+article.node-calendar-event-public .cal-display-metadata .cal-display-campus-target-audience,
+article.node-calendar-event-public .cal-display-metadata .cal-display-campus-event-type {
+  margin-bottom: .5em;
+}
+article.node-calendar-event-public .cal-display-metadata .cal-event-location-map img {
+  margin: 0.2em 0 -0.5em;
 }
