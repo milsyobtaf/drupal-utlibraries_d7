@@ -105,20 +105,50 @@
       <?php // Beginning of custom content output ?>
       <div class="cal-display-details"><!-- Beginning of calendar event detail display -->
         <p><?php print render($content['field_cal_event_date']); ?></p>
-        <p class="cal-display-details-location"><?php print render($content['field_cal_event_location']) . 'in' . render($content['field_cal_event_room']); ?></p>
-        <?php print render($content['field_cal_event_description']); ?>
+        <!-- Checking to see if this is an online event, one of the two unmappable options. If yes, print out a notice about it being online -->
+        <?php if ($content['field_cal_event_location']['#items']['0']['value'] == 'online'):
+          print '<p class="cal-display-details-location">This is an online event</p>';
+        ?>
+        <!-- Checking to see if this is an other event, one of the two unmappable options. If yes, do nothing, since it doesn't make sense to print "This is an other event". -->
+        <?php elseif ($content['field_cal_event_location']['#items']['0']['value'] == 'other'): ?>
+          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location_other']) . 'in' . render($content['field_cal_event_room']); ?></p>
+        <?php else: ?>
+          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location']) . 'in' . render($content['field_cal_event_room']); ?></p>
+      <?php endif; ?>
+      <?php print render($content['field_cal_event_image']); ?>
+      <?php print render($content['field_cal_event_description']); ?>
       </div><!-- End of calendar event detail display -->
 
-      <div class="cal-display-metadata"><!-- Beginning of calendar image and map display -->
-        <?php print render($content['field_cal_event_image']); ?>
-        <?php if ($content['field_cal_event_location']['#items']['0']['value'] !== 'online'): /* Checking to make sure the type has a mappable location */ ?>
+      <!-- Beginning of metadata and map display -->
+      <div class="cal-display-metadata">
+
+        <!-- Checks to see if Target Audience is empty, if not it prints the values -->
+        <?php if (!empty($content['field_cal_campus_target_au'])): ?>
+          <div class="cal-display-target-audience">
+            <h4>Audience</h4>
+            <?php print render($content['field_cal_campus_target_au']); ?>
+          </div>
+        <?php endif; ?>
+
+          <div class="cal-display-event-category">
+            <h4>Event Type</h4>
+            <?php print render($content['field_cal_event_category']); ?>
+          </div>
+
+        <!-- Checking to see if this is an online event, one of the two unmappable options. If yes, print out a notice about it being online -->
+        <?php if ($content['field_cal_event_location']['#items']['0']['value'] == 'online'):
+          print 'This is an online-only event';
+          ?>
+        <!-- Checking to see if this is an other event, one of the two unmappable options. If yes, do nothing, since it doesn't make sense to print "This is an other event". -->
+        <?php elseif ($content['field_cal_event_location']['#items']['0']['value'] == 'other'): ?>
+        <?php else: ?>
         <div class="cal-event-location-map">
+          <h4>Getting to the<?php print render($content['field_cal_event_location']); ?></h4>
           <a href="http://www.google.com/maps/place/<?php print urlencode(render($content['field_cal_event_location']['0'])); ?>"target="_blank">
             <img src="http://www.utexas.edu/maps/main/buildings/graphics/insets/<?php print render($content['field_cal_event_location']['#items']['0']['value']);?>_inset.gif" />
           </a>
           <p><a href="http://www.google.com/maps/place/<?php print urlencode(render($content['field_cal_event_location']['0'])); ?>" target="_blank">Click Here To Open Map In A New Page</a></p>
         </div>
-        <?php else: print 'butt'; ?>
         <?php endif; ?>
       </div><!-- End of calendar image and map display -->
 
