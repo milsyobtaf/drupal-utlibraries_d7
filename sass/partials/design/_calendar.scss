@@ -15,13 +15,21 @@ article.node-calendar-event-public {
   }
   .cal-display-metadata {
     @include span-columns(3 omega,6);
-    margin-top: 5px;
+      h4 {
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+      .cal-display-target-audience,
+      .cal-display-event-category {
+        margin-bottom: .5em;
+      }
       .cal-event-location-map {
+        img {
+          margin: .2em 0 -.5em;
+        }
       }
   }
-  img {
-    max-width: 380px;
-  }
+  img {}
   a {
     @extend .clean-links;
   }
