@@ -36,16 +36,67 @@ article.node-calendar-event-public {
   }
 }
 
-// Global styling to remove the padding at the bottom of the page for calendars
 .page-calendar {
-  div#main {
+  div#main { // Global styling to remove the padding at the bottom of the page for calendars
     padding-bottom: 0;
+  }
+  div.tabs {
+    position: absolute;
+    margin-top: 5px;
+    ul.tabs.primary { // Global month / week / day / year navigation styling
+      border: none;
+      margin: 7px 5px;
+        li {
+          padding: 7px 0 6px;
+          background-color: lighten($gray-highlight, 5%);
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          display: inline;
+          &:hover,
+          &:focus {
+            background-color: $white;
+          }
+            a {
+              border: none;
+              background: transparent;
+              border-radius: 5px;
+              padding: 7px 10px 6px;
+              // padding: 6px 15px;
+              color: darken($color-libgreen, 5%);
+              font-weight: bold;
+              position: relative; // These two lines are dumb but necessary or the link gets covered up due to wonky markup
+              z-index: 10;        // These two lines are dumb but necessary or the link gets covered up due to wonky markup
+                &.active {
+                  background-color: $white;
+                }
+            }
+        }
+    }
+  }
+
+  ul.pager { // Global prev / next navigation styling
+    .date-prev,
+    .date-next {
+      background-color: lighten($gray-highlight, 5%);
+      border: 1px solid #ccc;
+      display: inline;
+      &:hover,
+      &:focus {
+        background-color: $white;
+      }
+    }
+    .date-prev {
+      right: 80px;
+    }
+    .date-next {
+      right: 15px;
+    }
   }
 }
 
 // Styling of the various calendar views
 div.view-cal-public-calendar {
-  color: $color-libgreen;
+  color: darken($color-libgreen, 5%);
     table tr {
       border: none;
     }
@@ -67,6 +118,7 @@ div.view-cal-public-calendar {
   .calendar-calendar .year-view { // Year view specific styling
     td {
       padding: 0 0.5em;
+      text-align: center;
     }
     td.today {
       background-color: transparentize($color-libgreen, .8);
@@ -77,35 +129,38 @@ div.view-cal-public-calendar {
     }
     .mini-day-off,
     .mini-day-on {
-      padding-right: 5px;
       padding-top: 2px;
+    }
+    .date-nav {
+      padding:1px 1px 0;
+      background-color: $gray-light; // Using a pre-existing variable, however it just conveniently matches up with the default weekday letter border color
+    }
+    .date-heading {
+      background-color: lighten($gray-highlight, 5%);
+        a {
+          color: darken($color-libgreen, 5%);
+          font-size: 1.3em;
+          line-height: 1.3em;
+        }
     }
   }
   .calendar-calendar .month-view { // Month view specific styling
+    th,
+    td.date-box.empty,
+    td.single-day.empty {
+      background-color: lighten($gray-highlight, 5%);
+    }
     .date-nav-wrapper {
       margin-top: 0;
     }
   }
   .calendar-calendar .week-view { // Week view specific styling
     th {
-      background-color: $gray-highlight;
+      background-color: lighten($gray-highlight, 5%);
       border: 1px solid #ccc;
       // Removed the borders below to hide the fact that the table columns don't line up perfectly, and to visually get rid of the placeholders on the left and right
       border-left: none;
       border-right: none;
-    }
-  }
-  ul.pager {
-    .date-prev,
-    .date-next {
-      background-color: $gray-highlight;
-      border: 1px solid #ccc;
-    }
-    .date-prev {
-      right: 80px;
-    }
-    .date-next {
-      right: 15px;
     }
   }
   .calendar-calendar .month-view .full tr td.today,
@@ -128,7 +183,7 @@ div.view-cal-public-calendar {
     border-right: 2px solid $color-libgreen;
   }
   .calendar-calendar th.days {
-    color: $color-libgreen;
+    color: darken($color-libgreen, 5%);
   }
   .calendar-calendar td,
   .calendar-calendar td.empty { // Colors the day number in cells with no events
