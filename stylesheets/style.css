@@ -2161,9 +2161,57 @@ article.node-calendar-event-public .cal-display-metadata .cal-event-location-map
 .page-calendar div#main {
   padding-bottom: 0;
 }
+.page-calendar div.tabs {
+  position: absolute;
+  margin-top: 5px;
+}
+.page-calendar div.tabs ul.tabs.primary {
+  border: none;
+  margin: 7px 5px;
+}
+.page-calendar div.tabs ul.tabs.primary li {
+  padding: 7px 0 6px;
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: inline;
+}
+.page-calendar div.tabs ul.tabs.primary li:hover, .page-calendar div.tabs ul.tabs.primary li:focus {
+  background-color: white;
+}
+.page-calendar div.tabs ul.tabs.primary li a {
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  padding: 7px 10px 6px;
+  color: #076c6c;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+.page-calendar div.tabs ul.tabs.primary li a.active {
+  background-color: white;
+}
+.page-calendar ul.pager .date-prev,
+.page-calendar ul.pager .date-next {
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  display: inline;
+}
+.page-calendar ul.pager .date-prev:hover, .page-calendar ul.pager .date-prev:focus,
+.page-calendar ul.pager .date-next:hover,
+.page-calendar ul.pager .date-next:focus {
+  background-color: white;
+}
+.page-calendar ul.pager .date-prev {
+  right: 80px;
+}
+.page-calendar ul.pager .date-next {
+  right: 15px;
+}
 
 div.view-cal-public-calendar {
-  color: #098484;
+  color: #076c6c;
 }
 div.view-cal-public-calendar table tr {
   border: none;
@@ -2183,6 +2231,7 @@ div.view-cal-public-calendar .date-nav-wrapper .date-nav {
 }
 div.view-cal-public-calendar .calendar-calendar .year-view td {
   padding: 0 0.5em;
+  text-align: center;
 }
 div.view-cal-public-calendar .calendar-calendar .year-view td.today {
   background-color: rgba(9, 132, 132, 0.2);
@@ -2193,28 +2242,33 @@ div.view-cal-public-calendar .calendar-calendar .year-view td.mini a {
 }
 div.view-cal-public-calendar .calendar-calendar .year-view .mini-day-off,
 div.view-cal-public-calendar .calendar-calendar .year-view .mini-day-on {
-  padding-right: 5px;
   padding-top: 2px;
+}
+div.view-cal-public-calendar .calendar-calendar .year-view .date-nav {
+  padding: 1px 1px 0;
+  background-color: #cccccc;
+}
+div.view-cal-public-calendar .calendar-calendar .year-view .date-heading {
+  background-color: #f9f9f9;
+}
+div.view-cal-public-calendar .calendar-calendar .year-view .date-heading a {
+  color: #076c6c;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+div.view-cal-public-calendar .calendar-calendar .month-view th,
+div.view-cal-public-calendar .calendar-calendar .month-view td.date-box.empty,
+div.view-cal-public-calendar .calendar-calendar .month-view td.single-day.empty {
+  background-color: #f9f9f9;
 }
 div.view-cal-public-calendar .calendar-calendar .month-view .date-nav-wrapper {
   margin-top: 0;
 }
 div.view-cal-public-calendar .calendar-calendar .week-view th {
-  background-color: #ececec;
+  background-color: #f9f9f9;
   border: 1px solid #cccccc;
   border-left: none;
   border-right: none;
-}
-div.view-cal-public-calendar ul.pager .date-prev,
-div.view-cal-public-calendar ul.pager .date-next {
-  background-color: #ececec;
-  border: 1px solid #cccccc;
-}
-div.view-cal-public-calendar ul.pager .date-prev {
-  right: 80px;
-}
-div.view-cal-public-calendar ul.pager .date-next {
-  right: 15px;
 }
 div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.today,
 div.view-cal-public-calendar .calendar-calendar .month-view .full tr.odd td.today,
@@ -2236,7 +2290,7 @@ div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.multi-da
   border-right: 2px solid #098484;
 }
 div.view-cal-public-calendar .calendar-calendar th.days {
-  color: #098484;
+  color: #076c6c;
 }
 div.view-cal-public-calendar .calendar-calendar td,
 div.view-cal-public-calendar .calendar-calendar td.empty {
