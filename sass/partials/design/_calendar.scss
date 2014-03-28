@@ -1,3 +1,9 @@
+.page-calendar {
+  div#main {
+    padding-bottom: 0;
+  }
+}
+
 article.node-calendar-event-public {
   #page-title {
     margin-bottom: 0px;
@@ -32,5 +38,96 @@ article.node-calendar-event-public {
   img {}
   a {
     @extend .clean-links;
+  }
+}
+
+div.view-cal-public-calendar {
+  color: $color-libgreen;
+    table tr {
+      border: none;
+    }
+    a {
+      word-wrap: normal;
+    }
+  .date-heading {
+    h3 {
+      color: $color-ut;
+    }
+  }
+  .date-nav-wrapper {
+    margin-top: 10px;
+      .date-nav {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+  }
+  .calendar-calendar .year-view {
+    td {
+      padding: 0 0.5em;
+    }
+    td.today {
+      background-color: transparentize($color-libgreen, .8);
+    }
+    td.mini a {
+      font-weight: bold;
+    }
+    .mini-day-off,
+    .mini-day-on {
+      padding-right: 5px;
+      padding-top: 2px;
+    }
+  }
+  .calendar-calendar .month-view {
+    .date-nav-wrapper {
+      margin-top: 0;
+    }
+  }
+  .calendar-calendar .week-view {
+    th {
+      background-color: $gray-highlight;
+      border: 1px solid #ccc;
+    }
+  }
+  ul.pager {
+    .date-prev,
+    .date-next {
+      background-color: $gray-highlight;
+      border: 1px solid #ccc;
+    }
+    .date-prev {
+      right: 80px;
+    }
+    .date-next {
+      right: 15px;
+    }
+  }
+  .calendar-calendar .month-view .full tr td.today,
+  .calendar-calendar .month-view .full tr.odd td.today,
+  .calendar-calendar .month-view .full tr.even td.today {
+    background: none;
+    border-left: 2px solid $color-ut;
+    border-right: 2px solid $color-ut;
+  }
+  .calendar-calendar .month-view .full td.date-box.today {
+    border-color: $color-ut;
+  }
+  .calendar-calendar .month-view .full tr td.single-day.today {
+    border-bottom: 2px solid $color-ut;
+  }
+  .calendar-calendar .month-view .full tr td.multi-day.starts-today {
+    border-left: 2px solid $color-ut;
+  }
+  .calendar-calendar .month-view .full tr td.multi-day.ends-today {
+    border-right: 2px solid $color-ut;
+  }
+  .calendar-calendar th.days {
+    color: $color-libgreen;
+  }
+  .calendar-calendar td,
+  .calendar-calendar td.empty { // Colors the day number in cells with no events
+    color: lighten($color-libgreen, 5%);
+  }
+  .calendar-calendar div.day { // Keeps the day number from bumping into the right hand border
+    width: auto;
   }
 }
