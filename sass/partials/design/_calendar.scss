@@ -86,6 +86,9 @@ div.view-cal-public-calendar {
     th {
       background-color: $gray-highlight;
       border: 1px solid #ccc;
+      // Removed the borders below to hide the fact that the table columns don't line up perfectly, and to visually get rid of the placeholders on the left and right
+      border-left: none;
+      border-right: none;
     }
   }
   ul.pager {
