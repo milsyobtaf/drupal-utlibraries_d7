@@ -1,9 +1,4 @@
-.page-calendar {
-  div#main {
-    padding-bottom: 0;
-  }
-}
-
+// Styling for individual events
 article.node-calendar-event-public {
   #page-title {
     margin-bottom: 0px;
@@ -41,6 +36,14 @@ article.node-calendar-event-public {
   }
 }
 
+// Global styling to remove the padding at the bottom of the page for calendars
+.page-calendar {
+  div#main {
+    padding-bottom: 0;
+  }
+}
+
+// Styling of the various calendar views
 div.view-cal-public-calendar {
   color: $color-libgreen;
     table tr {
@@ -61,7 +64,7 @@ div.view-cal-public-calendar {
         margin-bottom: 0;
       }
   }
-  .calendar-calendar .year-view {
+  .calendar-calendar .year-view { // Year view specific styling
     td {
       padding: 0 0.5em;
     }
@@ -77,12 +80,12 @@ div.view-cal-public-calendar {
       padding-top: 2px;
     }
   }
-  .calendar-calendar .month-view {
+  .calendar-calendar .month-view { // Month view specific styling
     .date-nav-wrapper {
       margin-top: 0;
     }
   }
-  .calendar-calendar .week-view {
+  .calendar-calendar .week-view { // Week view specific styling
     th {
       background-color: $gray-highlight;
       border: 1px solid #ccc;
