@@ -60,8 +60,8 @@ article.node-calendar-event-public {
               border: none;
               background: transparent;
               border-radius: 5px;
+              margin: 0;
               padding: 7px 10px 6px;
-              // padding: 6px 15px;
               color: darken($color-libgreen, 5%);
               font-weight: bold;
               position: relative; // These two lines are dumb but necessary or the link gets covered up due to wonky markup
