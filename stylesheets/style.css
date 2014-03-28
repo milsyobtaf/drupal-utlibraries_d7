@@ -2201,6 +2201,8 @@ div.view-cal-public-calendar .calendar-calendar .month-view .date-nav-wrapper {
 div.view-cal-public-calendar .calendar-calendar .week-view th {
   background-color: #ececec;
   border: 1px solid #cccccc;
+  border-left: none;
+  border-right: none;
 }
 div.view-cal-public-calendar ul.pager .date-prev,
 div.view-cal-public-calendar ul.pager .date-next {
