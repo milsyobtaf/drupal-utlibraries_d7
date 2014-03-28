@@ -2183,6 +2183,7 @@ article.node-calendar-event-public .cal-display-metadata .cal-event-location-map
   border: none;
   background: transparent;
   border-radius: 5px;
+  margin: 0;
   padding: 7px 10px 6px;
   color: #076c6c;
   font-weight: bold;
