@@ -2125,10 +2125,6 @@ article.node-basic-page-no-template div.business-info-center-table table tr:last
   border: none;
 }
 
-.page-calendar div#main {
-  padding-bottom: 0;
-}
-
 article.node-calendar-event-public #page-title {
   margin-bottom: 0px;
 }
@@ -2160,6 +2156,10 @@ article.node-calendar-event-public .cal-display-metadata .cal-display-event-cate
 }
 article.node-calendar-event-public .cal-display-metadata .cal-event-location-map img {
   margin: 0.2em 0 -0.5em;
+}
+
+.page-calendar div#main {
+  padding-bottom: 0;
 }
 
 div.view-cal-public-calendar {
