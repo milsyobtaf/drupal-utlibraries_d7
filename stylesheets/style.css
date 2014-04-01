@@ -2157,13 +2157,38 @@ article.node-calendar-event-public .cal-display-metadata .cal-display-event-cate
 article.node-calendar-event-public .cal-display-metadata .cal-event-location-map img {
   margin: 0.2em 0 -0.5em;
 }
+article.node-calendar-event-public .calendar-events-upcoming ul {
+  list-style: none;
+}
+article.node-calendar-event-public .calendar-events-upcoming ul li div {
+  display: inline;
+}
+article.node-calendar-event-public .calendar-events-upcoming ul li div.views-field-title {
+  font-weight: bold;
+}
+article.node-calendar-event-public .calendar-events-upcoming ul li div.views-field-field-cal-event-date {
+  font-style: italic;
+  margin-left: 5px;
+}
 
 .page-calendar div#main {
   padding-bottom: 0;
 }
+.page-calendar div.feed-icon {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 18px;
+  padding-left: 5px;
+}
+.page-calendar div.feed-icon img {
+  vertical-align: sub;
+}
+.page-calendar div.feed-icon:before {
+  content: "Add to Your Calendar\00a0";
+}
 .page-calendar div.tabs {
   position: absolute;
-  margin-top: 5px;
+  margin-top: 72px;
 }
 .page-calendar div.tabs ul.tabs.primary {
   border: none;
@@ -2192,6 +2217,15 @@ article.node-calendar-event-public .cal-display-metadata .cal-event-location-map
 }
 .page-calendar div.tabs ul.tabs.primary li a.active {
   background-color: white;
+}
+.page-calendar div.view-filters {
+  float: right;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+.page-calendar div.view-filters .views-exposed-widget {
+  padding: 6px 8px 5px 0;
 }
 .page-calendar ul.pager .date-prev,
 .page-calendar ul.pager .date-next {
@@ -2264,6 +2298,16 @@ div.view-cal-public-calendar .calendar-calendar .month-view td.single-day.empty 
 }
 div.view-cal-public-calendar .calendar-calendar .month-view .date-nav-wrapper {
   margin-top: 0;
+}
+div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview,
+div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview .cutoff {
+  background-color: #cc5500;
+}
+div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview a {
+  color: #ececec;
+}
+div.view-cal-public-calendar .calendar-calendar .month-view .inner .item a {
+  font-size: 1.2em;
 }
 div.view-cal-public-calendar .calendar-calendar .week-view th {
   background-color: #f9f9f9;
