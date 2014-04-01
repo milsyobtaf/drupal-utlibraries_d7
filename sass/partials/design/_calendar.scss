@@ -30,6 +30,23 @@ article.node-calendar-event-public {
         }
       }
   }
+  .calendar-events-upcoming {
+    ul {
+      list-style: none;
+        li {
+          div {
+            &.views-field-title {
+              font-weight: bold;
+            }
+            &.views-field-field-cal-event-date {
+              font-style: italic;
+              margin-left: 5px;
+            }
+            display: inline;
+          }
+        }
+    }
+  }
   img {}
   a {
     @extend .clean-links;
@@ -40,9 +57,21 @@ article.node-calendar-event-public {
   div#main { // Global styling to remove the padding at the bottom of the page for calendars
     padding-bottom: 0;
   }
+  div.feed-icon { // Global styling of iCal feed icon
+    text-align: right;
+    font-weight: bold;
+    padding-right: 18px;
+    padding-left: 5px;
+      img {
+        vertical-align: sub;
+      }
+      &:before {
+        content: ('Add to Your Calendar\00a0'); // The \00a0 is the hex code for a non breaking space
+      }
+  }
   div.tabs {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 72px; // Positioning is a little hacky since the tabs live in the page tpl, and the pager in the views tpl. A custom page tpl or preprocessing could fix this, but currently short on time
     ul.tabs.primary { // Global month / week / day / year navigation styling
       border: none;
       margin: 7px 5px;
@@ -73,7 +102,16 @@ article.node-calendar-event-public {
         }
     }
   }
-
+  div.view-filters { // Styling of the exposed filters for category / location / etc
+    float: right;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+      .views-exposed-widget {
+        padding: 6px 8px 5px 0;
+        // float: none;
+      }
+  }
   ul.pager { // Global prev / next navigation styling
     .date-prev,
     .date-next {
@@ -152,6 +190,16 @@ div.view-cal-public-calendar {
     }
     .date-nav-wrapper {
       margin-top: 0;
+    }
+    .full td.multi-day div.monthview,
+    .full td.multi-day div.monthview .cutoff {
+      background-color: $color-ut;
+    }
+    .full td.multi-day div.monthview a {
+      color: $gray-highlight;
+    }
+    .inner .item a {
+      font-size: 1.2em;
     }
   }
   .calendar-calendar .week-view { // Week view specific styling
