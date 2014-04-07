@@ -2093,9 +2093,9 @@ div.recent-arrivals-full .text h5 {
   text-align: right;
 }
 
-article.node-basic-page-no-template h1#page-title {
+article.node-basic-page-no-template div.basic-content {
   width: 95%;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 article.node-basic-page-no-template div.business-info-center-table h5,
 article.node-basic-page-no-template div.business-info-center-table table {
