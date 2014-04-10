@@ -133,7 +133,8 @@ article.node-calendar-event-public {
 }
 
 // Styling of the various calendar views
-div.view-cal-public-calendar {
+div.view-public-calendar,
+div.view-staff-calendar {
   color: darken($color-libgreen, 5%);
     table tr {
       border: none;
