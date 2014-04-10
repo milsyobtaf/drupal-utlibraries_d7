@@ -713,6 +713,10 @@ tbody {
   display: none;
 }
 
+.not-logged-in .page-calendar div.tabs {
+  display: block;
+}
+
 h1#page-title {
   margin: 10px 0;
   color: #333333;
