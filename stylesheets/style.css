@@ -713,7 +713,7 @@ tbody {
   display: none;
 }
 
-.not-logged-in .page-calendar div.tabs {
+.not-logged-in.page-calendar div.tabs {
   display: block;
 }
 
