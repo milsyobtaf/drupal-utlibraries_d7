@@ -2245,102 +2245,136 @@ article.node-calendar-event-public .calendar-events-upcoming ul li div.views-fie
   right: 15px;
 }
 
-div.view-cal-public-calendar {
+div.view-public-calendar,
+div.view-staff-calendar {
   color: #076c6c;
 }
-div.view-cal-public-calendar table tr {
+div.view-public-calendar table tr,
+div.view-staff-calendar table tr {
   border: none;
 }
-div.view-cal-public-calendar a {
+div.view-public-calendar a,
+div.view-staff-calendar a {
   word-wrap: normal;
 }
-div.view-cal-public-calendar .date-heading h3 {
+div.view-public-calendar .date-heading h3,
+div.view-staff-calendar .date-heading h3 {
   color: #cc5500;
 }
-div.view-cal-public-calendar .date-nav-wrapper {
+div.view-public-calendar .date-nav-wrapper,
+div.view-staff-calendar .date-nav-wrapper {
   margin-top: 10px;
 }
-div.view-cal-public-calendar .date-nav-wrapper .date-nav {
+div.view-public-calendar .date-nav-wrapper .date-nav,
+div.view-staff-calendar .date-nav-wrapper .date-nav {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view td {
+div.view-public-calendar .calendar-calendar .year-view td,
+div.view-staff-calendar .calendar-calendar .year-view td {
   padding: 0 0.5em;
   text-align: center;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view td.today {
+div.view-public-calendar .calendar-calendar .year-view td.today,
+div.view-staff-calendar .calendar-calendar .year-view td.today {
   background-color: rgba(9, 132, 132, 0.2);
   border: 1px solid #098484;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view td.mini a {
+div.view-public-calendar .calendar-calendar .year-view td.mini a,
+div.view-staff-calendar .calendar-calendar .year-view td.mini a {
   font-weight: bold;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view .mini-day-off,
-div.view-cal-public-calendar .calendar-calendar .year-view .mini-day-on {
+div.view-public-calendar .calendar-calendar .year-view .mini-day-off,
+div.view-public-calendar .calendar-calendar .year-view .mini-day-on,
+div.view-staff-calendar .calendar-calendar .year-view .mini-day-off,
+div.view-staff-calendar .calendar-calendar .year-view .mini-day-on {
   padding-top: 2px;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view .date-nav {
+div.view-public-calendar .calendar-calendar .year-view .date-nav,
+div.view-staff-calendar .calendar-calendar .year-view .date-nav {
   padding: 1px 1px 0;
   background-color: #cccccc;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view .date-heading {
+div.view-public-calendar .calendar-calendar .year-view .date-heading,
+div.view-staff-calendar .calendar-calendar .year-view .date-heading {
   background-color: #f9f9f9;
 }
-div.view-cal-public-calendar .calendar-calendar .year-view .date-heading a {
+div.view-public-calendar .calendar-calendar .year-view .date-heading a,
+div.view-staff-calendar .calendar-calendar .year-view .date-heading a {
   color: #076c6c;
   font-size: 1.3em;
   line-height: 1.6em;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view th,
-div.view-cal-public-calendar .calendar-calendar .month-view td.date-box.empty,
-div.view-cal-public-calendar .calendar-calendar .month-view td.single-day.empty {
+div.view-public-calendar .calendar-calendar .month-view th,
+div.view-public-calendar .calendar-calendar .month-view td.date-box.empty,
+div.view-public-calendar .calendar-calendar .month-view td.single-day.empty,
+div.view-staff-calendar .calendar-calendar .month-view th,
+div.view-staff-calendar .calendar-calendar .month-view td.date-box.empty,
+div.view-staff-calendar .calendar-calendar .month-view td.single-day.empty {
   background-color: #f9f9f9;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .date-nav-wrapper {
+div.view-public-calendar .calendar-calendar .month-view .date-nav-wrapper,
+div.view-staff-calendar .calendar-calendar .month-view .date-nav-wrapper {
   margin-top: 0;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview,
-div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview .cutoff {
+div.view-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview,
+div.view-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview .cutoff,
+div.view-staff-calendar .calendar-calendar .month-view .full td.multi-day div.monthview,
+div.view-staff-calendar .calendar-calendar .month-view .full td.multi-day div.monthview .cutoff {
   background-color: #cc5500;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview a {
+div.view-public-calendar .calendar-calendar .month-view .full td.multi-day div.monthview a,
+div.view-staff-calendar .calendar-calendar .month-view .full td.multi-day div.monthview a {
   color: #ececec;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .inner .item a {
+div.view-public-calendar .calendar-calendar .month-view .inner .item a,
+div.view-staff-calendar .calendar-calendar .month-view .inner .item a {
   font-size: 1.2em;
 }
-div.view-cal-public-calendar .calendar-calendar .week-view th {
+div.view-public-calendar .calendar-calendar .week-view th,
+div.view-staff-calendar .calendar-calendar .week-view th {
   background-color: #f9f9f9;
   border: 1px solid #cccccc;
   border-left: none;
   border-right: none;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.today,
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr.odd td.today,
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr.even td.today {
+div.view-public-calendar .calendar-calendar .month-view .full tr td.today,
+div.view-public-calendar .calendar-calendar .month-view .full tr.odd td.today,
+div.view-public-calendar .calendar-calendar .month-view .full tr.even td.today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr td.today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr.odd td.today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr.even td.today {
   background: none;
   border-left: 2px solid #098484;
   border-right: 2px solid #098484;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full td.date-box.today {
+div.view-public-calendar .calendar-calendar .month-view .full td.date-box.today,
+div.view-staff-calendar .calendar-calendar .month-view .full td.date-box.today {
   border-color: #098484;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.single-day.today {
+div.view-public-calendar .calendar-calendar .month-view .full tr td.single-day.today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr td.single-day.today {
   border-bottom: 2px solid #098484;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.multi-day.starts-today {
+div.view-public-calendar .calendar-calendar .month-view .full tr td.multi-day.starts-today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr td.multi-day.starts-today {
   border-left: 2px solid #098484;
 }
-div.view-cal-public-calendar .calendar-calendar .month-view .full tr td.multi-day.ends-today {
+div.view-public-calendar .calendar-calendar .month-view .full tr td.multi-day.ends-today,
+div.view-staff-calendar .calendar-calendar .month-view .full tr td.multi-day.ends-today {
   border-right: 2px solid #098484;
 }
-div.view-cal-public-calendar .calendar-calendar th.days {
+div.view-public-calendar .calendar-calendar th.days,
+div.view-staff-calendar .calendar-calendar th.days {
   color: #076c6c;
 }
-div.view-cal-public-calendar .calendar-calendar td,
-div.view-cal-public-calendar .calendar-calendar td.empty {
+div.view-public-calendar .calendar-calendar td,
+div.view-public-calendar .calendar-calendar td.empty,
+div.view-staff-calendar .calendar-calendar td,
+div.view-staff-calendar .calendar-calendar td.empty {
   color: #0b9c9c;
 }
-div.view-cal-public-calendar .calendar-calendar div.day {
+div.view-public-calendar .calendar-calendar div.day,
+div.view-staff-calendar .calendar-calendar div.day {
   width: auto;
 }
