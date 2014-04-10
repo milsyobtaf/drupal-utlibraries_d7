@@ -24,6 +24,11 @@
   display: none;
 }
 
+// Undoing previous hack on calendar pages
+.not-logged-in .page-calendar div.tabs {
+  display: block;
+}
+
 h1#page-title {
   // @include squish-text;
   margin: 10px 0;
