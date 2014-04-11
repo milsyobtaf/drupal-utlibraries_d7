@@ -111,7 +111,7 @@ article.node-calendar-event-public {
   }
   div.tabs {
     position: absolute;
-    margin-top: 54px; // Positioning is a little hacky since the tabs live in the page tpl, and the pager in the views tpl. A custom page tpl or preprocessing could fix this, but currently short on time
+    margin-top: 72px; // Positioning is a little hacky since the tabs live in the page tpl, and the pager in the views tpl. A custom page tpl or preprocessing could fix this, but currently short on time
     ul.tabs.primary { // Global month / week / day / year navigation styling
       border: none;
       margin: 7px 5px;
