@@ -4,6 +4,9 @@ article.node-calendar-event-staff {
     margin-bottom: 0px;
     color: $color-ut;
   }
+  .cal-display-separator {
+    margin-left: -5px; //Super dumb hack necessary because of whitespace introduced by the Fences module
+  }
   .field-name-field-scal-event-date {
     font-size: 1.2em;
     font-weight: bolder;
@@ -36,6 +39,9 @@ article.node-calendar-event-public {
   #page-title {
     margin-bottom: 0px;
     color: $color-ut;
+  }
+  .cal-display-separator {
+    margin-left: -5px; //Super dumb hack necessary because of whitespace introduced by the Fences module
   }
   .field-name-field-cal-event-date {
     font-size: 1.2em;
