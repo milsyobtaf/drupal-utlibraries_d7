@@ -111,9 +111,9 @@
         ?>
         <!-- Checking to see if this is an other event, one of the two unmappable options. If yes, do nothing, since it doesn't make sense to print "This is an other event". -->
         <?php elseif ($content['field_cal_event_location']['#items']['0']['value'] == 'other'): ?>
-          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location_other']) . 'in' . render($content['field_cal_event_room']); ?></p>
+          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location_other']) . ',' . render($content['field_cal_event_room']); ?></p>
         <?php else: ?>
-          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location']) . 'in' . render($content['field_cal_event_room']); ?></p>
+          <p class="cal-display-details-location">At the<?php print render($content['field_cal_event_location']) . ',' . render($content['field_cal_event_room']); ?></p>
       <?php endif; ?>
       <?php print render($content['field_cal_event_image']); ?>
       <?php print render($content['field_cal_event_description']); ?>
