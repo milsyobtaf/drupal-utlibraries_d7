@@ -2133,6 +2133,9 @@ article.node-calendar-event-staff #page-title {
   margin-bottom: 0px;
   color: #cc5500;
 }
+article.node-calendar-event-staff .cal-display-separator {
+  margin-left: -5px;
+}
 article.node-calendar-event-staff .field-name-field-scal-event-date {
   font-size: 1.2em;
   font-weight: bolder;
@@ -2166,6 +2169,9 @@ article.node-calendar-event-staff .cal-display-metadata .cal-event-location-map 
 article.node-calendar-event-public #page-title {
   margin-bottom: 0px;
   color: #cc5500;
+}
+article.node-calendar-event-public .cal-display-separator {
+  margin-left: -5px;
 }
 article.node-calendar-event-public .field-name-field-cal-event-date {
   font-size: 1.2em;
