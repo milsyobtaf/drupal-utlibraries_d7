@@ -1,4 +1,35 @@
 // Styling for individual events
+article.node-calendar-event-staff {
+  #page-title {
+    margin-bottom: 0px;
+  }
+  .field-name-field-scal-event-date {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .cal-display-details-location {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  .cal-display-details {
+    @include span-columns(3, 6);
+  }
+  .cal-display-metadata {
+    @include span-columns(3 omega,6);
+      h4 {
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+      .cal-display-target-audience,
+      .cal-display-event-category {
+        margin-bottom: .5em;
+      }
+      .cal-event-location-map {
+        img {
+          margin: .2em 0 -.5em;
+        }
+      }
+  }
 article.node-calendar-event-public {
   #page-title {
     margin-bottom: 0px;
@@ -30,37 +61,6 @@ article.node-calendar-event-public {
         }
       }
   }
-  article.node-calendar-event-staff {
-    #page-title {
-      margin-bottom: 0px;
-    }
-    .field-name-field-scal-event-date {
-      font-size: 1.2em;
-      font-weight: bolder;
-    }
-    .cal-display-details-location {
-      font-size: 1.2em;
-      font-style: italic;
-    }
-    .cal-display-details {
-      @include span-columns(3, 6);
-    }
-    .cal-display-metadata {
-      @include span-columns(3 omega,6);
-        h4 {
-          font-size: 1.1em;
-          margin-top: 0;
-        }
-        .cal-display-target-audience,
-        .cal-display-event-category {
-          margin-bottom: .5em;
-        }
-        .cal-event-location-map {
-          img {
-            margin: .2em 0 -.5em;
-          }
-        }
-    }
   .calendar-events-upcoming {
     ul {
       list-style: none;
