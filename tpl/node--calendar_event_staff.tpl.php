@@ -131,6 +131,10 @@
             <h4>Event Type</h4>
             <?php print render($content['field_scal_event_category']); ?>
           </div>
+          <?php if (!empty($content['field_scal_web_link'])): ?>
+            <h4>Event Info</h4>
+            <?php print render($content['field_scal_web_link']); ?>
+          <?php endif; ?>
 
         <!-- Checking to see if this is an online event, one of the two unmappable options. If yes, print out a notice about it being online -->
         <?php if ($content['field_scal_event_location']['#items']['0']['value'] == 'online'):
